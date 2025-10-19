@@ -1,0 +1,3001 @@
+CustomerID,Gender,Age,Annual Income (BDT),Spending Score (1-100),True_Segment
+1,Female,47,1433469,40,High-income Cautious
+2,Male,41,473216,42,Middle-aged Budget Shoppers
+3,Male,52,1353114,30,High-income Cautious
+4,Male,28,1158145,95,Young Premium Spenders
+5,Female,35,686393,80,Young Active Spenders
+6,Male,63,851035,14,Senior Conservative
+7,Female,39,298506,48,Middle-aged Budget Shoppers
+8,Male,58,1431572,38,High-income Cautious
+9,Female,27,1332071,86,Young Premium Spenders
+10,Female,32,841762,68,Young Active Spenders
+11,Male,57,1410852,35,High-income Cautious
+12,Female,23,1163857,71,Young Premium Spenders
+13,Male,60,1008392,18,Senior Conservative
+14,Female,33,459951,51,Middle-aged Budget Shoppers
+15,Female,25,619326,93,Young Active Spenders
+16,Female,65,921777,28,Senior Conservative
+17,Male,58,768996,18,Senior Conservative
+18,Male,20,1198385,83,Young Premium Spenders
+19,Female,27,696946,64,Young Active Spenders
+20,Female,33,656700,73,Young Active Spenders
+21,Female,21,1162899,79,Young Premium Spenders
+22,Male,25,1314044,90,Young Premium Spenders
+23,Female,58,744092,23,Senior Conservative
+24,Male,42,1397142,25,High-income Cautious
+25,Female,37,393896,55,Middle-aged Budget Shoppers
+26,Female,30,732792,69,Young Active Spenders
+27,Male,30,525919,74,Young Active Spenders
+28,Male,40,498764,57,Middle-aged Budget Shoppers
+29,Male,28,1194146,100,Young Premium Spenders
+30,Male,42,493699,52,Middle-aged Budget Shoppers
+31,Female,65,785153,23,Senior Conservative
+32,Male,39,484469,36,Middle-aged Budget Shoppers
+33,Female,60,780843,19,Senior Conservative
+34,Male,29,810350,61,Young Active Spenders
+35,Female,25,1281370,97,Young Premium Spenders
+36,Male,60,893027,17,Senior Conservative
+37,Female,54,1500000,36,High-income Cautious
+38,Female,22,1208188,82,Young Premium Spenders
+39,Female,29,1381020,91,Young Premium Spenders
+40,Female,43,556725,58,Middle-aged Budget Shoppers
+41,Male,27,1093126,84,Young Premium Spenders
+42,Male,22,1118860,75,Young Premium Spenders
+43,Female,31,1146079,90,Young Premium Spenders
+44,Male,61,891900,21,Senior Conservative
+45,Female,36,449760,58,Middle-aged Budget Shoppers
+46,Male,44,570651,40,Middle-aged Budget Shoppers
+47,Female,29,852816,62,Young Active Spenders
+48,Female,21,1441574,82,Young Premium Spenders
+49,Female,33,479087,73,Young Active Spenders
+50,Female,45,444853,51,Middle-aged Budget Shoppers
+51,Female,60,866749,33,Senior Conservative
+52,Female,44,1480497,46,High-income Cautious
+53,Female,28,1189236,91,Young Premium Spenders
+54,Female,26,729658,60,Young Active Spenders
+55,Male,22,1097376,89,Young Premium Spenders
+56,Male,34,714587,65,Young Active Spenders
+57,Female,33,524138,28,Middle-aged Budget Shoppers
+58,Female,61,920080,22,Senior Conservative
+59,Male,30,682553,82,Young Active Spenders
+60,Female,53,899473,14,Senior Conservative
+61,Female,56,1006428,29,Senior Conservative
+62,Male,59,1084470,33,Senior Conservative
+63,Male,64,861567,36,Senior Conservative
+64,Male,31,1254065,100,Young Premium Spenders
+65,Female,25,1331760,88,Young Premium Spenders
+66,Male,46,548239,48,Middle-aged Budget Shoppers
+67,Female,51,651833,30,Middle-aged Budget Shoppers
+68,Male,47,468216,33,Middle-aged Budget Shoppers
+69,Male,43,734031,54,Middle-aged Budget Shoppers
+70,Male,26,1347268,81,Young Premium Spenders
+71,Female,51,561865,53,Middle-aged Budget Shoppers
+72,Female,29,627596,75,Young Active Spenders
+73,Female,32,742596,77,Young Active Spenders
+74,Male,51,1500000,33,High-income Cautious
+75,Female,25,1129677,84,Young Premium Spenders
+76,Female,52,757716,15,Senior Conservative
+77,Male,45,1323443,24,High-income Cautious
+78,Male,34,711469,68,Young Active Spenders
+79,Male,53,1309273,45,High-income Cautious
+80,Male,32,471196,59,Young Active Spenders
+81,Male,46,1500000,22,High-income Cautious
+82,Female,50,1395654,36,High-income Cautious
+83,Female,59,827443,23,Senior Conservative
+84,Male,46,1418527,36,High-income Cautious
+85,Female,46,1491992,36,High-income Cautious
+86,Female,27,1290850,91,Young Premium Spenders
+87,Female,30,893801,69,Young Active Spenders
+88,Male,50,569582,47,Middle-aged Budget Shoppers
+89,Female,34,813680,82,Young Active Spenders
+90,Male,28,836902,65,Young Active Spenders
+91,Female,27,1104909,87,Young Premium Spenders
+92,Male,38,404418,42,Middle-aged Budget Shoppers
+93,Male,32,936664,64,Young Active Spenders
+94,Male,43,438932,39,Middle-aged Budget Shoppers
+95,Female,36,566668,50,Middle-aged Budget Shoppers
+96,Female,30,1146417,88,Young Premium Spenders
+97,Male,27,680355,65,Young Active Spenders
+98,Female,49,1361261,24,High-income Cautious
+99,Male,25,1271955,96,Young Premium Spenders
+100,Female,45,437183,51,Middle-aged Budget Shoppers
+101,Male,49,1429152,44,High-income Cautious
+102,Female,22,1167991,73,Young Premium Spenders
+103,Female,50,872616,24,Senior Conservative
+104,Male,37,688988,44,Middle-aged Budget Shoppers
+105,Female,43,573235,49,Middle-aged Budget Shoppers
+106,Female,63,941626,17,Senior Conservative
+107,Male,39,1221384,27,High-income Cautious
+108,Female,24,1398385,74,Young Premium Spenders
+109,Female,26,1274068,90,Young Premium Spenders
+110,Female,39,534376,44,Middle-aged Budget Shoppers
+111,Female,33,963379,73,Young Active Spenders
+112,Female,23,1262249,88,Young Premium Spenders
+113,Male,34,614632,71,Young Active Spenders
+114,Male,50,1483549,29,High-income Cautious
+115,Male,27,1230382,98,Young Premium Spenders
+116,Female,51,1500000,50,High-income Cautious
+117,Female,28,1293374,87,Young Premium Spenders
+118,Female,29,1218619,85,Young Premium Spenders
+119,Female,43,430977,54,Middle-aged Budget Shoppers
+120,Male,54,1094628,47,High-income Cautious
+121,Female,31,763395,85,Young Active Spenders
+122,Male,34,549095,45,Middle-aged Budget Shoppers
+123,Male,58,857612,23,Senior Conservative
+124,Male,45,490914,55,Middle-aged Budget Shoppers
+125,Female,40,610696,38,Middle-aged Budget Shoppers
+126,Female,56,1376247,26,High-income Cautious
+127,Female,41,1448781,40,High-income Cautious
+128,Male,58,733832,32,Senior Conservative
+129,Male,55,938043,20,Senior Conservative
+130,Female,49,897285,12,Senior Conservative
+131,Male,40,1500000,32,High-income Cautious
+132,Female,47,525294,43,Middle-aged Budget Shoppers
+133,Female,47,1323562,35,High-income Cautious
+134,Female,49,638877,56,Middle-aged Budget Shoppers
+135,Male,58,761748,18,Senior Conservative
+136,Female,30,1077339,76,Young Premium Spenders
+137,Male,22,1205882,77,Young Premium Spenders
+138,Female,45,484296,52,Middle-aged Budget Shoppers
+139,Female,60,967605,24,Senior Conservative
+140,Male,51,1280077,32,High-income Cautious
+141,Male,34,794131,69,Young Active Spenders
+142,Female,41,482397,44,Middle-aged Budget Shoppers
+143,Female,53,1395305,29,High-income Cautious
+144,Male,29,873498,79,Young Active Spenders
+145,Male,53,1188384,39,High-income Cautious
+146,Female,26,1141631,88,Young Premium Spenders
+147,Female,48,1482570,26,High-income Cautious
+148,Male,47,1500000,37,High-income Cautious
+149,Male,52,1238332,42,High-income Cautious
+150,Female,29,1219207,91,Young Premium Spenders
+151,Male,53,1298903,32,High-income Cautious
+152,Male,33,730208,81,Young Active Spenders
+153,Female,58,1044303,26,Senior Conservative
+154,Female,46,1331770,30,High-income Cautious
+155,Female,26,1203261,81,Young Premium Spenders
+156,Female,49,1500000,22,High-income Cautious
+157,Male,26,1265896,92,Young Premium Spenders
+158,Male,35,780053,75,Young Active Spenders
+159,Female,43,503314,34,Middle-aged Budget Shoppers
+160,Female,31,672791,62,Young Active Spenders
+161,Female,42,461747,61,Middle-aged Budget Shoppers
+162,Male,50,1282856,32,High-income Cautious
+163,Male,24,1247165,82,Young Premium Spenders
+164,Male,24,1322417,97,Young Premium Spenders
+165,Female,49,562964,42,Middle-aged Budget Shoppers
+166,Female,35,632794,40,Middle-aged Budget Shoppers
+167,Female,30,1408889,81,Young Premium Spenders
+168,Female,36,792436,74,Young Active Spenders
+169,Male,55,1489812,34,High-income Cautious
+170,Male,25,1397187,87,Young Premium Spenders
+171,Male,36,751010,78,Young Active Spenders
+172,Female,25,845383,86,Young Active Spenders
+173,Female,39,404825,43,Middle-aged Budget Shoppers
+174,Female,60,1010862,18,Senior Conservative
+175,Male,32,680192,69,Young Active Spenders
+176,Female,37,208187,48,Middle-aged Budget Shoppers
+177,Female,49,1456444,37,High-income Cautious
+178,Female,33,505871,53,Middle-aged Budget Shoppers
+179,Female,25,1310417,73,Young Premium Spenders
+180,Female,46,463479,51,Middle-aged Budget Shoppers
+181,Male,27,1014133,77,Young Premium Spenders
+182,Male,36,739990,84,Young Active Spenders
+183,Male,47,1485566,41,High-income Cautious
+184,Male,26,681934,81,Young Active Spenders
+185,Female,27,1236267,85,Young Premium Spenders
+186,Male,26,1215052,81,Young Premium Spenders
+187,Male,27,1263346,97,Young Premium Spenders
+188,Female,52,1373608,22,High-income Cautious
+189,Male,44,813131,45,Middle-aged Budget Shoppers
+190,Female,47,731671,43,Middle-aged Budget Shoppers
+191,Male,62,1163599,25,Senior Conservative
+192,Male,57,877724,29,Senior Conservative
+193,Female,58,1397893,34,High-income Cautious
+194,Male,35,1454994,90,Young Premium Spenders
+195,Female,60,834318,25,Senior Conservative
+196,Female,27,889893,61,Young Active Spenders
+197,Female,25,1202011,76,Young Premium Spenders
+198,Female,33,863926,71,Young Active Spenders
+199,Female,63,751841,25,Senior Conservative
+200,Female,30,1150170,90,Young Premium Spenders
+201,Female,40,483408,46,Middle-aged Budget Shoppers
+202,Female,41,1396950,40,High-income Cautious
+203,Female,30,1172538,88,Young Premium Spenders
+204,Male,33,813881,67,Young Active Spenders
+205,Female,57,1500000,40,High-income Cautious
+206,Female,41,623889,45,Middle-aged Budget Shoppers
+207,Female,49,1314893,36,High-income Cautious
+208,Female,43,1404172,28,High-income Cautious
+209,Male,21,1240798,84,Young Premium Spenders
+210,Male,57,1380866,40,High-income Cautious
+211,Female,42,1281829,32,High-income Cautious
+212,Male,40,437714,58,Middle-aged Budget Shoppers
+213,Male,41,397988,56,Middle-aged Budget Shoppers
+214,Male,48,1236564,36,High-income Cautious
+215,Male,56,909084,20,Senior Conservative
+216,Female,25,1293735,83,Young Premium Spenders
+217,Female,25,1210517,86,Young Premium Spenders
+218,Male,26,1415663,83,Young Premium Spenders
+219,Male,44,1287208,36,High-income Cautious
+220,Female,49,1500000,36,High-income Cautious
+221,Female,41,584020,59,Middle-aged Budget Shoppers
+222,Male,43,531481,50,Middle-aged Budget Shoppers
+223,Male,58,800853,27,Senior Conservative
+224,Female,37,725716,75,Young Active Spenders
+225,Male,41,423587,56,Middle-aged Budget Shoppers
+226,Female,23,1332368,94,Young Premium Spenders
+227,Female,21,1292889,82,Young Premium Spenders
+228,Female,53,1500000,22,High-income Cautious
+229,Female,58,931121,19,Senior Conservative
+230,Male,23,1265873,76,Young Premium Spenders
+231,Female,31,641453,65,Middle-aged Budget Shoppers
+232,Female,47,1265132,21,High-income Cautious
+233,Male,33,847042,92,Young Active Spenders
+234,Male,22,1349863,90,Young Premium Spenders
+235,Male,57,968150,22,Senior Conservative
+236,Female,57,775040,20,Senior Conservative
+237,Male,21,1227137,85,Young Premium Spenders
+238,Male,46,502480,42,Middle-aged Budget Shoppers
+239,Male,32,688394,64,Young Active Spenders
+240,Male,57,961129,23,Senior Conservative
+241,Female,34,746783,87,Young Active Spenders
+242,Male,50,830078,26,Senior Conservative
+243,Male,43,1324167,27,High-income Cautious
+244,Male,44,1424960,35,High-income Cautious
+245,Male,30,1072508,82,Young Premium Spenders
+246,Female,26,1208517,90,Young Premium Spenders
+247,Male,50,530233,53,Middle-aged Budget Shoppers
+248,Male,24,1318066,82,Young Premium Spenders
+249,Female,58,858958,23,Senior Conservative
+250,Female,27,638468,78,Young Active Spenders
+251,Female,54,841859,14,Senior Conservative
+252,Female,27,498944,45,Middle-aged Budget Shoppers
+253,Male,28,1038728,83,Young Premium Spenders
+254,Male,59,1038569,13,Senior Conservative
+255,Female,27,755716,70,Young Active Spenders
+256,Female,36,766597,56,Young Active Spenders
+257,Female,49,1480184,38,High-income Cautious
+258,Female,24,779679,74,Young Active Spenders
+259,Female,51,1405718,50,High-income Cautious
+260,Female,41,1426288,34,High-income Cautious
+261,Female,39,559656,46,Middle-aged Budget Shoppers
+262,Male,39,541893,50,Middle-aged Budget Shoppers
+263,Female,29,1196612,90,Young Premium Spenders
+264,Male,62,964136,14,Senior Conservative
+265,Male,24,1218767,89,Young Premium Spenders
+266,Male,50,1480797,26,High-income Cautious
+267,Male,39,658221,58,Young Active Spenders
+268,Male,30,771105,81,Young Active Spenders
+269,Female,32,852922,75,Young Active Spenders
+270,Female,30,1332027,79,Young Premium Spenders
+271,Male,53,1500000,44,High-income Cautious
+272,Male,60,826731,24,Senior Conservative
+273,Female,47,1321754,32,High-income Cautious
+274,Female,21,1235741,81,Young Premium Spenders
+275,Male,56,695928,24,Senior Conservative
+276,Male,54,694573,9,Senior Conservative
+277,Female,36,774657,73,Young Active Spenders
+278,Female,59,985579,31,Senior Conservative
+279,Male,59,895787,30,Senior Conservative
+280,Female,29,1495860,87,Young Premium Spenders
+281,Male,44,602165,51,Middle-aged Budget Shoppers
+282,Male,59,1035430,28,Senior Conservative
+283,Female,18,1209705,80,Young Premium Spenders
+284,Male,54,819069,18,Senior Conservative
+285,Female,61,959539,30,Senior Conservative
+286,Female,44,1487613,39,High-income Cautious
+287,Female,24,1018612,83,Young Premium Spenders
+288,Female,34,640313,88,Young Active Spenders
+289,Female,27,1489527,84,Young Premium Spenders
+290,Female,26,1251891,83,Young Premium Spenders
+291,Female,34,622524,71,Young Active Spenders
+292,Male,31,681389,66,Young Active Spenders
+293,Male,34,414455,29,Middle-aged Budget Shoppers
+294,Female,45,432151,25,Middle-aged Budget Shoppers
+295,Male,46,1396708,45,High-income Cautious
+296,Female,31,903448,82,Young Active Spenders
+297,Female,55,863343,23,Senior Conservative
+298,Female,28,688011,74,Young Active Spenders
+299,Male,29,834496,70,Young Active Spenders
+300,Female,26,1233702,83,Young Premium Spenders
+301,Male,28,1319054,93,Young Premium Spenders
+302,Male,40,525041,42,Middle-aged Budget Shoppers
+303,Male,30,1215415,83,Young Premium Spenders
+304,Female,32,530994,49,Middle-aged Budget Shoppers
+305,Male,35,782564,91,Young Active Spenders
+306,Male,62,906504,18,Senior Conservative
+307,Female,41,409272,36,Middle-aged Budget Shoppers
+308,Male,43,503751,63,Middle-aged Budget Shoppers
+309,Female,47,387705,45,Middle-aged Budget Shoppers
+310,Male,21,1342552,80,Young Premium Spenders
+311,Female,25,1056355,84,Young Premium Spenders
+312,Female,40,485912,47,Middle-aged Budget Shoppers
+313,Female,54,781190,26,Senior Conservative
+314,Female,54,1264621,32,High-income Cautious
+315,Male,44,583236,49,Middle-aged Budget Shoppers
+316,Female,51,1500000,27,High-income Cautious
+317,Female,30,1270724,92,Young Premium Spenders
+318,Female,33,596686,67,Young Active Spenders
+319,Female,47,1458010,25,High-income Cautious
+320,Male,43,577708,54,Middle-aged Budget Shoppers
+321,Female,40,491379,47,Middle-aged Budget Shoppers
+322,Female,57,945298,27,Senior Conservative
+323,Female,45,1384970,31,High-income Cautious
+324,Female,41,1491366,24,High-income Cautious
+325,Female,35,535754,41,Middle-aged Budget Shoppers
+326,Female,44,594017,43,Middle-aged Budget Shoppers
+327,Female,28,1205586,87,Young Premium Spenders
+328,Male,45,1396967,19,High-income Cautious
+329,Male,24,779047,60,Young Active Spenders
+330,Male,49,1438338,29,High-income Cautious
+331,Male,59,956082,15,Senior Conservative
+332,Female,55,971109,18,Senior Conservative
+333,Female,43,1180527,34,High-income Cautious
+334,Female,54,975166,11,Senior Conservative
+335,Male,59,864232,21,Senior Conservative
+336,Female,31,879452,86,Young Active Spenders
+337,Female,53,1435150,42,High-income Cautious
+338,Male,45,508045,57,Middle-aged Budget Shoppers
+339,Male,50,1389654,34,High-income Cautious
+340,Female,48,378429,55,Middle-aged Budget Shoppers
+341,Male,29,708443,98,Young Active Spenders
+342,Female,23,1210961,81,Young Premium Spenders
+343,Male,61,1078524,27,Senior Conservative
+344,Female,35,712907,72,Young Active Spenders
+345,Male,24,1453054,90,Young Premium Spenders
+346,Female,42,448960,39,Middle-aged Budget Shoppers
+347,Female,34,829386,64,Young Active Spenders
+348,Male,29,1058519,86,Young Premium Spenders
+349,Female,37,436681,48,Middle-aged Budget Shoppers
+350,Female,22,1226240,73,Young Premium Spenders
+351,Male,55,851595,24,Senior Conservative
+352,Male,39,665342,74,Young Active Spenders
+353,Female,26,980236,90,Young Premium Spenders
+354,Male,49,1476112,29,High-income Cautious
+355,Female,32,701105,74,Young Active Spenders
+356,Female,27,1164882,75,Young Premium Spenders
+357,Female,28,694885,79,Young Active Spenders
+358,Female,52,784605,27,Senior Conservative
+359,Female,32,739216,66,Young Active Spenders
+360,Female,37,625237,51,Middle-aged Budget Shoppers
+361,Female,34,897105,75,Young Active Spenders
+362,Female,51,1493760,37,High-income Cautious
+363,Male,58,1411533,45,High-income Cautious
+364,Male,55,817669,27,Senior Conservative
+365,Male,59,753330,21,Senior Conservative
+366,Female,64,762771,29,Senior Conservative
+367,Female,54,1440017,41,High-income Cautious
+368,Male,37,510871,47,Middle-aged Budget Shoppers
+369,Male,44,1474899,25,High-income Cautious
+370,Female,56,1349999,37,High-income Cautious
+371,Male,25,1245826,79,Young Premium Spenders
+372,Female,30,1351481,85,Young Premium Spenders
+373,Male,39,369686,60,Middle-aged Budget Shoppers
+374,Female,37,486015,42,Middle-aged Budget Shoppers
+375,Male,26,1370785,93,Young Premium Spenders
+376,Female,43,376857,66,Middle-aged Budget Shoppers
+377,Male,43,320470,43,Middle-aged Budget Shoppers
+378,Male,47,440627,51,Middle-aged Budget Shoppers
+379,Female,22,1205468,95,Young Premium Spenders
+380,Male,41,412783,59,Middle-aged Budget Shoppers
+381,Male,59,1225118,36,Senior Conservative
+382,Male,44,1241476,44,High-income Cautious
+383,Female,59,880268,18,Senior Conservative
+384,Male,58,1003280,26,Senior Conservative
+385,Female,24,1462650,97,Young Premium Spenders
+386,Female,27,695255,59,Young Active Spenders
+387,Male,41,441233,39,Middle-aged Budget Shoppers
+388,Female,59,883660,22,Senior Conservative
+389,Male,63,775185,24,Senior Conservative
+390,Female,46,532922,34,Middle-aged Budget Shoppers
+391,Male,45,1418887,32,High-income Cautious
+392,Female,46,536464,34,Middle-aged Budget Shoppers
+393,Female,48,513530,31,Middle-aged Budget Shoppers
+394,Female,31,579216,57,Middle-aged Budget Shoppers
+395,Female,41,1338307,26,High-income Cautious
+396,Male,33,521217,50,Middle-aged Budget Shoppers
+397,Male,27,1246103,79,Young Premium Spenders
+398,Male,26,1402326,86,Young Premium Spenders
+399,Male,59,954958,27,Senior Conservative
+400,Male,34,621773,76,Young Active Spenders
+401,Female,57,905873,16,Senior Conservative
+402,Female,28,569586,64,Young Active Spenders
+403,Male,46,593877,45,Middle-aged Budget Shoppers
+404,Female,39,860996,80,Young Active Spenders
+405,Male,36,893508,63,Young Active Spenders
+406,Male,50,493957,46,Middle-aged Budget Shoppers
+407,Male,29,1273567,88,Young Premium Spenders
+408,Female,30,755679,53,Young Active Spenders
+409,Male,60,806308,34,Senior Conservative
+410,Female,55,1437906,19,High-income Cautious
+411,Female,34,476632,68,Middle-aged Budget Shoppers
+412,Female,29,1419763,72,Young Premium Spenders
+413,Male,43,561910,32,Middle-aged Budget Shoppers
+414,Male,24,1132647,79,Young Premium Spenders
+415,Female,24,1073353,98,Young Premium Spenders
+416,Female,43,573606,46,Middle-aged Budget Shoppers
+417,Male,41,621884,51,Middle-aged Budget Shoppers
+418,Female,24,1183417,91,Young Premium Spenders
+419,Male,45,494184,26,Middle-aged Budget Shoppers
+420,Male,27,1401199,80,Young Premium Spenders
+421,Male,24,1215392,98,Young Premium Spenders
+422,Female,47,1376247,26,High-income Cautious
+423,Female,45,418886,68,Middle-aged Budget Shoppers
+424,Female,64,928306,8,Senior Conservative
+425,Male,57,803857,31,Senior Conservative
+426,Female,63,852483,24,Senior Conservative
+427,Female,61,842306,25,Senior Conservative
+428,Female,25,1342522,75,Young Premium Spenders
+429,Male,19,1157804,79,Young Premium Spenders
+430,Male,22,1232729,90,Young Premium Spenders
+431,Female,24,787366,60,Young Active Spenders
+432,Male,31,1343441,84,Young Premium Spenders
+433,Female,27,707868,75,Young Active Spenders
+434,Female,33,387997,48,Middle-aged Budget Shoppers
+435,Male,45,313756,41,Middle-aged Budget Shoppers
+436,Male,39,413705,51,Middle-aged Budget Shoppers
+437,Male,39,511146,54,Middle-aged Budget Shoppers
+438,Male,40,1242690,40,High-income Cautious
+439,Male,58,1398893,23,High-income Cautious
+440,Female,55,954348,15,Senior Conservative
+441,Male,29,1295060,82,Young Premium Spenders
+442,Male,33,319174,54,Middle-aged Budget Shoppers
+443,Male,43,1419112,30,High-income Cautious
+444,Female,46,494518,37,Middle-aged Budget Shoppers
+445,Male,54,1314557,27,High-income Cautious
+446,Female,26,1154843,84,Young Premium Spenders
+447,Female,51,1404691,20,High-income Cautious
+448,Female,33,681761,64,Young Active Spenders
+449,Male,25,1337438,100,Young Premium Spenders
+450,Female,31,819306,70,Young Active Spenders
+451,Female,36,801241,75,Young Active Spenders
+452,Female,62,978988,20,Senior Conservative
+453,Male,32,853763,56,Young Active Spenders
+454,Female,39,721693,57,Middle-aged Budget Shoppers
+455,Male,36,564573,52,Middle-aged Budget Shoppers
+456,Female,27,1292004,83,Young Premium Spenders
+457,Male,58,1012892,23,Senior Conservative
+458,Female,23,1188390,82,Young Premium Spenders
+459,Female,32,1333102,88,Young Premium Spenders
+460,Female,23,1272744,80,Young Premium Spenders
+461,Male,43,624739,49,Middle-aged Budget Shoppers
+462,Female,30,1319408,95,Young Premium Spenders
+463,Female,24,1028091,78,Young Premium Spenders
+464,Male,26,1179563,87,Young Premium Spenders
+465,Female,35,413436,42,Middle-aged Budget Shoppers
+466,Male,32,433787,50,Middle-aged Budget Shoppers
+467,Female,68,774681,33,Senior Conservative
+468,Male,60,957657,23,Senior Conservative
+469,Male,31,1196772,97,Young Premium Spenders
+470,Male,34,948266,75,Young Active Spenders
+471,Male,52,820575,31,Senior Conservative
+472,Male,45,1490988,36,High-income Cautious
+473,Male,45,1326598,28,High-income Cautious
+474,Female,24,1268002,84,Young Premium Spenders
+475,Male,31,842021,83,Young Active Spenders
+476,Male,20,691330,73,Young Active Spenders
+477,Female,29,641581,70,Young Active Spenders
+478,Female,34,699082,69,Young Active Spenders
+479,Female,42,783733,58,Middle-aged Budget Shoppers
+480,Male,57,871367,16,Senior Conservative
+481,Female,29,750060,69,Young Active Spenders
+482,Female,26,1047924,85,Young Premium Spenders
+483,Female,46,496364,58,Middle-aged Budget Shoppers
+484,Male,59,1337690,48,High-income Cautious
+485,Female,51,1322754,28,High-income Cautious
+486,Male,32,774222,60,Young Active Spenders
+487,Female,45,1500000,37,High-income Cautious
+488,Female,34,687779,71,Young Active Spenders
+489,Female,22,1295487,84,Young Premium Spenders
+490,Female,31,730003,69,Young Active Spenders
+491,Male,63,742822,22,Senior Conservative
+492,Female,48,1357297,23,High-income Cautious
+493,Female,30,837291,67,Young Active Spenders
+494,Male,33,769640,58,Young Active Spenders
+495,Female,48,1466878,24,High-income Cautious
+496,Female,52,717529,22,Senior Conservative
+497,Female,25,1195955,85,Young Premium Spenders
+498,Male,46,1374755,26,High-income Cautious
+499,Female,22,1173124,85,Young Premium Spenders
+500,Male,32,559742,74,Young Active Spenders
+501,Male,42,435113,55,Middle-aged Budget Shoppers
+502,Male,54,1048944,23,Senior Conservative
+503,Female,52,788060,19,Senior Conservative
+504,Male,30,839666,66,Young Active Spenders
+505,Male,21,1347698,94,Young Premium Spenders
+506,Female,51,1411926,24,High-income Cautious
+507,Female,36,878202,77,Young Active Spenders
+508,Female,57,833673,23,Senior Conservative
+509,Female,28,649976,61,Young Active Spenders
+510,Male,56,809888,24,Senior Conservative
+511,Female,32,779803,63,Young Active Spenders
+512,Male,26,1331090,74,Young Premium Spenders
+513,Female,24,1500000,79,Young Premium Spenders
+514,Male,53,1425359,38,High-income Cautious
+515,Male,57,1005075,14,Senior Conservative
+516,Male,28,669149,64,Young Active Spenders
+517,Female,52,718430,13,Senior Conservative
+518,Female,27,1119923,91,Young Premium Spenders
+519,Male,41,600782,43,Middle-aged Budget Shoppers
+520,Female,37,519546,41,Middle-aged Budget Shoppers
+521,Female,29,1086188,82,Young Premium Spenders
+522,Female,52,1034697,28,Senior Conservative
+523,Female,40,419193,59,Middle-aged Budget Shoppers
+524,Male,52,785940,20,Senior Conservative
+525,Female,49,860495,12,Senior Conservative
+526,Male,41,446878,42,Middle-aged Budget Shoppers
+527,Female,40,863844,80,Young Active Spenders
+528,Male,55,1381956,39,High-income Cautious
+529,Female,52,1382130,37,High-income Cautious
+530,Male,34,724178,70,Young Active Spenders
+531,Female,47,1194038,44,High-income Cautious
+532,Male,60,1014879,27,Senior Conservative
+533,Male,42,486133,45,Middle-aged Budget Shoppers
+534,Male,26,687225,77,Young Active Spenders
+535,Male,24,1156148,81,Young Premium Spenders
+536,Male,54,1382718,45,High-income Cautious
+537,Male,44,734382,53,Middle-aged Budget Shoppers
+538,Male,37,877118,69,Young Active Spenders
+539,Female,38,441038,46,Middle-aged Budget Shoppers
+540,Male,42,560777,40,Middle-aged Budget Shoppers
+541,Female,51,1500000,40,High-income Cautious
+542,Female,34,489695,54,Middle-aged Budget Shoppers
+543,Female,26,1416616,88,Young Premium Spenders
+544,Male,40,1376673,34,High-income Cautious
+545,Male,51,966506,39,Senior Conservative
+546,Male,40,794276,56,Middle-aged Budget Shoppers
+547,Male,29,1262465,83,Young Premium Spenders
+548,Female,60,1486040,37,High-income Cautious
+549,Female,22,814550,86,Young Active Spenders
+550,Male,65,1043523,27,Senior Conservative
+551,Female,42,1489292,17,High-income Cautious
+552,Female,41,1447833,22,High-income Cautious
+553,Male,24,1287210,86,Young Premium Spenders
+554,Female,44,624169,29,Middle-aged Budget Shoppers
+555,Male,28,1199675,92,Young Premium Spenders
+556,Male,26,796260,82,Young Active Spenders
+557,Female,53,949648,22,Senior Conservative
+558,Female,23,1138181,77,Young Premium Spenders
+559,Male,23,1368892,85,Young Premium Spenders
+560,Female,23,1349706,81,Young Premium Spenders
+561,Female,37,787651,64,Young Active Spenders
+562,Female,55,1430085,30,High-income Cautious
+563,Male,37,1484478,29,High-income Cautious
+564,Female,53,892747,21,Senior Conservative
+565,Female,24,1298324,97,Young Premium Spenders
+566,Female,55,1500000,32,High-income Cautious
+567,Female,46,471267,39,Middle-aged Budget Shoppers
+568,Female,57,943198,19,Senior Conservative
+569,Male,40,577991,43,Middle-aged Budget Shoppers
+570,Male,35,693604,88,Young Active Spenders
+571,Male,54,816858,24,Senior Conservative
+572,Male,27,1077001,79,Young Premium Spenders
+573,Female,26,691461,62,Young Active Spenders
+574,Female,48,602850,48,Middle-aged Budget Shoppers
+575,Female,48,1321305,40,High-income Cautious
+576,Male,24,1219020,99,Young Premium Spenders
+577,Female,61,819700,18,Senior Conservative
+578,Male,62,800279,25,Senior Conservative
+579,Male,56,1011629,33,Senior Conservative
+580,Female,21,1202121,77,Young Premium Spenders
+581,Female,21,1320656,83,Young Premium Spenders
+582,Female,26,1117884,89,Young Premium Spenders
+583,Male,25,461610,69,Young Active Spenders
+584,Female,35,626597,70,Young Active Spenders
+585,Male,26,1248645,90,Young Premium Spenders
+586,Female,50,519033,55,Middle-aged Budget Shoppers
+587,Female,33,586694,84,Young Active Spenders
+588,Male,41,547260,50,Middle-aged Budget Shoppers
+589,Female,56,890056,30,Senior Conservative
+590,Male,56,1492497,31,High-income Cautious
+591,Male,32,780520,64,Young Active Spenders
+592,Male,29,658303,66,Young Active Spenders
+593,Male,33,871062,79,Young Active Spenders
+594,Female,46,607833,57,Middle-aged Budget Shoppers
+595,Female,40,598536,52,Middle-aged Budget Shoppers
+596,Female,24,1038833,88,Young Premium Spenders
+597,Male,56,1456613,45,High-income Cautious
+598,Male,27,1392940,82,Young Premium Spenders
+599,Female,46,546051,62,Middle-aged Budget Shoppers
+600,Male,49,425192,48,Middle-aged Budget Shoppers
+601,Female,57,853625,32,Senior Conservative
+602,Male,59,688950,27,Senior Conservative
+603,Male,25,1411301,100,Young Premium Spenders
+604,Male,41,432629,39,Middle-aged Budget Shoppers
+605,Male,59,1034537,19,Senior Conservative
+606,Male,37,442144,52,Middle-aged Budget Shoppers
+607,Female,54,862379,15,Senior Conservative
+608,Male,32,560487,45,Middle-aged Budget Shoppers
+609,Female,40,694649,63,Young Active Spenders
+610,Female,55,1500000,28,High-income Cautious
+611,Male,27,790940,66,Young Active Spenders
+612,Female,25,1181819,93,Young Premium Spenders
+613,Female,23,812171,72,Young Active Spenders
+614,Female,57,819439,17,Senior Conservative
+615,Female,39,457996,63,Middle-aged Budget Shoppers
+616,Female,28,557215,65,Young Active Spenders
+617,Female,45,602460,70,Middle-aged Budget Shoppers
+618,Female,40,589586,40,Middle-aged Budget Shoppers
+619,Male,29,1392747,87,Young Premium Spenders
+620,Female,27,1262666,82,Young Premium Spenders
+621,Female,30,796125,75,Young Active Spenders
+622,Male,26,1218699,89,Young Premium Spenders
+623,Female,41,490048,57,Middle-aged Budget Shoppers
+624,Female,36,327403,32,Middle-aged Budget Shoppers
+625,Female,32,705753,75,Young Active Spenders
+626,Female,40,1268655,34,High-income Cautious
+627,Female,54,981478,13,Senior Conservative
+628,Male,53,309698,41,Middle-aged Budget Shoppers
+629,Male,44,409342,45,Middle-aged Budget Shoppers
+630,Female,23,1417542,78,Young Premium Spenders
+631,Female,24,1249766,78,Young Premium Spenders
+632,Female,32,651235,62,Young Active Spenders
+633,Male,25,791952,81,Young Active Spenders
+634,Female,50,1500000,39,High-income Cautious
+635,Female,37,709690,84,Young Active Spenders
+636,Male,26,1249250,87,Young Premium Spenders
+637,Female,26,918852,55,Young Active Spenders
+638,Male,25,1202850,87,Young Premium Spenders
+639,Male,31,734059,71,Young Active Spenders
+640,Male,56,877675,22,Senior Conservative
+641,Male,50,1359525,42,High-income Cautious
+642,Male,44,303375,48,Middle-aged Budget Shoppers
+643,Male,38,554245,50,Middle-aged Budget Shoppers
+644,Female,32,629629,72,Young Active Spenders
+645,Male,53,1021533,34,Senior Conservative
+646,Female,57,853367,21,Senior Conservative
+647,Female,33,789987,74,Young Active Spenders
+648,Female,25,1275158,97,Young Premium Spenders
+649,Female,56,828659,29,Senior Conservative
+650,Female,46,527925,47,Middle-aged Budget Shoppers
+651,Female,38,390392,33,Middle-aged Budget Shoppers
+652,Male,27,1290448,91,Young Premium Spenders
+653,Female,27,717093,85,Young Active Spenders
+654,Female,29,654311,59,Young Active Spenders
+655,Male,28,853897,62,Young Active Spenders
+656,Female,48,1500000,41,High-income Cautious
+657,Male,56,867998,15,Senior Conservative
+658,Female,28,821919,81,Young Active Spenders
+659,Female,58,849466,19,Senior Conservative
+660,Female,30,704022,72,Young Active Spenders
+661,Female,55,765652,20,Senior Conservative
+662,Female,34,827032,62,Young Active Spenders
+663,Female,43,1489122,34,High-income Cautious
+664,Female,25,1198022,87,Young Premium Spenders
+665,Male,23,1333449,69,Young Premium Spenders
+666,Male,44,1207240,38,High-income Cautious
+667,Male,31,782734,77,Young Active Spenders
+668,Female,23,1258083,89,Young Premium Spenders
+669,Female,52,1333374,32,High-income Cautious
+670,Male,45,1500000,26,High-income Cautious
+671,Male,46,1374611,24,High-income Cautious
+672,Female,44,519073,43,Middle-aged Budget Shoppers
+673,Female,53,865716,21,Senior Conservative
+674,Female,31,682017,88,Young Active Spenders
+675,Female,58,915605,10,Senior Conservative
+676,Female,39,887798,76,Young Active Spenders
+677,Male,45,497201,50,Middle-aged Budget Shoppers
+678,Male,59,978983,17,Senior Conservative
+679,Female,46,1471260,36,High-income Cautious
+680,Female,42,569402,43,Middle-aged Budget Shoppers
+681,Male,57,1336252,25,High-income Cautious
+682,Male,46,1195711,28,High-income Cautious
+683,Male,27,554986,66,Young Active Spenders
+684,Female,39,538675,41,Middle-aged Budget Shoppers
+685,Female,26,1215421,85,Young Premium Spenders
+686,Female,51,1386579,51,High-income Cautious
+687,Male,33,488620,44,Middle-aged Budget Shoppers
+688,Male,46,454815,52,Middle-aged Budget Shoppers
+689,Female,36,627188,48,Middle-aged Budget Shoppers
+690,Female,34,588624,54,Middle-aged Budget Shoppers
+691,Male,39,743092,65,Young Active Spenders
+692,Male,30,727882,66,Young Active Spenders
+693,Male,43,659556,44,Middle-aged Budget Shoppers
+694,Male,38,672190,39,Middle-aged Budget Shoppers
+695,Male,38,702639,78,Young Active Spenders
+696,Female,30,759060,61,Young Active Spenders
+697,Female,52,1449623,32,High-income Cautious
+698,Female,33,679729,70,Young Active Spenders
+699,Female,47,536955,47,Middle-aged Budget Shoppers
+700,Male,29,599252,57,Middle-aged Budget Shoppers
+701,Female,25,1380821,82,Young Premium Spenders
+702,Female,26,487849,56,Middle-aged Budget Shoppers
+703,Female,26,1095272,98,Young Premium Spenders
+704,Female,53,1415003,47,High-income Cautious
+705,Female,25,1388034,89,Young Premium Spenders
+706,Male,50,1455207,30,High-income Cautious
+707,Male,23,1192994,75,Young Premium Spenders
+708,Female,27,1283446,74,Young Premium Spenders
+709,Male,31,1158747,87,Young Premium Spenders
+710,Female,30,762114,66,Young Active Spenders
+711,Male,61,1470514,36,High-income Cautious
+712,Female,48,591414,53,Middle-aged Budget Shoppers
+713,Male,52,686338,8,Senior Conservative
+714,Female,50,320812,53,Middle-aged Budget Shoppers
+715,Male,30,500613,61,Young Active Spenders
+716,Male,39,556243,45,Middle-aged Budget Shoppers
+717,Male,43,1487392,30,High-income Cautious
+718,Female,55,875429,23,Senior Conservative
+719,Male,52,983895,19,Senior Conservative
+720,Female,43,646396,31,Middle-aged Budget Shoppers
+721,Female,49,518235,35,Middle-aged Budget Shoppers
+722,Male,44,651677,51,Middle-aged Budget Shoppers
+723,Female,29,735337,78,Young Active Spenders
+724,Male,25,871147,86,Young Premium Spenders
+725,Male,40,549697,42,Middle-aged Budget Shoppers
+726,Male,48,473893,37,Middle-aged Budget Shoppers
+727,Female,27,1256028,84,Young Premium Spenders
+728,Female,45,1480092,42,High-income Cautious
+729,Female,47,1469410,25,High-income Cautious
+730,Female,55,857274,25,Senior Conservative
+731,Female,35,633839,78,Young Active Spenders
+732,Male,47,1500000,32,High-income Cautious
+733,Male,23,1322420,85,Young Premium Spenders
+734,Female,26,757234,79,Young Active Spenders
+735,Female,57,1037700,18,Senior Conservative
+736,Male,31,679523,93,Young Active Spenders
+737,Male,21,1121773,76,Young Premium Spenders
+738,Female,26,1242365,84,Young Premium Spenders
+739,Male,61,855407,28,Senior Conservative
+740,Female,34,761616,87,Young Active Spenders
+741,Female,59,798132,13,Senior Conservative
+742,Male,44,596166,48,Middle-aged Budget Shoppers
+743,Female,24,1043585,76,Young Premium Spenders
+744,Male,46,553877,45,Middle-aged Budget Shoppers
+745,Female,36,794948,81,Young Active Spenders
+746,Male,28,1336464,86,Young Premium Spenders
+747,Female,37,473694,44,Middle-aged Budget Shoppers
+748,Female,30,955409,60,Young Active Spenders
+749,Male,47,582998,39,Middle-aged Budget Shoppers
+750,Female,34,1317239,100,Young Premium Spenders
+751,Female,28,695281,60,Young Active Spenders
+752,Female,24,1045979,83,Young Premium Spenders
+753,Female,60,997794,33,Senior Conservative
+754,Female,40,746352,50,Middle-aged Budget Shoppers
+755,Male,55,752422,16,Senior Conservative
+756,Female,33,758895,99,Young Active Spenders
+757,Male,62,998296,30,Senior Conservative
+758,Male,26,1157149,87,Young Premium Spenders
+759,Male,52,1500000,42,High-income Cautious
+760,Female,61,835555,23,Senior Conservative
+761,Male,38,453052,43,Middle-aged Budget Shoppers
+762,Female,32,513281,75,Young Active Spenders
+763,Female,24,1101466,90,Young Premium Spenders
+764,Female,46,1112390,37,High-income Cautious
+765,Female,36,980692,69,Young Active Spenders
+766,Female,57,749646,34,Senior Conservative
+767,Male,36,805184,61,Young Active Spenders
+768,Female,28,909176,68,Young Active Spenders
+769,Male,34,857735,72,Young Active Spenders
+770,Male,51,1262394,36,High-income Cautious
+771,Male,43,1500000,40,High-income Cautious
+772,Female,56,1087920,22,Senior Conservative
+773,Female,48,1333217,26,High-income Cautious
+774,Male,43,536388,38,Middle-aged Budget Shoppers
+775,Female,24,1472101,88,Young Premium Spenders
+776,Male,56,897658,8,Senior Conservative
+777,Female,52,709209,30,Senior Conservative
+778,Male,25,661452,70,Young Active Spenders
+779,Male,59,883984,22,Senior Conservative
+780,Female,22,1093118,82,Young Premium Spenders
+781,Female,26,1216932,75,Young Premium Spenders
+782,Female,44,558470,49,Middle-aged Budget Shoppers
+783,Male,47,1500000,33,High-income Cautious
+784,Female,54,958057,9,Senior Conservative
+785,Male,40,532702,40,Middle-aged Budget Shoppers
+786,Male,54,1000439,27,Senior Conservative
+787,Male,34,832625,84,Young Active Spenders
+788,Male,30,612496,77,Young Active Spenders
+789,Female,41,1353100,35,High-income Cautious
+790,Male,27,375780,33,Middle-aged Budget Shoppers
+791,Male,56,1338842,36,High-income Cautious
+792,Female,54,922740,17,Senior Conservative
+793,Male,28,1347164,91,Young Premium Spenders
+794,Male,57,896817,14,Senior Conservative
+795,Female,37,502478,50,Middle-aged Budget Shoppers
+796,Male,38,502455,43,Middle-aged Budget Shoppers
+797,Female,32,692345,64,Young Active Spenders
+798,Female,42,561761,47,Middle-aged Budget Shoppers
+799,Female,37,799371,64,Young Active Spenders
+800,Female,32,676465,73,Young Active Spenders
+801,Male,25,1041371,87,Young Premium Spenders
+802,Male,53,1377047,33,High-income Cautious
+803,Female,47,497622,47,Middle-aged Budget Shoppers
+804,Female,21,1381573,77,Young Premium Spenders
+805,Male,34,482250,47,Middle-aged Budget Shoppers
+806,Male,52,1500000,23,High-income Cautious
+807,Female,48,1216710,40,High-income Cautious
+808,Female,25,1388576,80,Young Premium Spenders
+809,Male,59,818379,20,Senior Conservative
+810,Female,26,1380179,82,Young Premium Spenders
+811,Male,54,825663,35,Senior Conservative
+812,Male,51,1500000,26,High-income Cautious
+813,Male,44,1414867,33,High-income Cautious
+814,Female,42,512677,28,Middle-aged Budget Shoppers
+815,Male,58,913121,19,Senior Conservative
+816,Male,32,769405,77,Young Active Spenders
+817,Female,55,1500000,38,High-income Cautious
+818,Male,24,1192214,89,Young Premium Spenders
+819,Male,31,753971,65,Young Active Spenders
+820,Male,66,833281,27,Senior Conservative
+821,Male,50,1397590,34,High-income Cautious
+822,Female,31,1500000,89,Young Premium Spenders
+823,Female,24,659764,76,Young Active Spenders
+824,Female,29,1211556,83,Young Premium Spenders
+825,Female,31,798751,59,Young Active Spenders
+826,Female,45,596505,38,Middle-aged Budget Shoppers
+827,Female,38,1500000,35,High-income Cautious
+828,Female,43,537035,49,Middle-aged Budget Shoppers
+829,Female,42,391592,59,Middle-aged Budget Shoppers
+830,Male,61,859162,18,Senior Conservative
+831,Female,29,757844,61,Young Active Spenders
+832,Female,54,1007209,19,Senior Conservative
+833,Female,56,969100,28,Senior Conservative
+834,Male,54,969435,33,Senior Conservative
+835,Female,61,901689,35,Senior Conservative
+836,Male,26,1429620,100,Young Premium Spenders
+837,Female,24,1311423,96,Young Premium Spenders
+838,Male,45,1445469,37,High-income Cautious
+839,Male,29,981124,66,Young Active Spenders
+840,Female,28,844470,85,Young Active Spenders
+841,Male,37,793544,60,Young Active Spenders
+842,Female,31,745559,71,Young Active Spenders
+843,Female,34,706773,57,Young Active Spenders
+844,Male,57,1488863,45,High-income Cautious
+845,Female,55,791291,31,Senior Conservative
+846,Male,53,748491,11,Senior Conservative
+847,Female,30,868777,54,Young Active Spenders
+848,Male,42,408261,49,Middle-aged Budget Shoppers
+849,Female,40,1500000,41,High-income Cautious
+850,Female,59,839202,31,Senior Conservative
+851,Female,29,360714,46,Middle-aged Budget Shoppers
+852,Male,41,600377,58,Middle-aged Budget Shoppers
+853,Male,45,1483807,39,High-income Cautious
+854,Female,53,1334752,25,High-income Cautious
+855,Male,44,560016,52,Middle-aged Budget Shoppers
+856,Male,25,1345790,82,Young Premium Spenders
+857,Female,42,577660,40,Middle-aged Budget Shoppers
+858,Female,41,510923,45,Middle-aged Budget Shoppers
+859,Male,55,1337516,45,High-income Cautious
+860,Male,25,736105,78,Young Active Spenders
+861,Male,34,812964,69,Young Active Spenders
+862,Male,27,1045078,70,Young Premium Spenders
+863,Male,64,927461,18,Senior Conservative
+864,Male,61,794660,21,Senior Conservative
+865,Female,26,1204971,82,Young Premium Spenders
+866,Female,28,672045,69,Young Active Spenders
+867,Male,53,915210,26,Senior Conservative
+868,Male,46,1226786,44,High-income Cautious
+869,Male,30,576298,67,Young Active Spenders
+870,Male,31,673908,80,Young Active Spenders
+871,Female,28,1407890,85,Young Premium Spenders
+872,Female,26,1152561,84,Young Premium Spenders
+873,Female,27,1101436,97,Young Premium Spenders
+874,Female,28,691040,67,Young Active Spenders
+875,Male,52,948959,16,Senior Conservative
+876,Female,25,1261739,86,Young Premium Spenders
+877,Male,36,399714,46,Middle-aged Budget Shoppers
+878,Male,59,1155832,43,High-income Cautious
+879,Male,37,467000,41,Middle-aged Budget Shoppers
+880,Female,61,708222,29,Senior Conservative
+881,Female,35,890782,83,Young Active Spenders
+882,Female,36,407083,49,Middle-aged Budget Shoppers
+883,Male,37,559303,45,Middle-aged Budget Shoppers
+884,Female,44,393441,50,Middle-aged Budget Shoppers
+885,Male,58,963271,20,Senior Conservative
+886,Female,35,565745,86,Young Active Spenders
+887,Female,44,545538,49,Middle-aged Budget Shoppers
+888,Female,32,821197,70,Young Active Spenders
+889,Male,20,1128425,75,Young Premium Spenders
+890,Male,50,1438121,33,High-income Cautious
+891,Male,61,914863,25,Senior Conservative
+892,Male,34,739628,77,Young Active Spenders
+893,Male,55,955515,15,Senior Conservative
+894,Male,19,1213252,95,Young Premium Spenders
+895,Male,48,552660,53,Middle-aged Budget Shoppers
+896,Male,27,848696,86,Young Active Spenders
+897,Male,56,980142,3,Senior Conservative
+898,Female,45,1497788,24,High-income Cautious
+899,Male,29,1235599,88,Young Premium Spenders
+900,Female,29,1194347,83,Young Premium Spenders
+901,Female,55,1067819,23,Senior Conservative
+902,Male,28,1266017,83,Young Premium Spenders
+903,Female,33,705884,73,Young Active Spenders
+904,Male,20,1263442,75,Young Premium Spenders
+905,Male,48,1377615,44,High-income Cautious
+906,Female,53,1014855,16,Senior Conservative
+907,Male,57,990070,22,Senior Conservative
+908,Female,59,1044435,28,Senior Conservative
+909,Female,26,1205558,84,Young Premium Spenders
+910,Female,60,970332,21,Senior Conservative
+911,Female,56,1429766,27,High-income Cautious
+912,Female,37,799391,83,Young Active Spenders
+913,Female,37,1226793,33,High-income Cautious
+914,Male,43,466054,35,Middle-aged Budget Shoppers
+915,Male,57,878847,23,Senior Conservative
+916,Male,42,453394,54,Middle-aged Budget Shoppers
+917,Male,54,1321958,24,High-income Cautious
+918,Male,36,696638,74,Young Active Spenders
+919,Female,39,588555,44,Middle-aged Budget Shoppers
+920,Male,27,1148255,86,Young Premium Spenders
+921,Female,29,879959,66,Young Active Spenders
+922,Male,27,1340599,90,Young Premium Spenders
+923,Male,32,791313,72,Young Active Spenders
+924,Female,25,1156059,84,Young Premium Spenders
+925,Male,55,1475264,39,High-income Cautious
+926,Female,43,602828,40,Middle-aged Budget Shoppers
+927,Male,42,464536,44,Middle-aged Budget Shoppers
+928,Female,35,310324,47,Middle-aged Budget Shoppers
+929,Female,62,713407,23,Senior Conservative
+930,Male,44,1280653,33,High-income Cautious
+931,Female,30,1406646,79,Young Premium Spenders
+932,Female,53,397259,38,Middle-aged Budget Shoppers
+933,Female,56,1262848,24,High-income Cautious
+934,Male,47,587824,59,Middle-aged Budget Shoppers
+935,Male,52,1151106,19,High-income Cautious
+936,Female,39,474910,38,Middle-aged Budget Shoppers
+937,Female,48,1500000,30,High-income Cautious
+938,Male,60,954185,21,Senior Conservative
+939,Female,42,1212148,42,High-income Cautious
+940,Female,43,472576,36,Middle-aged Budget Shoppers
+941,Female,29,909505,74,Young Active Spenders
+942,Male,27,1248326,90,Young Premium Spenders
+943,Male,45,656739,65,Middle-aged Budget Shoppers
+944,Male,56,1115052,21,Senior Conservative
+945,Female,23,1188898,88,Young Premium Spenders
+946,Female,47,467180,48,Middle-aged Budget Shoppers
+947,Female,28,1325087,73,Young Premium Spenders
+948,Male,30,824548,91,Young Active Spenders
+949,Female,44,1500000,24,High-income Cautious
+950,Female,39,436299,43,Middle-aged Budget Shoppers
+951,Male,36,555801,52,Middle-aged Budget Shoppers
+952,Female,43,513697,44,Middle-aged Budget Shoppers
+953,Male,27,1197892,83,Young Premium Spenders
+954,Male,33,782474,75,Young Active Spenders
+955,Male,37,336598,50,Middle-aged Budget Shoppers
+956,Female,24,1236005,93,Young Premium Spenders
+957,Female,43,507163,46,Middle-aged Budget Shoppers
+958,Female,32,754735,63,Young Active Spenders
+959,Male,53,1077116,21,Senior Conservative
+960,Female,30,511198,75,Young Active Spenders
+961,Male,58,1076733,20,Senior Conservative
+962,Female,32,401198,48,Middle-aged Budget Shoppers
+963,Female,61,977592,21,Senior Conservative
+964,Female,26,691735,83,Young Active Spenders
+965,Male,32,697617,61,Young Active Spenders
+966,Female,35,480908,32,Middle-aged Budget Shoppers
+967,Male,24,682458,67,Young Active Spenders
+968,Male,59,1053956,20,Senior Conservative
+969,Male,63,1078291,19,Senior Conservative
+970,Female,52,986489,23,Senior Conservative
+971,Female,31,697276,59,Young Active Spenders
+972,Female,46,1356114,35,High-income Cautious
+973,Male,28,1308779,91,Young Premium Spenders
+974,Male,52,823359,10,Senior Conservative
+975,Male,27,576030,81,Young Active Spenders
+976,Female,49,1230190,39,High-income Cautious
+977,Male,43,1308345,44,High-income Cautious
+978,Female,50,1382567,22,High-income Cautious
+979,Female,56,1421768,55,High-income Cautious
+980,Female,63,905623,31,Senior Conservative
+981,Female,60,1064180,30,Senior Conservative
+982,Female,37,730357,66,Young Active Spenders
+983,Female,53,1499665,32,High-income Cautious
+984,Male,56,880416,21,Senior Conservative
+985,Male,49,1386025,33,High-income Cautious
+986,Female,30,531803,70,Young Active Spenders
+987,Male,51,1409514,39,High-income Cautious
+988,Male,58,762148,28,Senior Conservative
+989,Female,55,831650,17,Senior Conservative
+990,Female,52,1391952,31,High-income Cautious
+991,Male,36,690689,57,Young Active Spenders
+992,Male,22,1262456,86,Young Premium Spenders
+993,Female,53,1362528,31,High-income Cautious
+994,Female,44,1235711,30,High-income Cautious
+995,Female,56,1282688,26,High-income Cautious
+996,Female,53,853475,26,Senior Conservative
+997,Male,21,1311725,85,Young Premium Spenders
+998,Male,38,207261,45,Middle-aged Budget Shoppers
+999,Female,62,975363,14,Senior Conservative
+1000,Male,55,950390,15,Senior Conservative
+1001,Female,24,789688,65,Young Active Spenders
+1002,Male,26,991350,82,Young Premium Spenders
+1003,Male,64,829068,34,Senior Conservative
+1004,Male,22,1033780,90,Young Premium Spenders
+1005,Female,27,1284250,99,Young Premium Spenders
+1006,Male,47,1500000,28,High-income Cautious
+1007,Female,46,1480917,27,High-income Cautious
+1008,Male,61,812902,38,Senior Conservative
+1009,Male,48,1485293,42,High-income Cautious
+1010,Female,28,1120536,87,Young Premium Spenders
+1011,Male,43,501483,45,Middle-aged Budget Shoppers
+1012,Female,42,1362294,27,High-income Cautious
+1013,Female,28,1388117,86,Young Premium Spenders
+1014,Female,29,361064,48,Middle-aged Budget Shoppers
+1015,Female,31,541457,77,Young Active Spenders
+1016,Male,44,792368,35,Middle-aged Budget Shoppers
+1017,Male,59,945933,21,Senior Conservative
+1018,Male,44,350328,50,Middle-aged Budget Shoppers
+1019,Male,33,1186557,91,Young Premium Spenders
+1020,Male,45,355332,38,Middle-aged Budget Shoppers
+1021,Male,43,370033,44,Middle-aged Budget Shoppers
+1022,Male,47,379727,45,Middle-aged Budget Shoppers
+1023,Male,23,1341810,100,Young Premium Spenders
+1024,Male,49,1500000,35,High-income Cautious
+1025,Female,31,709275,64,Young Active Spenders
+1026,Female,22,1056021,81,Young Premium Spenders
+1027,Female,55,849568,27,Senior Conservative
+1028,Female,59,867764,32,Senior Conservative
+1029,Female,59,754074,25,Senior Conservative
+1030,Female,34,398873,43,Middle-aged Budget Shoppers
+1031,Male,46,1304003,29,High-income Cautious
+1032,Male,37,784620,82,Young Active Spenders
+1033,Male,33,475865,45,Middle-aged Budget Shoppers
+1034,Male,24,1287104,80,Young Premium Spenders
+1035,Female,47,1351925,41,High-income Cautious
+1036,Female,47,498229,55,Middle-aged Budget Shoppers
+1037,Female,56,1016888,25,Senior Conservative
+1038,Male,52,1482197,37,High-income Cautious
+1039,Female,50,925040,17,Senior Conservative
+1040,Female,35,810453,70,Young Active Spenders
+1041,Female,46,1346094,32,High-income Cautious
+1042,Female,48,1310216,39,High-income Cautious
+1043,Male,41,687392,78,Young Active Spenders
+1044,Male,58,897596,23,Senior Conservative
+1045,Female,35,870368,75,Young Active Spenders
+1046,Male,57,866274,22,Senior Conservative
+1047,Female,32,716366,39,Middle-aged Budget Shoppers
+1048,Female,22,1239027,80,Young Premium Spenders
+1049,Female,45,659951,53,Middle-aged Budget Shoppers
+1050,Male,39,517109,50,Middle-aged Budget Shoppers
+1051,Female,34,870603,77,Young Active Spenders
+1052,Male,45,1432674,26,High-income Cautious
+1053,Female,37,405719,44,Middle-aged Budget Shoppers
+1054,Male,39,495696,40,Middle-aged Budget Shoppers
+1055,Male,43,1497467,32,High-income Cautious
+1056,Female,42,1278468,26,High-income Cautious
+1057,Female,45,489768,39,Middle-aged Budget Shoppers
+1058,Male,37,1333468,31,High-income Cautious
+1059,Female,28,1286599,84,Young Premium Spenders
+1060,Male,47,1404506,40,High-income Cautious
+1061,Male,50,1413489,32,High-income Cautious
+1062,Male,48,569874,54,Middle-aged Budget Shoppers
+1063,Female,23,1411507,82,Young Premium Spenders
+1064,Female,51,855667,27,Senior Conservative
+1065,Male,47,593858,46,Middle-aged Budget Shoppers
+1066,Male,51,576350,53,Middle-aged Budget Shoppers
+1067,Female,46,469759,38,Middle-aged Budget Shoppers
+1068,Male,32,655071,63,Young Active Spenders
+1069,Female,31,643482,71,Young Active Spenders
+1070,Female,44,490221,64,Middle-aged Budget Shoppers
+1071,Male,24,1283708,78,Young Premium Spenders
+1072,Male,48,1453822,41,High-income Cautious
+1073,Male,60,869561,31,Senior Conservative
+1074,Female,58,824158,25,Senior Conservative
+1075,Male,25,1166191,75,Young Premium Spenders
+1076,Male,56,1495532,32,High-income Cautious
+1077,Male,37,531987,52,Middle-aged Budget Shoppers
+1078,Female,56,992995,21,Senior Conservative
+1079,Male,36,610497,75,Young Active Spenders
+1080,Male,25,1299660,89,Young Premium Spenders
+1081,Female,25,1185683,85,Young Premium Spenders
+1082,Female,63,1464423,40,High-income Cautious
+1083,Male,57,808544,24,Senior Conservative
+1084,Female,24,1181080,83,Young Premium Spenders
+1085,Male,31,1343594,84,Young Premium Spenders
+1086,Female,44,570324,47,Middle-aged Budget Shoppers
+1087,Female,24,743020,82,Young Active Spenders
+1088,Female,30,960277,91,Young Active Spenders
+1089,Male,43,509787,55,Middle-aged Budget Shoppers
+1090,Female,37,390530,40,Middle-aged Budget Shoppers
+1091,Male,26,1444974,88,Young Premium Spenders
+1092,Male,27,1210044,83,Young Premium Spenders
+1093,Male,50,1483837,26,High-income Cautious
+1094,Male,61,802891,17,Senior Conservative
+1095,Male,52,1402344,32,High-income Cautious
+1096,Female,57,1405864,34,High-income Cautious
+1097,Female,40,576643,59,Middle-aged Budget Shoppers
+1098,Male,39,893678,74,Young Active Spenders
+1099,Male,50,1290828,37,High-income Cautious
+1100,Female,57,979960,28,Senior Conservative
+1101,Male,28,1178861,78,Young Premium Spenders
+1102,Male,46,1212833,40,High-income Cautious
+1103,Male,47,1328095,46,High-income Cautious
+1104,Male,27,1164042,83,Young Premium Spenders
+1105,Female,34,826219,78,Young Active Spenders
+1106,Female,52,1419420,29,High-income Cautious
+1107,Male,34,842788,68,Young Active Spenders
+1108,Female,27,679379,78,Young Active Spenders
+1109,Female,42,424739,59,Middle-aged Budget Shoppers
+1110,Male,36,532840,46,Middle-aged Budget Shoppers
+1111,Male,50,1482684,35,High-income Cautious
+1112,Female,24,1222655,82,Young Premium Spenders
+1113,Female,43,1364935,31,High-income Cautious
+1114,Male,40,566481,57,Middle-aged Budget Shoppers
+1115,Female,28,761012,82,Young Active Spenders
+1116,Male,18,1133115,75,Young Premium Spenders
+1117,Male,50,1500000,37,High-income Cautious
+1118,Male,33,669711,84,Young Active Spenders
+1119,Female,35,690585,72,Young Active Spenders
+1120,Female,48,692634,34,Middle-aged Budget Shoppers
+1121,Male,44,434145,47,Middle-aged Budget Shoppers
+1122,Male,56,799957,23,Senior Conservative
+1123,Male,30,820157,76,Young Active Spenders
+1124,Female,26,1448130,86,Young Premium Spenders
+1125,Male,56,1011202,27,Senior Conservative
+1126,Female,55,901237,23,Senior Conservative
+1127,Female,25,1280782,73,Young Premium Spenders
+1128,Male,41,1399995,43,High-income Cautious
+1129,Male,23,1229018,86,Young Premium Spenders
+1130,Male,39,541909,40,Middle-aged Budget Shoppers
+1131,Male,59,1364519,33,High-income Cautious
+1132,Male,31,1263683,77,Young Premium Spenders
+1133,Male,54,1290425,31,High-income Cautious
+1134,Female,58,856677,21,Senior Conservative
+1135,Male,36,451476,47,Middle-aged Budget Shoppers
+1136,Male,26,517761,64,Middle-aged Budget Shoppers
+1137,Female,38,689737,52,Middle-aged Budget Shoppers
+1138,Female,24,1025708,83,Young Premium Spenders
+1139,Female,28,1208379,90,Young Premium Spenders
+1140,Male,35,838571,69,Young Active Spenders
+1141,Female,42,653629,36,Middle-aged Budget Shoppers
+1142,Male,40,521404,45,Middle-aged Budget Shoppers
+1143,Male,32,782534,73,Young Active Spenders
+1144,Female,61,1035528,20,Senior Conservative
+1145,Male,57,808140,21,Senior Conservative
+1146,Female,36,536053,43,Middle-aged Budget Shoppers
+1147,Female,31,1181590,88,Young Premium Spenders
+1148,Female,47,689146,65,Middle-aged Budget Shoppers
+1149,Female,46,1438309,34,High-income Cautious
+1150,Male,41,447455,53,Middle-aged Budget Shoppers
+1151,Male,54,1394024,39,High-income Cautious
+1152,Male,51,1326714,25,High-income Cautious
+1153,Female,51,831799,26,Senior Conservative
+1154,Male,24,1171135,87,Young Premium Spenders
+1155,Female,39,569341,49,Middle-aged Budget Shoppers
+1156,Male,60,846399,10,Senior Conservative
+1157,Female,59,737656,13,Senior Conservative
+1158,Female,46,1500000,43,High-income Cautious
+1159,Female,24,1246680,96,Young Premium Spenders
+1160,Female,62,759365,32,Senior Conservative
+1161,Male,29,1370766,90,Young Premium Spenders
+1162,Male,35,542737,54,Middle-aged Budget Shoppers
+1163,Male,55,1499567,40,High-income Cautious
+1164,Male,50,945160,19,Senior Conservative
+1165,Female,45,551222,47,Middle-aged Budget Shoppers
+1166,Female,51,1489630,31,High-income Cautious
+1167,Male,44,1184015,31,High-income Cautious
+1168,Male,37,583521,87,Young Active Spenders
+1169,Male,50,1236493,39,High-income Cautious
+1170,Male,59,1124880,12,Senior Conservative
+1171,Female,37,813879,72,Young Active Spenders
+1172,Female,27,1058554,75,Young Premium Spenders
+1173,Female,44,741557,57,Middle-aged Budget Shoppers
+1174,Male,48,1377907,36,High-income Cautious
+1175,Male,61,998410,21,Senior Conservative
+1176,Female,35,590495,52,Middle-aged Budget Shoppers
+1177,Male,44,476396,47,Middle-aged Budget Shoppers
+1178,Male,30,641318,77,Young Active Spenders
+1179,Male,20,1325099,88,Young Premium Spenders
+1180,Female,26,740053,77,Young Active Spenders
+1181,Female,22,1080525,75,Young Premium Spenders
+1182,Male,63,954822,32,Senior Conservative
+1183,Female,65,714729,12,Senior Conservative
+1184,Female,30,723111,71,Young Active Spenders
+1185,Male,34,817318,64,Young Active Spenders
+1186,Female,21,1179420,76,Young Premium Spenders
+1187,Male,38,736459,66,Young Active Spenders
+1188,Male,65,944029,32,Senior Conservative
+1189,Male,55,814272,21,Senior Conservative
+1190,Female,40,740445,74,Young Active Spenders
+1191,Male,42,1371985,25,High-income Cautious
+1192,Male,30,1276046,81,Young Premium Spenders
+1193,Male,28,1398668,84,Young Premium Spenders
+1194,Female,51,1500000,36,High-income Cautious
+1195,Male,38,704670,45,Middle-aged Budget Shoppers
+1196,Male,30,1066473,91,Young Premium Spenders
+1197,Female,27,1163196,72,Young Premium Spenders
+1198,Male,62,1034832,28,Senior Conservative
+1199,Female,28,1311519,82,Young Premium Spenders
+1200,Female,52,1411828,23,High-income Cautious
+1201,Male,54,907597,18,Senior Conservative
+1202,Male,32,645590,77,Young Active Spenders
+1203,Male,41,576094,49,Middle-aged Budget Shoppers
+1204,Male,63,915345,33,Senior Conservative
+1205,Male,55,1461343,35,High-income Cautious
+1206,Male,50,1416289,40,High-income Cautious
+1207,Female,40,382742,42,Middle-aged Budget Shoppers
+1208,Male,26,727340,67,Young Active Spenders
+1209,Male,57,760490,22,Senior Conservative
+1210,Female,19,1048154,91,Young Premium Spenders
+1211,Male,63,705247,24,Senior Conservative
+1212,Male,55,905364,9,Senior Conservative
+1213,Male,35,803963,69,Young Active Spenders
+1214,Female,25,1230238,78,Young Premium Spenders
+1215,Female,29,694677,69,Young Active Spenders
+1216,Female,28,1171396,82,Young Premium Spenders
+1217,Female,22,593310,71,Young Active Spenders
+1218,Male,55,1414491,37,High-income Cautious
+1219,Male,28,681554,53,Young Active Spenders
+1220,Male,47,545202,38,Middle-aged Budget Shoppers
+1221,Female,44,418146,35,Middle-aged Budget Shoppers
+1222,Male,44,521316,39,Middle-aged Budget Shoppers
+1223,Female,18,1062751,79,Young Premium Spenders
+1224,Female,46,1331857,24,High-income Cautious
+1225,Male,53,1357034,28,High-income Cautious
+1226,Male,38,659160,41,Middle-aged Budget Shoppers
+1227,Male,36,780616,74,Young Active Spenders
+1228,Male,29,1158758,83,Young Premium Spenders
+1229,Female,29,1495076,84,Young Premium Spenders
+1230,Female,63,873653,15,Senior Conservative
+1231,Male,20,682420,66,Young Active Spenders
+1232,Male,23,985712,77,Young Premium Spenders
+1233,Male,37,589311,46,Middle-aged Budget Shoppers
+1234,Male,29,1291737,98,Young Premium Spenders
+1235,Female,27,1258659,93,Young Premium Spenders
+1236,Female,51,1468202,31,High-income Cautious
+1237,Female,26,1300488,76,Young Premium Spenders
+1238,Male,47,1484052,35,High-income Cautious
+1239,Female,20,1104217,88,Young Premium Spenders
+1240,Female,23,983970,88,Young Premium Spenders
+1241,Male,42,1440100,38,High-income Cautious
+1242,Male,33,507492,65,Young Active Spenders
+1243,Male,39,633710,33,Middle-aged Budget Shoppers
+1244,Female,24,695507,69,Young Active Spenders
+1245,Female,36,875042,70,Young Active Spenders
+1246,Male,38,395547,62,Middle-aged Budget Shoppers
+1247,Male,27,1330181,73,Young Premium Spenders
+1248,Male,43,337126,52,Middle-aged Budget Shoppers
+1249,Female,29,621974,50,Middle-aged Budget Shoppers
+1250,Female,33,801772,66,Young Active Spenders
+1251,Male,35,848202,61,Young Active Spenders
+1252,Female,31,723643,57,Young Active Spenders
+1253,Male,41,585534,41,Middle-aged Budget Shoppers
+1254,Female,32,759985,78,Young Active Spenders
+1255,Male,54,932170,13,Senior Conservative
+1256,Female,41,435566,44,Middle-aged Budget Shoppers
+1257,Male,52,1425835,31,High-income Cautious
+1258,Female,23,1051267,84,Young Premium Spenders
+1259,Male,43,651243,44,Middle-aged Budget Shoppers
+1260,Male,63,1099690,9,Senior Conservative
+1261,Female,38,602293,66,Middle-aged Budget Shoppers
+1262,Male,31,459613,57,Middle-aged Budget Shoppers
+1263,Female,46,1132702,41,High-income Cautious
+1264,Female,27,1251089,100,Young Premium Spenders
+1265,Male,54,1500000,35,High-income Cautious
+1266,Female,46,1481835,40,High-income Cautious
+1267,Male,59,827392,21,Senior Conservative
+1268,Female,34,713174,70,Young Active Spenders
+1269,Female,29,711563,63,Young Active Spenders
+1270,Male,46,1434429,31,High-income Cautious
+1271,Male,32,947888,73,Young Active Spenders
+1272,Female,34,722440,63,Young Active Spenders
+1273,Female,26,1118244,84,Young Premium Spenders
+1274,Male,30,974803,89,Young Premium Spenders
+1275,Male,48,429272,50,Middle-aged Budget Shoppers
+1276,Male,52,783917,14,Senior Conservative
+1277,Female,30,1100043,67,Young Premium Spenders
+1278,Female,31,1047350,93,Young Premium Spenders
+1279,Male,46,1315362,29,High-income Cautious
+1280,Female,44,1493784,41,High-income Cautious
+1281,Male,28,1328733,89,Young Premium Spenders
+1282,Female,55,1425916,37,High-income Cautious
+1283,Female,53,1333122,34,High-income Cautious
+1284,Female,28,932022,79,Young Active Spenders
+1285,Female,35,755087,60,Young Active Spenders
+1286,Male,48,1392441,32,High-income Cautious
+1287,Male,41,573006,51,Middle-aged Budget Shoppers
+1288,Female,40,504957,52,Middle-aged Budget Shoppers
+1289,Male,23,1156248,76,Young Premium Spenders
+1290,Male,50,994596,19,Senior Conservative
+1291,Female,28,776493,82,Young Active Spenders
+1292,Male,22,1222405,80,Young Premium Spenders
+1293,Male,47,450693,56,Middle-aged Budget Shoppers
+1294,Male,56,908233,9,Senior Conservative
+1295,Female,27,936857,89,Young Premium Spenders
+1296,Female,38,645486,54,Middle-aged Budget Shoppers
+1297,Female,43,718151,65,Young Active Spenders
+1298,Female,30,907781,83,Young Active Spenders
+1299,Male,27,1386309,89,Young Premium Spenders
+1300,Female,27,1227957,96,Young Premium Spenders
+1301,Male,51,1031630,23,Senior Conservative
+1302,Female,27,1241369,70,Young Premium Spenders
+1303,Female,28,1339234,79,Young Premium Spenders
+1304,Male,26,779271,75,Young Active Spenders
+1305,Female,19,1054519,90,Young Premium Spenders
+1306,Female,53,973373,28,Senior Conservative
+1307,Female,26,1173925,92,Young Premium Spenders
+1308,Female,31,1225485,80,Young Premium Spenders
+1309,Male,43,328027,61,Middle-aged Budget Shoppers
+1310,Female,33,835759,69,Young Active Spenders
+1311,Male,62,1033110,12,Senior Conservative
+1312,Female,49,1384858,30,High-income Cautious
+1313,Male,49,474483,43,Middle-aged Budget Shoppers
+1314,Male,42,465743,56,Middle-aged Budget Shoppers
+1315,Male,63,1289542,22,High-income Cautious
+1316,Female,43,529460,52,Middle-aged Budget Shoppers
+1317,Female,52,1489443,48,High-income Cautious
+1318,Male,25,1279073,88,Young Premium Spenders
+1319,Male,54,1500000,34,High-income Cautious
+1320,Male,51,1205813,45,High-income Cautious
+1321,Female,31,1165662,76,Young Premium Spenders
+1322,Female,38,451238,34,Middle-aged Budget Shoppers
+1323,Male,46,498386,50,Middle-aged Budget Shoppers
+1324,Male,51,1348933,32,High-income Cautious
+1325,Female,32,872270,79,Young Active Spenders
+1326,Female,49,1500000,44,High-income Cautious
+1327,Female,59,1008271,20,Senior Conservative
+1328,Male,34,645802,82,Young Active Spenders
+1329,Female,58,784961,25,Senior Conservative
+1330,Male,62,954650,24,Senior Conservative
+1331,Male,31,1314226,83,Young Premium Spenders
+1332,Male,46,1375431,34,High-income Cautious
+1333,Male,52,984312,19,Senior Conservative
+1334,Female,26,782326,67,Young Active Spenders
+1335,Female,35,389601,47,Middle-aged Budget Shoppers
+1336,Female,32,772276,58,Young Active Spenders
+1337,Female,36,830374,55,Young Active Spenders
+1338,Male,24,799694,70,Young Active Spenders
+1339,Female,44,1229860,22,High-income Cautious
+1340,Female,43,559459,49,Middle-aged Budget Shoppers
+1341,Female,34,724650,71,Young Active Spenders
+1342,Female,25,1256025,74,Young Premium Spenders
+1343,Male,32,677783,58,Young Active Spenders
+1344,Male,27,1339836,85,Young Premium Spenders
+1345,Male,34,925816,68,Young Active Spenders
+1346,Female,63,672001,17,Senior Conservative
+1347,Male,52,861713,10,Senior Conservative
+1348,Male,47,590340,30,Middle-aged Budget Shoppers
+1349,Male,35,844920,62,Young Active Spenders
+1350,Female,31,777425,74,Young Active Spenders
+1351,Female,23,1305885,85,Young Premium Spenders
+1352,Female,59,834570,16,Senior Conservative
+1353,Male,39,458895,34,Middle-aged Budget Shoppers
+1354,Male,34,892541,77,Young Active Spenders
+1355,Female,52,647879,24,Senior Conservative
+1356,Female,51,1498159,42,High-income Cautious
+1357,Male,58,727934,18,Senior Conservative
+1358,Male,28,553240,65,Young Active Spenders
+1359,Female,37,437193,41,Middle-aged Budget Shoppers
+1360,Male,25,1214968,82,Young Premium Spenders
+1361,Female,38,1174321,86,Young Premium Spenders
+1362,Female,37,1392371,25,High-income Cautious
+1363,Male,51,1460839,28,High-income Cautious
+1364,Female,31,729426,76,Young Active Spenders
+1365,Male,38,522452,42,Middle-aged Budget Shoppers
+1366,Male,59,987829,18,Senior Conservative
+1367,Male,50,1190642,32,High-income Cautious
+1368,Female,60,936731,38,Senior Conservative
+1369,Male,48,1500000,29,High-income Cautious
+1370,Male,50,582401,30,Middle-aged Budget Shoppers
+1371,Male,27,1256777,78,Young Premium Spenders
+1372,Male,51,512570,42,Middle-aged Budget Shoppers
+1373,Female,47,1484248,43,High-income Cautious
+1374,Female,36,563695,63,Middle-aged Budget Shoppers
+1375,Female,25,1453470,89,Young Premium Spenders
+1376,Female,61,1016366,25,Senior Conservative
+1377,Female,22,766985,80,Young Active Spenders
+1378,Male,23,1232240,89,Young Premium Spenders
+1379,Male,57,901225,24,Senior Conservative
+1380,Female,56,1347194,38,High-income Cautious
+1381,Male,49,1442776,34,High-income Cautious
+1382,Female,48,1483996,44,High-income Cautious
+1383,Male,32,1259032,96,Young Premium Spenders
+1384,Male,58,866911,33,Senior Conservative
+1385,Female,39,690719,82,Young Active Spenders
+1386,Male,27,774057,72,Young Active Spenders
+1387,Male,25,1326258,75,Young Premium Spenders
+1388,Female,46,1313808,28,High-income Cautious
+1389,Male,26,802907,93,Young Active Spenders
+1390,Male,49,492055,50,Middle-aged Budget Shoppers
+1391,Female,32,766100,64,Young Active Spenders
+1392,Female,59,1004170,34,Senior Conservative
+1393,Female,32,699760,81,Young Active Spenders
+1394,Female,60,870148,32,Senior Conservative
+1395,Female,22,1022379,92,Young Premium Spenders
+1396,Female,47,525535,60,Middle-aged Budget Shoppers
+1397,Male,53,1484158,50,High-income Cautious
+1398,Female,46,635118,51,Middle-aged Budget Shoppers
+1399,Male,54,1493637,48,High-income Cautious
+1400,Female,37,737636,84,Young Active Spenders
+1401,Female,34,947448,65,Young Active Spenders
+1402,Male,44,667185,54,Middle-aged Budget Shoppers
+1403,Male,28,579974,66,Young Active Spenders
+1404,Male,41,480560,60,Middle-aged Budget Shoppers
+1405,Male,26,1401055,93,Young Premium Spenders
+1406,Male,29,1275263,85,Young Premium Spenders
+1407,Female,42,561615,46,Middle-aged Budget Shoppers
+1408,Male,44,336951,43,Middle-aged Budget Shoppers
+1409,Male,50,1177570,33,High-income Cautious
+1410,Male,45,438684,41,Middle-aged Budget Shoppers
+1411,Female,45,1240296,35,High-income Cautious
+1412,Male,29,1310584,93,Young Premium Spenders
+1413,Male,24,1177775,92,Young Premium Spenders
+1414,Male,65,965197,28,Senior Conservative
+1415,Male,51,1152828,41,High-income Cautious
+1416,Female,32,940913,62,Young Active Spenders
+1417,Female,41,560404,54,Middle-aged Budget Shoppers
+1418,Male,23,1249845,79,Young Premium Spenders
+1419,Female,57,1378264,39,High-income Cautious
+1420,Male,48,1460590,34,High-income Cautious
+1421,Female,30,1183372,78,Young Premium Spenders
+1422,Female,35,866214,79,Young Active Spenders
+1423,Female,52,1482550,34,High-income Cautious
+1424,Female,31,573854,65,Young Active Spenders
+1425,Male,40,499939,51,Middle-aged Budget Shoppers
+1426,Male,24,1120523,83,Young Premium Spenders
+1427,Female,57,1372889,31,High-income Cautious
+1428,Male,45,387913,53,Middle-aged Budget Shoppers
+1429,Female,29,904359,81,Young Active Spenders
+1430,Female,26,1306187,86,Young Premium Spenders
+1431,Female,27,1067108,75,Young Premium Spenders
+1432,Male,29,1377123,100,Young Premium Spenders
+1433,Female,34,710299,67,Young Active Spenders
+1434,Male,40,804230,66,Young Active Spenders
+1435,Female,41,379400,29,Middle-aged Budget Shoppers
+1436,Female,50,1309260,30,High-income Cautious
+1437,Female,28,488758,49,Middle-aged Budget Shoppers
+1438,Female,41,621382,42,Middle-aged Budget Shoppers
+1439,Male,31,700377,47,Middle-aged Budget Shoppers
+1440,Female,53,1492486,33,High-income Cautious
+1441,Male,39,625402,34,Middle-aged Budget Shoppers
+1442,Male,56,935867,20,Senior Conservative
+1443,Female,31,814823,84,Young Active Spenders
+1444,Male,24,1176714,90,Young Premium Spenders
+1445,Male,45,518039,54,Middle-aged Budget Shoppers
+1446,Male,48,1497092,30,High-income Cautious
+1447,Female,30,773358,73,Young Active Spenders
+1448,Male,41,1433623,40,High-income Cautious
+1449,Male,54,676757,14,Senior Conservative
+1450,Male,40,382125,46,Middle-aged Budget Shoppers
+1451,Male,47,532573,55,Middle-aged Budget Shoppers
+1452,Female,34,775330,63,Young Active Spenders
+1453,Male,38,833306,62,Young Active Spenders
+1454,Male,51,404334,54,Middle-aged Budget Shoppers
+1455,Male,33,794327,70,Young Active Spenders
+1456,Female,27,1247077,83,Young Premium Spenders
+1457,Female,56,947629,32,Senior Conservative
+1458,Female,48,504911,48,Middle-aged Budget Shoppers
+1459,Female,37,568061,52,Middle-aged Budget Shoppers
+1460,Female,48,1500000,28,High-income Cautious
+1461,Female,20,1177900,82,Young Premium Spenders
+1462,Female,54,892947,18,Senior Conservative
+1463,Male,39,823510,72,Young Active Spenders
+1464,Male,55,944508,26,Senior Conservative
+1465,Male,63,1500000,43,High-income Cautious
+1466,Female,53,1245534,36,High-income Cautious
+1467,Male,39,483657,41,Middle-aged Budget Shoppers
+1468,Male,49,592126,55,Middle-aged Budget Shoppers
+1469,Female,25,1054001,96,Young Premium Spenders
+1470,Male,27,898919,73,Young Active Spenders
+1471,Male,22,1394674,77,Young Premium Spenders
+1472,Male,39,646497,51,Middle-aged Budget Shoppers
+1473,Male,54,934324,12,Senior Conservative
+1474,Female,31,469820,39,Middle-aged Budget Shoppers
+1475,Male,37,693333,69,Young Active Spenders
+1476,Female,49,1457710,23,High-income Cautious
+1477,Female,55,1002637,29,Senior Conservative
+1478,Female,26,678476,70,Young Active Spenders
+1479,Female,50,1455180,38,High-income Cautious
+1480,Male,26,493800,38,Middle-aged Budget Shoppers
+1481,Male,48,496770,53,Middle-aged Budget Shoppers
+1482,Male,28,1085565,82,Young Premium Spenders
+1483,Male,27,1410993,79,Young Premium Spenders
+1484,Male,49,533743,41,Middle-aged Budget Shoppers
+1485,Male,65,929064,28,Senior Conservative
+1486,Female,51,1466818,42,High-income Cautious
+1487,Female,61,965764,21,Senior Conservative
+1488,Female,27,1301434,83,Young Premium Spenders
+1489,Male,43,386443,40,Middle-aged Budget Shoppers
+1490,Male,50,1420743,28,High-income Cautious
+1491,Female,34,816337,72,Young Active Spenders
+1492,Female,26,1145116,83,Young Premium Spenders
+1493,Male,54,940992,25,Senior Conservative
+1494,Male,46,1453880,17,High-income Cautious
+1495,Female,27,899951,70,Young Active Spenders
+1496,Female,54,939055,32,Senior Conservative
+1497,Female,27,772240,54,Young Active Spenders
+1498,Male,51,1418515,34,High-income Cautious
+1499,Female,53,1402746,30,High-income Cautious
+1500,Male,56,890849,30,Senior Conservative
+1501,Female,27,1101022,84,Young Premium Spenders
+1502,Male,28,1158122,92,Young Premium Spenders
+1503,Female,25,1085465,80,Young Premium Spenders
+1504,Male,54,927467,20,Senior Conservative
+1505,Female,43,1325374,24,High-income Cautious
+1506,Female,31,699979,70,Young Active Spenders
+1507,Female,28,750494,72,Young Active Spenders
+1508,Female,36,721614,50,Middle-aged Budget Shoppers
+1509,Male,36,587982,76,Young Active Spenders
+1510,Male,42,1230067,34,High-income Cautious
+1511,Male,42,613708,48,Middle-aged Budget Shoppers
+1512,Female,41,331480,52,Middle-aged Budget Shoppers
+1513,Female,27,743779,74,Young Active Spenders
+1514,Female,42,533308,63,Middle-aged Budget Shoppers
+1515,Male,57,948130,27,Senior Conservative
+1516,Male,27,652246,72,Young Active Spenders
+1517,Female,51,1349321,30,High-income Cautious
+1518,Male,26,770891,81,Young Active Spenders
+1519,Female,62,745778,23,Senior Conservative
+1520,Female,49,1443923,29,High-income Cautious
+1521,Female,35,614219,49,Middle-aged Budget Shoppers
+1522,Female,43,516171,50,Middle-aged Budget Shoppers
+1523,Male,45,1405554,32,High-income Cautious
+1524,Male,48,1417350,33,High-income Cautious
+1525,Female,37,589129,49,Middle-aged Budget Shoppers
+1526,Female,55,1481347,33,High-income Cautious
+1527,Male,38,643716,61,Young Active Spenders
+1528,Male,33,631794,76,Young Active Spenders
+1529,Female,36,561972,42,Middle-aged Budget Shoppers
+1530,Female,62,1385065,30,High-income Cautious
+1531,Female,39,517681,46,Middle-aged Budget Shoppers
+1532,Male,50,697210,29,Senior Conservative
+1533,Male,42,834082,77,Young Active Spenders
+1534,Male,39,665985,43,Middle-aged Budget Shoppers
+1535,Male,26,1125672,86,Young Premium Spenders
+1536,Female,25,1100844,85,Young Premium Spenders
+1537,Female,52,924000,20,Senior Conservative
+1538,Male,59,923233,17,Senior Conservative
+1539,Male,19,987847,75,Young Premium Spenders
+1540,Female,25,1336608,79,Young Premium Spenders
+1541,Male,27,1127226,74,Young Premium Spenders
+1542,Female,31,1155754,82,Young Premium Spenders
+1543,Female,39,1434845,45,High-income Cautious
+1544,Male,42,542415,52,Middle-aged Budget Shoppers
+1545,Male,42,504163,42,Middle-aged Budget Shoppers
+1546,Male,28,1307252,86,Young Premium Spenders
+1547,Female,27,1038142,79,Young Premium Spenders
+1548,Female,31,736026,67,Young Active Spenders
+1549,Female,24,1150960,62,Young Premium Spenders
+1550,Female,28,642893,69,Young Active Spenders
+1551,Female,37,727917,74,Young Active Spenders
+1552,Female,54,816458,20,Senior Conservative
+1553,Female,22,1153426,85,Young Premium Spenders
+1554,Male,28,1162756,70,Young Premium Spenders
+1555,Male,55,1494052,38,High-income Cautious
+1556,Female,39,614366,33,Middle-aged Budget Shoppers
+1557,Female,20,1079192,76,Young Premium Spenders
+1558,Male,56,838439,36,Senior Conservative
+1559,Female,33,576499,67,Young Active Spenders
+1560,Female,22,1208369,87,Young Premium Spenders
+1561,Female,34,742761,57,Young Active Spenders
+1562,Male,27,1044097,91,Young Premium Spenders
+1563,Male,28,875719,71,Young Active Spenders
+1564,Female,32,782206,58,Young Active Spenders
+1565,Female,51,1249882,48,High-income Cautious
+1566,Female,30,920613,52,Young Active Spenders
+1567,Female,32,607599,73,Young Active Spenders
+1568,Male,31,746357,69,Young Active Spenders
+1569,Male,31,890367,77,Young Active Spenders
+1570,Female,49,1267784,36,High-income Cautious
+1571,Male,22,1106441,85,Young Premium Spenders
+1572,Male,28,1162129,86,Young Premium Spenders
+1573,Female,23,1195130,88,Young Premium Spenders
+1574,Male,37,570129,39,Middle-aged Budget Shoppers
+1575,Male,52,940360,32,Senior Conservative
+1576,Male,26,1189081,74,Young Premium Spenders
+1577,Female,44,1458314,33,High-income Cautious
+1578,Male,62,957020,16,Senior Conservative
+1579,Male,57,755586,21,Senior Conservative
+1580,Female,40,683096,60,Middle-aged Budget Shoppers
+1581,Female,28,658196,58,Young Active Spenders
+1582,Male,25,1226462,95,Young Premium Spenders
+1583,Male,44,1475398,37,High-income Cautious
+1584,Female,59,965273,14,Senior Conservative
+1585,Female,50,531739,63,Middle-aged Budget Shoppers
+1586,Male,26,996038,61,Young Active Spenders
+1587,Female,60,816444,11,Senior Conservative
+1588,Male,40,1392317,39,High-income Cautious
+1589,Female,42,527007,46,Middle-aged Budget Shoppers
+1590,Female,33,647001,69,Young Active Spenders
+1591,Male,35,348363,48,Middle-aged Budget Shoppers
+1592,Male,31,733805,76,Young Active Spenders
+1593,Female,26,1317958,94,Young Premium Spenders
+1594,Male,37,732129,71,Young Active Spenders
+1595,Male,22,1237734,100,Young Premium Spenders
+1596,Female,52,826419,15,Senior Conservative
+1597,Male,48,1380847,40,High-income Cautious
+1598,Male,49,593840,53,Middle-aged Budget Shoppers
+1599,Female,47,462291,41,Middle-aged Budget Shoppers
+1600,Male,45,572566,55,Middle-aged Budget Shoppers
+1601,Female,59,1072504,23,Senior Conservative
+1602,Female,24,1256965,94,Young Premium Spenders
+1603,Male,63,964666,18,Senior Conservative
+1604,Female,40,541491,51,Middle-aged Budget Shoppers
+1605,Female,32,546073,48,Middle-aged Budget Shoppers
+1606,Male,35,603754,46,Middle-aged Budget Shoppers
+1607,Male,52,1458959,41,High-income Cautious
+1608,Male,29,734102,66,Young Active Spenders
+1609,Female,58,750447,15,Senior Conservative
+1610,Female,37,510956,38,Middle-aged Budget Shoppers
+1611,Male,45,591839,59,Middle-aged Budget Shoppers
+1612,Male,24,1328766,97,Young Premium Spenders
+1613,Male,50,967301,24,Senior Conservative
+1614,Male,60,956902,28,Senior Conservative
+1615,Female,26,1139402,78,Young Premium Spenders
+1616,Female,45,1473139,41,High-income Cautious
+1617,Male,58,1500000,40,High-income Cautious
+1618,Female,28,1262560,89,Young Premium Spenders
+1619,Male,48,1367590,33,High-income Cautious
+1620,Male,62,1065886,20,Senior Conservative
+1621,Female,55,828600,17,Senior Conservative
+1622,Female,40,575938,48,Middle-aged Budget Shoppers
+1623,Female,59,841818,22,Senior Conservative
+1624,Female,48,1442177,34,High-income Cautious
+1625,Female,24,1223824,80,Young Premium Spenders
+1626,Male,27,876655,81,Young Active Spenders
+1627,Female,53,1001671,25,Senior Conservative
+1628,Female,28,1262565,82,Young Premium Spenders
+1629,Female,24,1240464,78,Young Premium Spenders
+1630,Male,45,1336190,26,High-income Cautious
+1631,Male,60,935873,25,Senior Conservative
+1632,Female,51,636603,47,Middle-aged Budget Shoppers
+1633,Female,33,659467,68,Young Active Spenders
+1634,Female,63,803278,13,Senior Conservative
+1635,Male,61,856485,29,Senior Conservative
+1636,Female,33,747018,60,Young Active Spenders
+1637,Female,45,1421492,46,High-income Cautious
+1638,Male,31,808572,82,Young Active Spenders
+1639,Female,44,528536,51,Middle-aged Budget Shoppers
+1640,Female,27,934193,78,Young Active Spenders
+1641,Male,34,479480,36,Middle-aged Budget Shoppers
+1642,Male,34,769267,79,Young Active Spenders
+1643,Male,62,1056466,25,Senior Conservative
+1644,Female,26,1067821,85,Young Premium Spenders
+1645,Male,42,515840,35,Middle-aged Budget Shoppers
+1646,Female,41,473363,51,Middle-aged Budget Shoppers
+1647,Female,42,1238550,27,High-income Cautious
+1648,Female,26,625025,76,Young Active Spenders
+1649,Male,45,1497545,30,High-income Cautious
+1650,Female,44,531977,52,Middle-aged Budget Shoppers
+1651,Female,52,738662,16,Senior Conservative
+1652,Female,56,1305291,51,High-income Cautious
+1653,Female,26,1253288,79,Young Premium Spenders
+1654,Female,29,1064219,89,Young Premium Spenders
+1655,Female,52,553555,30,Middle-aged Budget Shoppers
+1656,Female,39,1500000,37,High-income Cautious
+1657,Female,31,835160,86,Young Active Spenders
+1658,Female,37,636537,63,Young Active Spenders
+1659,Male,38,522632,46,Middle-aged Budget Shoppers
+1660,Male,54,1481014,25,High-income Cautious
+1661,Female,44,485689,61,Middle-aged Budget Shoppers
+1662,Female,31,805035,78,Young Active Spenders
+1663,Male,62,914988,33,Senior Conservative
+1664,Male,59,753898,24,Senior Conservative
+1665,Female,56,1496838,44,High-income Cautious
+1666,Male,23,1190095,81,Young Premium Spenders
+1667,Female,51,1433689,36,High-income Cautious
+1668,Male,61,733054,29,Senior Conservative
+1669,Male,25,1341730,93,Young Premium Spenders
+1670,Male,47,528566,47,Middle-aged Budget Shoppers
+1671,Male,52,1443722,38,High-income Cautious
+1672,Male,24,1129331,97,Young Premium Spenders
+1673,Male,25,1435865,85,Young Premium Spenders
+1674,Female,46,1423594,36,High-income Cautious
+1675,Female,38,465475,36,Middle-aged Budget Shoppers
+1676,Female,36,793700,59,Young Active Spenders
+1677,Female,63,1500000,44,High-income Cautious
+1678,Male,47,1362509,32,High-income Cautious
+1679,Female,44,562495,43,Middle-aged Budget Shoppers
+1680,Female,48,1327285,41,High-income Cautious
+1681,Male,53,1485702,35,High-income Cautious
+1682,Male,47,1429766,35,High-income Cautious
+1683,Male,50,1294505,33,High-income Cautious
+1684,Female,31,785511,88,Young Active Spenders
+1685,Female,49,1500000,44,High-income Cautious
+1686,Female,23,1257151,97,Young Premium Spenders
+1687,Male,55,677853,19,Senior Conservative
+1688,Male,24,1161747,78,Young Premium Spenders
+1689,Male,54,1343656,42,High-income Cautious
+1690,Male,50,1318099,33,High-income Cautious
+1691,Male,36,809610,73,Young Active Spenders
+1692,Male,24,765124,65,Young Active Spenders
+1693,Female,24,1166562,83,Young Premium Spenders
+1694,Male,39,1304559,37,High-income Cautious
+1695,Female,41,431855,46,Middle-aged Budget Shoppers
+1696,Male,54,1486319,41,High-income Cautious
+1697,Male,48,519782,47,Middle-aged Budget Shoppers
+1698,Female,32,706491,82,Young Active Spenders
+1699,Male,46,516531,52,Middle-aged Budget Shoppers
+1700,Female,39,594679,50,Middle-aged Budget Shoppers
+1701,Female,35,737967,80,Young Active Spenders
+1702,Female,29,732565,84,Young Active Spenders
+1703,Male,55,1360853,38,High-income Cautious
+1704,Female,49,1347898,38,High-income Cautious
+1705,Male,53,1235267,36,High-income Cautious
+1706,Male,26,1278510,81,Young Premium Spenders
+1707,Male,54,923933,28,Senior Conservative
+1708,Female,53,1484841,40,High-income Cautious
+1709,Male,41,1357523,50,High-income Cautious
+1710,Male,48,1500000,32,High-income Cautious
+1711,Male,25,1076415,80,Young Premium Spenders
+1712,Female,47,428560,50,Middle-aged Budget Shoppers
+1713,Male,47,1219806,35,High-income Cautious
+1714,Female,62,967828,20,Senior Conservative
+1715,Female,59,728658,27,Senior Conservative
+1716,Female,33,843881,82,Young Active Spenders
+1717,Male,53,1406778,32,High-income Cautious
+1718,Male,34,726942,71,Young Active Spenders
+1719,Female,45,521381,39,Middle-aged Budget Shoppers
+1720,Female,50,1394939,32,High-income Cautious
+1721,Male,47,1494413,46,High-income Cautious
+1722,Female,28,1142681,75,Young Premium Spenders
+1723,Male,22,710469,91,Young Active Spenders
+1724,Male,61,1485587,43,High-income Cautious
+1725,Female,56,1482159,40,High-income Cautious
+1726,Male,47,572276,49,Middle-aged Budget Shoppers
+1727,Female,58,866187,26,Senior Conservative
+1728,Male,62,983804,11,Senior Conservative
+1729,Male,43,513254,45,Middle-aged Budget Shoppers
+1730,Male,47,544192,43,Middle-aged Budget Shoppers
+1731,Male,47,1493979,43,High-income Cautious
+1732,Male,37,695838,73,Young Active Spenders
+1733,Female,42,484158,47,Middle-aged Budget Shoppers
+1734,Male,26,755596,79,Young Active Spenders
+1735,Male,28,722153,66,Young Active Spenders
+1736,Female,57,882047,23,Senior Conservative
+1737,Female,50,1320641,34,High-income Cautious
+1738,Female,30,745148,63,Young Active Spenders
+1739,Male,60,839584,14,Senior Conservative
+1740,Female,45,493114,50,Middle-aged Budget Shoppers
+1741,Female,47,368162,60,Middle-aged Budget Shoppers
+1742,Male,59,942418,13,Senior Conservative
+1743,Male,24,1154560,87,Young Premium Spenders
+1744,Female,57,1374521,38,High-income Cautious
+1745,Male,44,1384597,34,High-income Cautious
+1746,Male,42,594405,37,Middle-aged Budget Shoppers
+1747,Female,30,1477049,79,Young Premium Spenders
+1748,Female,58,852261,12,Senior Conservative
+1749,Male,49,1429807,22,High-income Cautious
+1750,Male,44,457116,39,Middle-aged Budget Shoppers
+1751,Male,23,1083720,82,Young Premium Spenders
+1752,Male,44,1217025,21,High-income Cautious
+1753,Male,36,675317,26,Middle-aged Budget Shoppers
+1754,Female,43,472336,48,Middle-aged Budget Shoppers
+1755,Female,24,1189737,80,Young Premium Spenders
+1756,Male,55,1417491,39,High-income Cautious
+1757,Male,49,629850,7,Senior Conservative
+1758,Female,47,655923,41,Middle-aged Budget Shoppers
+1759,Female,45,406891,58,Middle-aged Budget Shoppers
+1760,Male,58,911045,25,Senior Conservative
+1761,Female,23,1156179,97,Young Premium Spenders
+1762,Male,43,1480919,32,High-income Cautious
+1763,Male,25,623737,76,Young Active Spenders
+1764,Male,42,407090,42,Middle-aged Budget Shoppers
+1765,Male,25,1406568,83,Young Premium Spenders
+1766,Male,39,498481,54,Middle-aged Budget Shoppers
+1767,Male,51,1370489,27,High-income Cautious
+1768,Female,33,1015629,72,Young Active Spenders
+1769,Female,50,1369504,42,High-income Cautious
+1770,Male,38,1345604,39,High-income Cautious
+1771,Male,48,1377116,38,High-income Cautious
+1772,Male,54,910003,13,Senior Conservative
+1773,Female,61,802512,23,Senior Conservative
+1774,Female,24,1203618,93,Young Premium Spenders
+1775,Male,25,1151816,92,Young Premium Spenders
+1776,Female,55,1474055,48,High-income Cautious
+1777,Female,31,777780,73,Young Active Spenders
+1778,Female,22,1183660,73,Young Premium Spenders
+1779,Male,41,506607,48,Middle-aged Budget Shoppers
+1780,Male,37,442950,48,Middle-aged Budget Shoppers
+1781,Female,55,1386867,47,High-income Cautious
+1782,Male,43,535730,54,Middle-aged Budget Shoppers
+1783,Female,45,400074,61,Middle-aged Budget Shoppers
+1784,Female,20,1333424,82,Young Premium Spenders
+1785,Female,24,960388,88,Young Premium Spenders
+1786,Female,20,1300816,88,Young Premium Spenders
+1787,Male,36,720088,73,Young Active Spenders
+1788,Male,46,569100,49,Middle-aged Budget Shoppers
+1789,Female,61,875695,19,Senior Conservative
+1790,Male,58,861144,5,Senior Conservative
+1791,Male,46,666802,26,Senior Conservative
+1792,Female,33,689418,70,Young Active Spenders
+1793,Female,44,502141,51,Middle-aged Budget Shoppers
+1794,Female,27,1258716,81,Young Premium Spenders
+1795,Male,60,875274,22,Senior Conservative
+1796,Female,39,516176,55,Middle-aged Budget Shoppers
+1797,Male,49,1281848,45,High-income Cautious
+1798,Female,26,1154905,83,Young Premium Spenders
+1799,Male,39,635446,45,Middle-aged Budget Shoppers
+1800,Female,35,373510,27,Middle-aged Budget Shoppers
+1801,Male,31,841818,76,Young Active Spenders
+1802,Female,30,817201,71,Young Active Spenders
+1803,Male,49,1500000,45,High-income Cautious
+1804,Male,53,839217,23,Senior Conservative
+1805,Female,31,696365,56,Young Active Spenders
+1806,Female,40,418712,49,Middle-aged Budget Shoppers
+1807,Male,58,878016,38,Senior Conservative
+1808,Male,29,821151,79,Young Active Spenders
+1809,Male,37,474960,29,Middle-aged Budget Shoppers
+1810,Male,39,987273,79,Young Active Spenders
+1811,Male,34,731525,83,Young Active Spenders
+1812,Male,42,1352265,36,High-income Cautious
+1813,Male,53,1489176,46,High-income Cautious
+1814,Male,50,1223020,36,High-income Cautious
+1815,Female,38,440595,39,Middle-aged Budget Shoppers
+1816,Female,52,1358766,27,High-income Cautious
+1817,Female,54,770908,20,Senior Conservative
+1818,Male,36,774271,70,Young Active Spenders
+1819,Male,52,801433,15,Senior Conservative
+1820,Female,52,999410,30,Senior Conservative
+1821,Female,49,499216,48,Middle-aged Budget Shoppers
+1822,Male,51,1473046,26,High-income Cautious
+1823,Male,47,1446358,43,High-income Cautious
+1824,Male,24,1255471,87,Young Premium Spenders
+1825,Female,28,1093170,82,Young Premium Spenders
+1826,Female,31,893146,70,Young Active Spenders
+1827,Male,52,411493,43,Middle-aged Budget Shoppers
+1828,Female,33,682316,73,Young Active Spenders
+1829,Female,57,704354,25,Senior Conservative
+1830,Male,45,420817,49,Middle-aged Budget Shoppers
+1831,Female,39,566243,42,Middle-aged Budget Shoppers
+1832,Male,33,749816,81,Young Active Spenders
+1833,Male,54,1019126,27,Senior Conservative
+1834,Female,26,1103405,79,Young Premium Spenders
+1835,Male,29,792366,73,Young Active Spenders
+1836,Male,57,1038262,30,Senior Conservative
+1837,Female,26,1223268,77,Young Premium Spenders
+1838,Female,29,1129004,80,Young Premium Spenders
+1839,Female,53,908148,20,Senior Conservative
+1840,Male,56,839459,13,Senior Conservative
+1841,Male,59,836387,17,Senior Conservative
+1842,Male,61,876224,16,Senior Conservative
+1843,Male,24,1134955,90,Young Premium Spenders
+1844,Female,22,1041416,82,Young Premium Spenders
+1845,Female,27,1359954,93,Young Premium Spenders
+1846,Male,30,437244,35,Middle-aged Budget Shoppers
+1847,Male,29,1265552,90,Young Premium Spenders
+1848,Male,24,1187770,91,Young Premium Spenders
+1849,Male,38,1354433,37,High-income Cautious
+1850,Female,42,578823,42,Middle-aged Budget Shoppers
+1851,Female,32,577929,57,Middle-aged Budget Shoppers
+1852,Male,44,1334728,18,High-income Cautious
+1853,Male,61,968508,17,Senior Conservative
+1854,Male,27,836195,73,Young Active Spenders
+1855,Male,62,1121273,29,High-income Cautious
+1856,Male,39,493649,61,Middle-aged Budget Shoppers
+1857,Male,51,1238654,32,High-income Cautious
+1858,Male,60,1016260,30,Senior Conservative
+1859,Female,38,490129,30,Middle-aged Budget Shoppers
+1860,Male,37,476474,58,Middle-aged Budget Shoppers
+1861,Female,58,1071121,22,Senior Conservative
+1862,Female,20,1073655,83,Young Premium Spenders
+1863,Female,27,968368,53,Young Active Spenders
+1864,Female,48,1356355,29,High-income Cautious
+1865,Female,55,1332935,42,High-income Cautious
+1866,Female,49,1401579,29,High-income Cautious
+1867,Female,28,1288969,98,Young Premium Spenders
+1868,Male,42,331330,44,Middle-aged Budget Shoppers
+1869,Female,18,1290076,85,Young Premium Spenders
+1870,Male,52,1500000,35,High-income Cautious
+1871,Male,49,1257648,33,High-income Cautious
+1872,Male,27,691169,79,Young Active Spenders
+1873,Male,53,757881,19,Senior Conservative
+1874,Male,51,1327651,23,High-income Cautious
+1875,Male,53,1499870,35,High-income Cautious
+1876,Male,49,547004,24,Middle-aged Budget Shoppers
+1877,Female,44,580715,36,Middle-aged Budget Shoppers
+1878,Female,43,1324896,33,High-income Cautious
+1879,Female,39,653834,46,Middle-aged Budget Shoppers
+1880,Female,32,998619,73,Young Active Spenders
+1881,Male,28,1201168,69,Young Premium Spenders
+1882,Male,34,484528,55,Middle-aged Budget Shoppers
+1883,Female,29,752379,68,Young Active Spenders
+1884,Female,44,516042,62,Middle-aged Budget Shoppers
+1885,Female,61,763136,24,Senior Conservative
+1886,Male,60,978279,11,Senior Conservative
+1887,Female,38,545638,48,Middle-aged Budget Shoppers
+1888,Female,30,1480146,92,Young Premium Spenders
+1889,Female,49,1263167,27,High-income Cautious
+1890,Female,38,742732,37,Middle-aged Budget Shoppers
+1891,Male,41,721542,56,Middle-aged Budget Shoppers
+1892,Female,30,835535,68,Young Active Spenders
+1893,Male,58,1491074,31,High-income Cautious
+1894,Female,36,583273,50,Middle-aged Budget Shoppers
+1895,Female,38,434235,42,Middle-aged Budget Shoppers
+1896,Female,32,1306371,93,Young Premium Spenders
+1897,Male,30,686359,58,Young Active Spenders
+1898,Male,59,903462,28,Senior Conservative
+1899,Male,32,915247,88,Young Premium Spenders
+1900,Male,32,811041,77,Young Active Spenders
+1901,Female,55,866911,16,Senior Conservative
+1902,Female,41,405545,55,Middle-aged Budget Shoppers
+1903,Female,38,480495,36,Middle-aged Budget Shoppers
+1904,Male,22,1077729,93,Young Premium Spenders
+1905,Male,63,812990,17,Senior Conservative
+1906,Female,26,1290818,86,Young Premium Spenders
+1907,Male,57,695541,22,Senior Conservative
+1908,Male,44,483871,48,Middle-aged Budget Shoppers
+1909,Male,30,749375,80,Young Active Spenders
+1910,Female,21,1392347,88,Young Premium Spenders
+1911,Male,35,897943,79,Young Active Spenders
+1912,Female,28,1324562,88,Young Premium Spenders
+1913,Male,48,351963,50,Middle-aged Budget Shoppers
+1914,Male,39,1161720,42,High-income Cautious
+1915,Male,57,915187,31,Senior Conservative
+1916,Female,32,1427719,76,Young Premium Spenders
+1917,Male,40,454480,39,Middle-aged Budget Shoppers
+1918,Female,64,1024158,23,Senior Conservative
+1919,Male,50,925548,13,Senior Conservative
+1920,Male,54,1308878,24,High-income Cautious
+1921,Male,49,1291330,30,High-income Cautious
+1922,Female,24,1348734,79,Young Premium Spenders
+1923,Female,54,1018904,23,Senior Conservative
+1924,Female,33,420189,50,Middle-aged Budget Shoppers
+1925,Female,26,909118,55,Young Active Spenders
+1926,Female,51,1371572,36,High-income Cautious
+1927,Male,30,1161475,96,Young Premium Spenders
+1928,Female,26,939962,93,Young Premium Spenders
+1929,Male,38,623308,63,Middle-aged Budget Shoppers
+1930,Female,44,366591,39,Middle-aged Budget Shoppers
+1931,Female,55,990415,26,Senior Conservative
+1932,Female,33,924898,81,Young Active Spenders
+1933,Male,27,1302358,99,Young Premium Spenders
+1934,Female,51,516405,62,Middle-aged Budget Shoppers
+1935,Female,21,1112684,90,Young Premium Spenders
+1936,Male,49,1484698,35,High-income Cautious
+1937,Female,34,762529,72,Young Active Spenders
+1938,Male,54,801836,21,Senior Conservative
+1939,Male,55,759402,21,Senior Conservative
+1940,Male,60,870699,26,Senior Conservative
+1941,Female,57,812918,12,Senior Conservative
+1942,Male,30,649532,84,Young Active Spenders
+1943,Male,48,1500000,30,High-income Cautious
+1944,Female,24,1500000,69,Young Premium Spenders
+1945,Male,53,994313,28,Senior Conservative
+1946,Female,61,874334,21,Senior Conservative
+1947,Male,61,1052811,15,Senior Conservative
+1948,Female,42,1136272,26,High-income Cautious
+1949,Male,27,751520,77,Young Active Spenders
+1950,Female,25,1129309,83,Young Premium Spenders
+1951,Male,30,697564,68,Young Active Spenders
+1952,Male,49,1363608,33,High-income Cautious
+1953,Female,43,395046,56,Middle-aged Budget Shoppers
+1954,Female,36,786262,78,Young Active Spenders
+1955,Male,38,419647,41,Middle-aged Budget Shoppers
+1956,Female,25,1391358,84,Young Premium Spenders
+1957,Female,36,846749,75,Young Active Spenders
+1958,Female,37,747689,69,Young Active Spenders
+1959,Male,48,1436719,37,High-income Cautious
+1960,Male,47,1473780,19,High-income Cautious
+1961,Male,55,1073483,9,Senior Conservative
+1962,Male,29,917821,57,Young Active Spenders
+1963,Male,65,897614,28,Senior Conservative
+1964,Male,31,702701,82,Young Active Spenders
+1965,Male,47,376173,39,Middle-aged Budget Shoppers
+1966,Female,21,1011073,74,Young Premium Spenders
+1967,Female,31,767011,65,Young Active Spenders
+1968,Male,39,782899,75,Young Active Spenders
+1969,Female,52,1335649,45,High-income Cautious
+1970,Female,41,1499941,44,High-income Cautious
+1971,Male,25,1076237,86,Young Premium Spenders
+1972,Female,49,1480153,31,High-income Cautious
+1973,Female,49,1298529,10,High-income Cautious
+1974,Female,33,756214,66,Young Active Spenders
+1975,Female,53,1224416,51,High-income Cautious
+1976,Female,28,1274345,78,Young Premium Spenders
+1977,Female,53,1450024,33,High-income Cautious
+1978,Male,50,1500000,44,High-income Cautious
+1979,Male,59,927166,25,Senior Conservative
+1980,Male,48,447596,30,Middle-aged Budget Shoppers
+1981,Female,30,988886,77,Young Active Spenders
+1982,Male,28,1272276,78,Young Premium Spenders
+1983,Male,42,457745,46,Middle-aged Budget Shoppers
+1984,Male,41,575089,88,Young Active Spenders
+1985,Female,50,1274087,39,High-income Cautious
+1986,Female,33,458045,37,Middle-aged Budget Shoppers
+1987,Female,58,837810,25,Senior Conservative
+1988,Male,42,502081,43,Middle-aged Budget Shoppers
+1989,Male,55,804049,22,Senior Conservative
+1990,Male,54,1413533,51,High-income Cautious
+1991,Female,58,882610,8,Senior Conservative
+1992,Female,25,1231204,88,Young Premium Spenders
+1993,Female,18,1309269,100,Young Premium Spenders
+1994,Female,45,1430687,50,High-income Cautious
+1995,Male,52,1500000,35,High-income Cautious
+1996,Male,61,786219,38,Senior Conservative
+1997,Male,64,1070675,19,Senior Conservative
+1998,Male,54,1092358,23,Senior Conservative
+1999,Female,27,789607,74,Young Active Spenders
+2000,Female,29,899748,85,Young Active Spenders
+2001,Female,38,530100,39,Middle-aged Budget Shoppers
+2002,Female,34,749239,71,Young Active Spenders
+2003,Male,56,1106745,48,High-income Cautious
+2004,Male,43,1441233,22,High-income Cautious
+2005,Male,54,850083,25,Senior Conservative
+2006,Female,37,509937,47,Middle-aged Budget Shoppers
+2007,Male,31,585707,61,Middle-aged Budget Shoppers
+2008,Male,52,828510,21,Senior Conservative
+2009,Male,37,480447,54,Middle-aged Budget Shoppers
+2010,Female,43,519614,43,Middle-aged Budget Shoppers
+2011,Male,46,1350575,24,High-income Cautious
+2012,Female,33,705686,63,Young Active Spenders
+2013,Female,56,837687,18,Senior Conservative
+2014,Female,42,1294105,34,High-income Cautious
+2015,Female,52,770759,21,Senior Conservative
+2016,Male,51,1383841,33,High-income Cautious
+2017,Female,39,630182,48,Middle-aged Budget Shoppers
+2018,Male,53,1347413,36,High-income Cautious
+2019,Male,44,1493570,30,High-income Cautious
+2020,Female,34,835719,62,Young Active Spenders
+2021,Male,36,765008,60,Young Active Spenders
+2022,Female,23,1202624,74,Young Premium Spenders
+2023,Female,59,1343141,30,High-income Cautious
+2024,Female,50,1403024,22,High-income Cautious
+2025,Female,55,1019531,17,Senior Conservative
+2026,Female,29,768775,71,Young Active Spenders
+2027,Male,48,550021,30,Middle-aged Budget Shoppers
+2028,Female,55,858711,20,Senior Conservative
+2029,Female,23,1336649,89,Young Premium Spenders
+2030,Female,58,824609,20,Senior Conservative
+2031,Female,45,540046,40,Middle-aged Budget Shoppers
+2032,Male,55,834611,20,Senior Conservative
+2033,Male,57,764817,21,Senior Conservative
+2034,Female,27,818355,72,Young Active Spenders
+2035,Male,47,1480193,39,High-income Cautious
+2036,Female,24,736822,81,Young Active Spenders
+2037,Male,58,1066623,28,Senior Conservative
+2038,Male,49,499705,54,Middle-aged Budget Shoppers
+2039,Female,27,648724,81,Young Active Spenders
+2040,Male,42,454964,44,Middle-aged Budget Shoppers
+2041,Male,25,1013193,88,Young Premium Spenders
+2042,Female,25,1319867,85,Young Premium Spenders
+2043,Male,32,693854,72,Young Active Spenders
+2044,Female,26,1245069,65,Young Premium Spenders
+2045,Male,30,596288,68,Young Active Spenders
+2046,Male,27,1110054,89,Young Premium Spenders
+2047,Female,48,1452308,47,High-income Cautious
+2048,Female,26,1439753,87,Young Premium Spenders
+2049,Male,57,902013,26,Senior Conservative
+2050,Female,27,759439,77,Young Active Spenders
+2051,Male,25,1286161,78,Young Premium Spenders
+2052,Male,25,643443,71,Young Active Spenders
+2053,Male,59,1224624,21,High-income Cautious
+2054,Male,53,834948,31,Senior Conservative
+2055,Male,31,817745,78,Young Active Spenders
+2056,Female,24,1271668,86,Young Premium Spenders
+2057,Male,25,1109957,90,Young Premium Spenders
+2058,Female,59,1302368,31,High-income Cautious
+2059,Female,33,834751,93,Young Active Spenders
+2060,Male,49,1500000,24,High-income Cautious
+2061,Female,30,689593,97,Young Active Spenders
+2062,Female,46,1497665,42,High-income Cautious
+2063,Male,47,499848,44,Middle-aged Budget Shoppers
+2064,Male,28,1498214,86,Young Premium Spenders
+2065,Female,46,1440050,33,High-income Cautious
+2066,Female,42,564270,56,Middle-aged Budget Shoppers
+2067,Female,59,905490,28,Senior Conservative
+2068,Male,56,1009038,23,Senior Conservative
+2069,Male,25,1251524,94,Young Premium Spenders
+2070,Female,65,783076,14,Senior Conservative
+2071,Female,30,789088,69,Young Active Spenders
+2072,Male,27,1183717,98,Young Premium Spenders
+2073,Female,53,1500000,24,High-income Cautious
+2074,Female,41,1488174,32,High-income Cautious
+2075,Female,40,622950,59,Middle-aged Budget Shoppers
+2076,Male,47,1500000,45,High-income Cautious
+2077,Female,38,553087,50,Middle-aged Budget Shoppers
+2078,Female,47,536862,43,Middle-aged Budget Shoppers
+2079,Male,50,647338,57,Middle-aged Budget Shoppers
+2080,Female,33,726122,75,Young Active Spenders
+2081,Male,48,1417821,33,High-income Cautious
+2082,Female,55,977026,21,Senior Conservative
+2083,Male,43,1369611,44,High-income Cautious
+2084,Male,31,716801,81,Young Active Spenders
+2085,Male,44,649390,49,Middle-aged Budget Shoppers
+2086,Female,33,693361,85,Young Active Spenders
+2087,Male,34,675133,68,Young Active Spenders
+2088,Male,55,853687,26,Senior Conservative
+2089,Male,53,1204784,47,High-income Cautious
+2090,Male,64,839580,24,Senior Conservative
+2091,Female,51,438606,64,Middle-aged Budget Shoppers
+2092,Female,34,619768,81,Young Active Spenders
+2093,Male,36,654609,82,Young Active Spenders
+2094,Male,41,421372,41,Middle-aged Budget Shoppers
+2095,Male,32,777163,73,Young Active Spenders
+2096,Female,27,1082511,96,Young Premium Spenders
+2097,Male,24,1398142,87,Young Premium Spenders
+2098,Male,52,1441451,43,High-income Cautious
+2099,Female,55,784684,19,Senior Conservative
+2100,Male,40,430038,59,Middle-aged Budget Shoppers
+2101,Male,42,1500000,28,High-income Cautious
+2102,Male,44,1500000,39,High-income Cautious
+2103,Female,34,696843,81,Young Active Spenders
+2104,Female,51,584886,49,Middle-aged Budget Shoppers
+2105,Female,59,1483514,41,High-income Cautious
+2106,Female,43,674147,51,Middle-aged Budget Shoppers
+2107,Male,30,760632,66,Young Active Spenders
+2108,Male,53,1500000,44,High-income Cautious
+2109,Female,24,991506,84,Young Premium Spenders
+2110,Male,51,1348874,41,High-income Cautious
+2111,Male,24,942332,84,Young Premium Spenders
+2112,Male,47,1480393,36,High-income Cautious
+2113,Male,37,704244,73,Young Active Spenders
+2114,Female,39,487603,39,Middle-aged Budget Shoppers
+2115,Male,56,854745,29,Senior Conservative
+2116,Male,33,715236,61,Young Active Spenders
+2117,Female,55,1319699,28,High-income Cautious
+2118,Male,45,1350895,32,High-income Cautious
+2119,Female,33,582835,69,Young Active Spenders
+2120,Female,47,473587,50,Middle-aged Budget Shoppers
+2121,Female,27,1322407,90,Young Premium Spenders
+2122,Female,46,535205,40,Middle-aged Budget Shoppers
+2123,Female,33,780033,78,Young Active Spenders
+2124,Male,50,1368278,39,High-income Cautious
+2125,Male,38,441417,25,Middle-aged Budget Shoppers
+2126,Male,57,1500000,31,High-income Cautious
+2127,Male,23,1207355,80,Young Premium Spenders
+2128,Female,51,1384664,34,High-income Cautious
+2129,Female,51,1486602,30,High-income Cautious
+2130,Male,59,984896,16,Senior Conservative
+2131,Male,55,1122304,12,Senior Conservative
+2132,Male,49,1469591,49,High-income Cautious
+2133,Female,29,1436111,81,Young Premium Spenders
+2134,Male,42,1451073,42,High-income Cautious
+2135,Female,56,1437497,28,High-income Cautious
+2136,Female,43,580138,46,Middle-aged Budget Shoppers
+2137,Female,26,1237639,95,Young Premium Spenders
+2138,Female,57,868530,16,Senior Conservative
+2139,Male,48,1323938,42,High-income Cautious
+2140,Male,45,1485120,42,High-income Cautious
+2141,Male,28,1332507,96,Young Premium Spenders
+2142,Female,25,1137482,97,Young Premium Spenders
+2143,Male,22,1244454,84,Young Premium Spenders
+2144,Male,23,1167569,80,Young Premium Spenders
+2145,Female,55,921192,19,Senior Conservative
+2146,Female,30,753608,70,Young Active Spenders
+2147,Male,33,818940,75,Young Active Spenders
+2148,Male,41,492932,41,Middle-aged Budget Shoppers
+2149,Female,51,1488049,40,High-income Cautious
+2150,Female,38,430351,56,Middle-aged Budget Shoppers
+2151,Female,28,697171,64,Young Active Spenders
+2152,Male,53,832659,10,Senior Conservative
+2153,Female,22,1041176,81,Young Premium Spenders
+2154,Female,36,572289,52,Middle-aged Budget Shoppers
+2155,Female,54,870642,16,Senior Conservative
+2156,Female,45,1439767,20,High-income Cautious
+2157,Male,40,484693,46,Middle-aged Budget Shoppers
+2158,Male,22,1192854,84,Young Premium Spenders
+2159,Female,59,935696,21,Senior Conservative
+2160,Male,52,1229976,45,High-income Cautious
+2161,Female,29,1396245,87,Young Premium Spenders
+2162,Female,18,1002213,91,Young Premium Spenders
+2163,Female,38,514065,50,Middle-aged Budget Shoppers
+2164,Female,27,1370709,85,Young Premium Spenders
+2165,Female,26,1445901,85,Young Premium Spenders
+2166,Female,47,536370,48,Middle-aged Budget Shoppers
+2167,Male,57,871942,19,Senior Conservative
+2168,Male,23,1131252,83,Young Premium Spenders
+2169,Female,60,808123,28,Senior Conservative
+2170,Female,26,1090583,87,Young Premium Spenders
+2171,Female,52,1361472,28,High-income Cautious
+2172,Female,36,656462,40,Middle-aged Budget Shoppers
+2173,Female,30,689593,62,Young Active Spenders
+2174,Female,40,515543,43,Middle-aged Budget Shoppers
+2175,Female,36,410277,53,Middle-aged Budget Shoppers
+2176,Female,27,681279,68,Young Active Spenders
+2177,Female,29,809564,67,Young Active Spenders
+2178,Male,34,721353,70,Young Active Spenders
+2179,Male,55,1431866,40,High-income Cautious
+2180,Female,30,818192,74,Young Active Spenders
+2181,Male,58,1301411,38,High-income Cautious
+2182,Female,43,370777,41,Middle-aged Budget Shoppers
+2183,Male,31,530181,49,Middle-aged Budget Shoppers
+2184,Male,49,527097,38,Middle-aged Budget Shoppers
+2185,Male,59,1025704,13,Senior Conservative
+2186,Female,59,1471671,28,High-income Cautious
+2187,Male,47,628947,61,Middle-aged Budget Shoppers
+2188,Male,21,1206018,85,Young Premium Spenders
+2189,Male,33,849055,71,Young Active Spenders
+2190,Male,30,497592,52,Middle-aged Budget Shoppers
+2191,Female,30,577653,74,Young Active Spenders
+2192,Female,26,1109791,87,Young Premium Spenders
+2193,Male,24,1197601,84,Young Premium Spenders
+2194,Male,37,867905,91,Young Active Spenders
+2195,Male,57,1475916,39,High-income Cautious
+2196,Male,55,1487428,33,High-income Cautious
+2197,Female,23,1329055,74,Young Premium Spenders
+2198,Female,33,1210931,72,Young Premium Spenders
+2199,Female,48,1287607,20,High-income Cautious
+2200,Female,39,420075,50,Middle-aged Budget Shoppers
+2201,Female,34,815950,64,Young Active Spenders
+2202,Male,40,1426502,34,High-income Cautious
+2203,Female,28,676587,56,Young Active Spenders
+2204,Male,32,755968,68,Young Active Spenders
+2205,Male,52,1498721,29,High-income Cautious
+2206,Female,24,1249438,75,Young Premium Spenders
+2207,Male,38,500350,51,Middle-aged Budget Shoppers
+2208,Female,32,788301,74,Young Active Spenders
+2209,Female,37,748177,84,Young Active Spenders
+2210,Male,30,738335,80,Young Active Spenders
+2211,Female,48,360945,43,Middle-aged Budget Shoppers
+2212,Male,61,658885,18,Senior Conservative
+2213,Female,42,560932,59,Middle-aged Budget Shoppers
+2214,Male,60,862139,17,Senior Conservative
+2215,Male,56,899522,23,Senior Conservative
+2216,Male,53,914820,24,Senior Conservative
+2217,Female,45,469346,57,Middle-aged Budget Shoppers
+2218,Male,56,1451770,40,High-income Cautious
+2219,Male,27,1215601,87,Young Premium Spenders
+2220,Male,43,1500000,30,High-income Cautious
+2221,Female,27,1194967,87,Young Premium Spenders
+2222,Male,29,1093469,78,Young Premium Spenders
+2223,Male,19,1059219,90,Young Premium Spenders
+2224,Male,60,843237,24,Senior Conservative
+2225,Female,27,1246520,78,Young Premium Spenders
+2226,Male,67,933555,10,Senior Conservative
+2227,Female,29,1225674,82,Young Premium Spenders
+2228,Female,33,813734,57,Young Active Spenders
+2229,Female,39,604541,44,Middle-aged Budget Shoppers
+2230,Male,37,813363,62,Young Active Spenders
+2231,Male,56,948937,30,Senior Conservative
+2232,Male,52,1341739,55,High-income Cautious
+2233,Male,40,463730,45,Middle-aged Budget Shoppers
+2234,Female,55,912964,23,Senior Conservative
+2235,Male,23,1069481,90,Young Premium Spenders
+2236,Female,28,1233000,83,Young Premium Spenders
+2237,Male,30,1096129,84,Young Premium Spenders
+2238,Female,58,777804,16,Senior Conservative
+2239,Male,45,548438,41,Middle-aged Budget Shoppers
+2240,Female,27,723177,63,Young Active Spenders
+2241,Female,57,1336990,33,High-income Cautious
+2242,Male,40,409990,57,Middle-aged Budget Shoppers
+2243,Female,53,928360,13,Senior Conservative
+2244,Female,51,1338366,15,High-income Cautious
+2245,Female,27,1071646,92,Young Premium Spenders
+2246,Male,34,551305,58,Middle-aged Budget Shoppers
+2247,Female,34,658552,71,Young Active Spenders
+2248,Male,58,953518,23,Senior Conservative
+2249,Male,37,518832,44,Middle-aged Budget Shoppers
+2250,Female,49,1500000,23,High-income Cautious
+2251,Female,25,1140124,89,Young Premium Spenders
+2252,Male,29,582270,71,Young Active Spenders
+2253,Male,52,995163,16,Senior Conservative
+2254,Female,23,1077671,83,Young Premium Spenders
+2255,Male,57,939255,16,Senior Conservative
+2256,Female,46,1500000,33,High-income Cautious
+2257,Female,25,1500000,87,Young Premium Spenders
+2258,Male,39,637831,54,Middle-aged Budget Shoppers
+2259,Female,24,1232725,84,Young Premium Spenders
+2260,Male,53,830342,19,Senior Conservative
+2261,Female,52,1500000,42,High-income Cautious
+2262,Male,54,1447177,31,High-income Cautious
+2263,Male,56,1328240,48,High-income Cautious
+2264,Male,52,843430,19,Senior Conservative
+2265,Male,62,1500000,30,High-income Cautious
+2266,Male,25,730230,82,Young Active Spenders
+2267,Male,24,1160013,77,Young Premium Spenders
+2268,Male,51,1338312,37,High-income Cautious
+2269,Female,21,1128303,90,Young Premium Spenders
+2270,Male,43,347293,48,Middle-aged Budget Shoppers
+2271,Male,54,1322140,41,High-income Cautious
+2272,Female,27,916895,79,Young Premium Spenders
+2273,Male,52,1302382,46,High-income Cautious
+2274,Male,49,1447952,29,High-income Cautious
+2275,Female,52,1359727,23,High-income Cautious
+2276,Male,26,1333148,79,Young Premium Spenders
+2277,Male,64,1156365,24,Senior Conservative
+2278,Female,48,1439398,35,High-income Cautious
+2279,Male,48,1298088,40,High-income Cautious
+2280,Female,60,845955,24,Senior Conservative
+2281,Male,22,1335419,80,Young Premium Spenders
+2282,Male,54,868146,23,Senior Conservative
+2283,Female,40,1500000,37,High-income Cautious
+2284,Female,28,1132232,82,Young Premium Spenders
+2285,Female,31,1154369,96,Young Premium Spenders
+2286,Male,41,570896,52,Middle-aged Budget Shoppers
+2287,Male,44,1274474,43,High-income Cautious
+2288,Female,26,1305571,84,Young Premium Spenders
+2289,Male,43,468764,40,Middle-aged Budget Shoppers
+2290,Male,51,1372305,30,High-income Cautious
+2291,Male,39,403903,55,Middle-aged Budget Shoppers
+2292,Female,31,674033,59,Young Active Spenders
+2293,Male,43,1444270,30,High-income Cautious
+2294,Male,29,1190020,81,Young Premium Spenders
+2295,Female,46,1264852,52,High-income Cautious
+2296,Female,28,1225563,82,Young Premium Spenders
+2297,Female,31,778814,82,Young Active Spenders
+2298,Male,33,756492,87,Young Active Spenders
+2299,Female,46,1498128,37,High-income Cautious
+2300,Male,61,888046,24,Senior Conservative
+2301,Male,29,1186395,80,Young Premium Spenders
+2302,Female,27,1255985,85,Young Premium Spenders
+2303,Female,33,578736,55,Young Active Spenders
+2304,Female,46,1279503,31,High-income Cautious
+2305,Male,22,1215805,87,Young Premium Spenders
+2306,Male,60,848604,27,Senior Conservative
+2307,Male,55,1500000,27,High-income Cautious
+2308,Female,21,1030689,89,Young Premium Spenders
+2309,Male,54,884722,20,Senior Conservative
+2310,Female,28,1155660,86,Young Premium Spenders
+2311,Female,55,1408081,43,High-income Cautious
+2312,Female,36,588140,45,Middle-aged Budget Shoppers
+2313,Female,50,1500000,22,High-income Cautious
+2314,Female,36,1441154,46,High-income Cautious
+2315,Male,30,660707,63,Young Active Spenders
+2316,Female,32,878182,65,Young Active Spenders
+2317,Female,36,734357,76,Young Active Spenders
+2318,Female,25,1388890,95,Young Premium Spenders
+2319,Male,52,472448,45,Middle-aged Budget Shoppers
+2320,Male,56,959534,26,Senior Conservative
+2321,Male,48,1364866,29,High-income Cautious
+2322,Female,35,668532,84,Young Active Spenders
+2323,Female,51,1333127,38,High-income Cautious
+2324,Male,58,1500000,33,High-income Cautious
+2325,Male,41,433879,47,Middle-aged Budget Shoppers
+2326,Female,30,1169832,87,Young Premium Spenders
+2327,Male,28,705251,70,Young Active Spenders
+2328,Female,39,618441,39,Middle-aged Budget Shoppers
+2329,Male,45,1193533,32,High-income Cautious
+2330,Female,36,366923,33,Middle-aged Budget Shoppers
+2331,Female,54,1500000,29,High-income Cautious
+2332,Male,26,1146450,84,Young Premium Spenders
+2333,Female,22,1189579,88,Young Premium Spenders
+2334,Male,24,1266934,84,Young Premium Spenders
+2335,Female,22,1213443,88,Young Premium Spenders
+2336,Male,32,802591,59,Young Active Spenders
+2337,Male,41,1382915,24,High-income Cautious
+2338,Female,50,462224,58,Middle-aged Budget Shoppers
+2339,Male,32,791616,72,Young Active Spenders
+2340,Male,59,831885,35,Senior Conservative
+2341,Male,39,635201,43,Middle-aged Budget Shoppers
+2342,Female,22,1194199,88,Young Premium Spenders
+2343,Female,62,727530,16,Senior Conservative
+2344,Male,26,767323,72,Young Active Spenders
+2345,Female,34,846161,82,Young Active Spenders
+2346,Male,33,565261,47,Middle-aged Budget Shoppers
+2347,Female,22,1133023,79,Young Premium Spenders
+2348,Male,49,1485872,37,High-income Cautious
+2349,Male,27,1153516,76,Young Premium Spenders
+2350,Male,49,1343056,35,High-income Cautious
+2351,Male,28,767287,66,Young Active Spenders
+2352,Female,37,846902,72,Young Active Spenders
+2353,Male,33,747095,73,Young Active Spenders
+2354,Male,38,783227,57,Young Active Spenders
+2355,Male,27,1387465,99,Young Premium Spenders
+2356,Female,53,1348069,13,High-income Cautious
+2357,Female,45,1500000,33,High-income Cautious
+2358,Male,60,759659,26,Senior Conservative
+2359,Male,25,1133436,74,Young Premium Spenders
+2360,Male,46,341749,44,Middle-aged Budget Shoppers
+2361,Female,23,1213384,88,Young Premium Spenders
+2362,Male,42,544022,44,Middle-aged Budget Shoppers
+2363,Male,60,900534,25,Senior Conservative
+2364,Female,46,1223131,28,High-income Cautious
+2365,Male,23,612481,74,Young Active Spenders
+2366,Female,47,523855,63,Middle-aged Budget Shoppers
+2367,Female,43,1426393,36,High-income Cautious
+2368,Male,55,782027,14,Senior Conservative
+2369,Male,27,1200540,82,Young Premium Spenders
+2370,Male,57,771535,14,Senior Conservative
+2371,Female,25,1283019,96,Young Premium Spenders
+2372,Male,31,715320,77,Young Active Spenders
+2373,Male,44,385167,48,Middle-aged Budget Shoppers
+2374,Male,41,546041,44,Middle-aged Budget Shoppers
+2375,Female,64,829925,24,Senior Conservative
+2376,Female,31,1342228,88,Young Premium Spenders
+2377,Female,64,847784,14,Senior Conservative
+2378,Male,24,1278907,80,Young Premium Spenders
+2379,Female,61,809305,22,Senior Conservative
+2380,Female,41,546466,56,Middle-aged Budget Shoppers
+2381,Male,61,881904,19,Senior Conservative
+2382,Male,26,1199017,83,Young Premium Spenders
+2383,Female,36,441370,59,Middle-aged Budget Shoppers
+2384,Male,28,770332,68,Young Active Spenders
+2385,Male,36,441276,41,Middle-aged Budget Shoppers
+2386,Male,39,513748,27,Middle-aged Budget Shoppers
+2387,Male,43,1491371,35,High-income Cautious
+2388,Male,47,520980,65,Middle-aged Budget Shoppers
+2389,Male,33,497199,82,Young Active Spenders
+2390,Female,37,586742,41,Middle-aged Budget Shoppers
+2391,Female,45,463208,46,Middle-aged Budget Shoppers
+2392,Male,43,490951,64,Middle-aged Budget Shoppers
+2393,Female,28,799412,64,Young Active Spenders
+2394,Male,19,1316687,79,Young Premium Spenders
+2395,Female,46,579754,40,Middle-aged Budget Shoppers
+2396,Male,54,1059519,30,Senior Conservative
+2397,Male,52,1494979,41,High-income Cautious
+2398,Male,55,1482728,30,High-income Cautious
+2399,Male,27,684565,88,Young Active Spenders
+2400,Female,52,1500000,41,High-income Cautious
+2401,Male,28,1034336,97,Young Premium Spenders
+2402,Male,42,586263,44,Middle-aged Budget Shoppers
+2403,Male,57,678851,32,Senior Conservative
+2404,Male,60,844765,19,Senior Conservative
+2405,Male,62,873440,21,Senior Conservative
+2406,Female,43,523196,57,Middle-aged Budget Shoppers
+2407,Female,47,349364,38,Middle-aged Budget Shoppers
+2408,Female,25,1323726,85,Young Premium Spenders
+2409,Male,38,710921,73,Young Active Spenders
+2410,Female,49,1288020,24,High-income Cautious
+2411,Male,42,1277779,35,High-income Cautious
+2412,Male,49,1460898,27,High-income Cautious
+2413,Female,35,587063,54,Middle-aged Budget Shoppers
+2414,Female,61,909018,16,Senior Conservative
+2415,Female,61,951300,27,Senior Conservative
+2416,Male,28,628633,79,Young Active Spenders
+2417,Female,41,452405,44,Middle-aged Budget Shoppers
+2418,Female,30,898105,70,Young Active Spenders
+2419,Female,31,813597,61,Young Active Spenders
+2420,Female,28,610642,75,Young Active Spenders
+2421,Male,57,775522,22,Senior Conservative
+2422,Male,26,1297456,77,Young Premium Spenders
+2423,Female,22,1050229,90,Young Premium Spenders
+2424,Male,24,718533,74,Young Active Spenders
+2425,Male,44,825377,22,Senior Conservative
+2426,Female,27,1163730,84,Young Premium Spenders
+2427,Female,40,918153,70,Young Active Spenders
+2428,Female,35,495813,44,Middle-aged Budget Shoppers
+2429,Female,30,829102,68,Young Active Spenders
+2430,Male,47,1490387,37,High-income Cautious
+2431,Male,42,498680,64,Middle-aged Budget Shoppers
+2432,Female,37,456016,47,Middle-aged Budget Shoppers
+2433,Female,22,1213398,82,Young Premium Spenders
+2434,Male,27,1207929,90,Young Premium Spenders
+2435,Female,38,585065,62,Middle-aged Budget Shoppers
+2436,Male,22,1204057,86,Young Premium Spenders
+2437,Male,32,936366,58,Young Active Spenders
+2438,Male,56,1345212,40,High-income Cautious
+2439,Male,35,505375,43,Middle-aged Budget Shoppers
+2440,Male,36,567297,48,Middle-aged Budget Shoppers
+2441,Male,52,1500000,32,High-income Cautious
+2442,Female,35,956653,66,Young Active Spenders
+2443,Female,50,1389625,35,High-income Cautious
+2444,Male,43,413610,48,Middle-aged Budget Shoppers
+2445,Male,36,469323,44,Middle-aged Budget Shoppers
+2446,Female,37,567705,51,Middle-aged Budget Shoppers
+2447,Male,54,1234331,46,High-income Cautious
+2448,Female,39,871765,79,Young Active Spenders
+2449,Female,42,620766,41,Middle-aged Budget Shoppers
+2450,Male,44,555093,54,Middle-aged Budget Shoppers
+2451,Female,39,463202,63,Middle-aged Budget Shoppers
+2452,Male,60,826982,35,Senior Conservative
+2453,Male,62,777613,16,Senior Conservative
+2454,Female,32,1236428,86,Young Premium Spenders
+2455,Male,54,856932,17,Senior Conservative
+2456,Female,29,907316,77,Young Active Spenders
+2457,Male,36,514659,55,Middle-aged Budget Shoppers
+2458,Female,26,846263,87,Young Active Spenders
+2459,Female,39,776090,66,Young Active Spenders
+2460,Male,32,618407,54,Middle-aged Budget Shoppers
+2461,Female,60,626634,15,Senior Conservative
+2462,Male,47,1459899,38,High-income Cautious
+2463,Female,64,694203,25,Senior Conservative
+2464,Female,43,592070,51,Middle-aged Budget Shoppers
+2465,Female,45,493680,44,Middle-aged Budget Shoppers
+2466,Male,29,677166,63,Young Active Spenders
+2467,Female,60,863509,26,Senior Conservative
+2468,Male,25,1225097,90,Young Premium Spenders
+2469,Male,32,925202,69,Young Active Spenders
+2470,Male,51,888088,19,Senior Conservative
+2471,Female,54,1068376,12,Senior Conservative
+2472,Male,32,700231,69,Young Active Spenders
+2473,Female,24,1144178,81,Young Premium Spenders
+2474,Female,27,1154790,86,Young Premium Spenders
+2475,Female,24,1165222,78,Young Premium Spenders
+2476,Female,27,682433,69,Young Active Spenders
+2477,Female,43,1177679,38,High-income Cautious
+2478,Female,31,738178,67,Young Active Spenders
+2479,Female,19,1384790,87,Young Premium Spenders
+2480,Male,37,618398,47,Middle-aged Budget Shoppers
+2481,Female,33,754483,78,Young Active Spenders
+2482,Male,49,1424669,28,High-income Cautious
+2483,Male,25,1255427,82,Young Premium Spenders
+2484,Female,53,1500000,27,High-income Cautious
+2485,Male,43,499925,41,Middle-aged Budget Shoppers
+2486,Female,57,1360447,25,High-income Cautious
+2487,Male,54,801805,17,Senior Conservative
+2488,Male,35,863776,65,Young Active Spenders
+2489,Female,57,1500000,47,High-income Cautious
+2490,Female,35,678580,48,Middle-aged Budget Shoppers
+2491,Female,25,1293880,99,Young Premium Spenders
+2492,Female,38,923041,79,Young Active Spenders
+2493,Female,48,1178161,35,High-income Cautious
+2494,Female,26,808019,77,Young Active Spenders
+2495,Female,61,880878,25,Senior Conservative
+2496,Female,48,451243,43,Middle-aged Budget Shoppers
+2497,Male,55,1045936,16,Senior Conservative
+2498,Female,54,1354758,32,High-income Cautious
+2499,Female,49,1480254,43,High-income Cautious
+2500,Female,59,871870,23,Senior Conservative
+2501,Male,53,551728,16,Senior Conservative
+2502,Male,20,1400624,91,Young Premium Spenders
+2503,Female,36,592440,31,Middle-aged Budget Shoppers
+2504,Female,43,468804,52,Middle-aged Budget Shoppers
+2505,Female,55,894606,19,Senior Conservative
+2506,Female,59,950948,26,Senior Conservative
+2507,Female,26,1193384,84,Young Premium Spenders
+2508,Male,27,1145247,76,Young Premium Spenders
+2509,Female,38,436956,41,Middle-aged Budget Shoppers
+2510,Male,31,758222,59,Young Active Spenders
+2511,Female,26,1287219,70,Young Premium Spenders
+2512,Male,46,1415153,34,High-income Cautious
+2513,Male,59,841636,17,Senior Conservative
+2514,Female,41,440273,48,Middle-aged Budget Shoppers
+2515,Female,23,1189889,82,Young Premium Spenders
+2516,Female,25,717939,66,Young Active Spenders
+2517,Male,31,1335101,86,Young Premium Spenders
+2518,Male,53,904960,21,Senior Conservative
+2519,Female,43,602768,38,Middle-aged Budget Shoppers
+2520,Male,36,450051,32,Middle-aged Budget Shoppers
+2521,Male,32,817037,67,Young Active Spenders
+2522,Male,28,678454,72,Young Active Spenders
+2523,Female,27,723741,78,Young Active Spenders
+2524,Female,39,553619,75,Middle-aged Budget Shoppers
+2525,Male,33,750892,51,Young Active Spenders
+2526,Male,35,597755,64,Young Active Spenders
+2527,Female,43,430513,39,Middle-aged Budget Shoppers
+2528,Male,57,931145,18,Senior Conservative
+2529,Female,45,1387738,32,High-income Cautious
+2530,Male,55,783144,20,Senior Conservative
+2531,Male,22,1193631,80,Young Premium Spenders
+2532,Male,48,1484909,22,High-income Cautious
+2533,Female,42,579641,50,Middle-aged Budget Shoppers
+2534,Female,25,1146547,70,Young Premium Spenders
+2535,Male,28,1276513,81,Young Premium Spenders
+2536,Female,36,615411,43,Middle-aged Budget Shoppers
+2537,Male,58,766813,19,Senior Conservative
+2538,Female,32,641481,83,Young Active Spenders
+2539,Male,35,766443,82,Young Active Spenders
+2540,Female,40,507827,44,Middle-aged Budget Shoppers
+2541,Female,45,612731,55,Middle-aged Budget Shoppers
+2542,Male,52,1217220,33,High-income Cautious
+2543,Male,25,1261068,89,Young Premium Spenders
+2544,Female,20,789847,73,Young Active Spenders
+2545,Female,30,578446,63,Middle-aged Budget Shoppers
+2546,Female,39,581717,36,Middle-aged Budget Shoppers
+2547,Female,27,1083931,65,Young Premium Spenders
+2548,Female,42,1211417,24,High-income Cautious
+2549,Male,28,869868,67,Young Active Spenders
+2550,Female,41,628936,74,Young Active Spenders
+2551,Female,44,1461556,38,High-income Cautious
+2552,Male,39,399467,59,Middle-aged Budget Shoppers
+2553,Male,27,803173,78,Young Active Spenders
+2554,Female,62,938318,22,Senior Conservative
+2555,Female,38,553385,40,Middle-aged Budget Shoppers
+2556,Female,41,1209799,33,High-income Cautious
+2557,Male,55,886632,9,Senior Conservative
+2558,Female,51,956192,25,Senior Conservative
+2559,Female,36,583618,80,Young Active Spenders
+2560,Female,64,1120736,16,Senior Conservative
+2561,Male,45,361291,22,Middle-aged Budget Shoppers
+2562,Female,25,1359363,93,Young Premium Spenders
+2563,Male,26,677711,79,Young Active Spenders
+2564,Male,26,1228528,75,Young Premium Spenders
+2565,Female,43,672967,47,Middle-aged Budget Shoppers
+2566,Female,65,910373,33,Senior Conservative
+2567,Female,37,532000,39,Middle-aged Budget Shoppers
+2568,Female,60,769557,31,Senior Conservative
+2569,Female,22,1211097,86,Young Premium Spenders
+2570,Male,25,1163152,90,Young Premium Spenders
+2571,Male,44,503596,58,Middle-aged Budget Shoppers
+2572,Male,56,999781,30,Senior Conservative
+2573,Female,25,1318447,66,Young Premium Spenders
+2574,Male,50,765771,12,Senior Conservative
+2575,Male,33,816330,68,Young Active Spenders
+2576,Female,47,415836,35,Middle-aged Budget Shoppers
+2577,Female,57,940069,23,Senior Conservative
+2578,Female,54,1307052,29,High-income Cautious
+2579,Female,45,582201,52,Middle-aged Budget Shoppers
+2580,Female,30,953908,83,Young Active Spenders
+2581,Female,24,1206821,75,Young Premium Spenders
+2582,Male,61,870458,23,Senior Conservative
+2583,Male,33,685986,69,Young Active Spenders
+2584,Female,53,1473645,34,High-income Cautious
+2585,Male,61,850554,26,Senior Conservative
+2586,Male,44,1484463,50,High-income Cautious
+2587,Male,63,973754,8,Senior Conservative
+2588,Female,28,1215775,84,Young Premium Spenders
+2589,Male,58,899201,14,Senior Conservative
+2590,Male,35,626004,61,Young Active Spenders
+2591,Male,31,750274,67,Young Active Spenders
+2592,Female,34,648675,57,Young Active Spenders
+2593,Male,59,1004719,35,Senior Conservative
+2594,Male,24,1014992,78,Young Premium Spenders
+2595,Male,24,1267261,73,Young Premium Spenders
+2596,Male,25,889486,82,Young Premium Spenders
+2597,Female,55,1009257,14,Senior Conservative
+2598,Male,55,873216,18,Senior Conservative
+2599,Male,60,940266,18,Senior Conservative
+2600,Female,51,470238,60,Middle-aged Budget Shoppers
+2601,Male,59,976618,30,Senior Conservative
+2602,Female,24,1254901,83,Young Premium Spenders
+2603,Male,44,518861,60,Middle-aged Budget Shoppers
+2604,Female,51,1500000,44,High-income Cautious
+2605,Male,34,886462,75,Young Active Spenders
+2606,Male,64,796750,24,Senior Conservative
+2607,Female,54,785512,19,Senior Conservative
+2608,Male,59,888208,29,Senior Conservative
+2609,Male,44,579631,39,Middle-aged Budget Shoppers
+2610,Male,53,1272465,34,High-income Cautious
+2611,Male,55,1437326,46,High-income Cautious
+2612,Male,49,1500000,35,High-income Cautious
+2613,Female,48,766378,68,Middle-aged Budget Shoppers
+2614,Female,28,1145005,79,Young Premium Spenders
+2615,Male,27,1416664,90,Young Premium Spenders
+2616,Male,52,905452,23,Senior Conservative
+2617,Male,42,1255060,34,High-income Cautious
+2618,Male,43,1261373,26,High-income Cautious
+2619,Male,60,1017304,21,Senior Conservative
+2620,Female,62,830325,18,Senior Conservative
+2621,Female,40,543161,37,Middle-aged Budget Shoppers
+2622,Male,30,814704,64,Young Active Spenders
+2623,Female,50,1346381,25,High-income Cautious
+2624,Female,63,854815,23,Senior Conservative
+2625,Female,28,1291589,77,Young Premium Spenders
+2626,Female,31,779395,51,Young Active Spenders
+2627,Male,40,1390458,29,High-income Cautious
+2628,Female,20,1226791,100,Young Premium Spenders
+2629,Female,52,720230,24,Senior Conservative
+2630,Female,22,992156,95,Young Premium Spenders
+2631,Female,28,679484,62,Young Active Spenders
+2632,Female,23,1380565,81,Young Premium Spenders
+2633,Male,24,768032,57,Young Active Spenders
+2634,Male,63,1004952,36,Senior Conservative
+2635,Female,50,1491323,44,High-income Cautious
+2636,Female,46,1492937,31,High-income Cautious
+2637,Male,23,1064667,76,Young Premium Spenders
+2638,Male,40,558744,30,Middle-aged Budget Shoppers
+2639,Female,28,725295,64,Young Active Spenders
+2640,Male,24,1273889,77,Young Premium Spenders
+2641,Male,49,869595,22,Senior Conservative
+2642,Female,48,534709,40,Middle-aged Budget Shoppers
+2643,Female,31,678697,66,Young Active Spenders
+2644,Male,26,1089411,78,Young Premium Spenders
+2645,Male,41,438227,44,Middle-aged Budget Shoppers
+2646,Female,49,1045880,20,Senior Conservative
+2647,Female,29,805122,77,Young Active Spenders
+2648,Male,44,413630,42,Middle-aged Budget Shoppers
+2649,Female,25,1306122,88,Young Premium Spenders
+2650,Female,25,516284,69,Young Active Spenders
+2651,Female,39,470032,41,Middle-aged Budget Shoppers
+2652,Male,59,1477552,36,High-income Cautious
+2653,Female,53,1345032,40,High-income Cautious
+2654,Female,25,1241353,83,Young Premium Spenders
+2655,Female,34,763939,68,Young Active Spenders
+2656,Male,48,1341296,20,High-income Cautious
+2657,Male,56,1056067,18,Senior Conservative
+2658,Male,37,723982,75,Young Active Spenders
+2659,Male,23,1254201,86,Young Premium Spenders
+2660,Male,55,960695,25,Senior Conservative
+2661,Female,58,984343,26,Senior Conservative
+2662,Female,58,841222,14,Senior Conservative
+2663,Male,60,987752,34,Senior Conservative
+2664,Female,26,1257685,89,Young Premium Spenders
+2665,Male,25,1159276,80,Young Premium Spenders
+2666,Female,34,867044,54,Young Active Spenders
+2667,Male,29,661550,63,Young Active Spenders
+2668,Female,58,889167,17,Senior Conservative
+2669,Female,29,859269,77,Young Active Spenders
+2670,Female,26,632672,73,Young Active Spenders
+2671,Female,32,957113,82,Young Active Spenders
+2672,Female,63,951535,26,Senior Conservative
+2673,Female,25,786049,72,Young Active Spenders
+2674,Male,44,1465603,33,High-income Cautious
+2675,Male,46,336902,54,Middle-aged Budget Shoppers
+2676,Female,23,1191250,78,Young Premium Spenders
+2677,Female,33,695956,82,Young Active Spenders
+2678,Female,26,1081362,90,Young Premium Spenders
+2679,Male,57,710411,17,Senior Conservative
+2680,Female,37,860319,67,Young Active Spenders
+2681,Female,27,695206,67,Young Active Spenders
+2682,Male,35,576059,57,Middle-aged Budget Shoppers
+2683,Male,52,1032281,11,Senior Conservative
+2684,Female,56,1486625,45,High-income Cautious
+2685,Male,57,905323,26,Senior Conservative
+2686,Male,28,1401303,71,Young Premium Spenders
+2687,Male,49,1439586,28,High-income Cautious
+2688,Male,39,484934,36,Middle-aged Budget Shoppers
+2689,Male,27,760157,58,Young Active Spenders
+2690,Male,31,643807,73,Young Active Spenders
+2691,Male,48,1290194,39,High-income Cautious
+2692,Male,44,1500000,31,High-income Cautious
+2693,Female,45,467692,47,Middle-aged Budget Shoppers
+2694,Male,54,1000538,28,Senior Conservative
+2695,Female,24,1253513,91,Young Premium Spenders
+2696,Female,63,681581,15,Senior Conservative
+2697,Male,27,765179,61,Young Active Spenders
+2698,Female,50,766685,23,Senior Conservative
+2699,Male,31,708779,72,Young Active Spenders
+2700,Female,38,594748,38,Middle-aged Budget Shoppers
+2701,Female,41,526012,61,Middle-aged Budget Shoppers
+2702,Female,35,488490,59,Middle-aged Budget Shoppers
+2703,Male,35,845906,61,Young Active Spenders
+2704,Male,46,477592,40,Middle-aged Budget Shoppers
+2705,Female,35,636243,66,Young Active Spenders
+2706,Male,38,523910,47,Middle-aged Budget Shoppers
+2707,Male,35,582229,80,Young Active Spenders
+2708,Female,48,397582,46,Middle-aged Budget Shoppers
+2709,Male,22,1123908,86,Young Premium Spenders
+2710,Male,50,402756,51,Middle-aged Budget Shoppers
+2711,Male,54,935875,11,Senior Conservative
+2712,Female,35,634602,74,Young Active Spenders
+2713,Male,50,711383,27,Senior Conservative
+2714,Male,49,1500000,34,High-income Cautious
+2715,Female,55,1488373,34,High-income Cautious
+2716,Female,63,1466271,31,High-income Cautious
+2717,Female,25,1333717,84,Young Premium Spenders
+2718,Male,28,717004,70,Young Active Spenders
+2719,Male,21,842448,71,Young Active Spenders
+2720,Female,29,1373637,98,Young Premium Spenders
+2721,Female,24,1019504,79,Young Premium Spenders
+2722,Male,32,474653,66,Middle-aged Budget Shoppers
+2723,Female,43,589694,47,Middle-aged Budget Shoppers
+2724,Male,36,536950,32,Middle-aged Budget Shoppers
+2725,Female,24,1103324,85,Young Premium Spenders
+2726,Male,59,841181,23,Senior Conservative
+2727,Female,35,626114,31,Middle-aged Budget Shoppers
+2728,Male,53,1286813,35,High-income Cautious
+2729,Male,50,1416191,32,High-income Cautious
+2730,Female,27,1143863,77,Young Premium Spenders
+2731,Female,38,525425,42,Middle-aged Budget Shoppers
+2732,Male,54,1335386,32,High-income Cautious
+2733,Male,37,432065,52,Middle-aged Budget Shoppers
+2734,Male,48,1249483,33,High-income Cautious
+2735,Female,40,715790,77,Young Active Spenders
+2736,Male,23,1238085,85,Young Premium Spenders
+2737,Female,49,1500000,29,High-income Cautious
+2738,Female,37,522381,33,Middle-aged Budget Shoppers
+2739,Female,51,1359797,33,High-income Cautious
+2740,Female,55,751927,30,Senior Conservative
+2741,Male,33,469686,64,Young Active Spenders
+2742,Female,58,951939,28,Senior Conservative
+2743,Female,55,1500000,32,High-income Cautious
+2744,Female,31,749828,68,Young Active Spenders
+2745,Female,42,593703,39,Middle-aged Budget Shoppers
+2746,Female,18,1315541,80,Young Premium Spenders
+2747,Male,33,498638,42,Middle-aged Budget Shoppers
+2748,Female,41,618994,50,Middle-aged Budget Shoppers
+2749,Male,50,1327153,34,High-income Cautious
+2750,Male,51,1498286,28,High-income Cautious
+2751,Male,33,699248,81,Young Active Spenders
+2752,Female,63,1373755,30,High-income Cautious
+2753,Male,54,771872,18,Senior Conservative
+2754,Male,40,1490811,33,High-income Cautious
+2755,Male,28,728995,68,Young Active Spenders
+2756,Female,38,899013,71,Young Active Spenders
+2757,Male,57,1450056,33,High-income Cautious
+2758,Female,32,1231916,86,Young Premium Spenders
+2759,Male,54,1320789,49,High-income Cautious
+2760,Male,41,584236,48,Middle-aged Budget Shoppers
+2761,Female,22,1216323,68,Young Premium Spenders
+2762,Female,43,541217,43,Middle-aged Budget Shoppers
+2763,Male,51,1281319,29,High-income Cautious
+2764,Male,37,627163,47,Middle-aged Budget Shoppers
+2765,Male,28,667003,67,Young Active Spenders
+2766,Male,35,925749,80,Young Active Spenders
+2767,Female,54,992125,16,Senior Conservative
+2768,Male,44,535279,67,Middle-aged Budget Shoppers
+2769,Male,30,768693,53,Young Active Spenders
+2770,Male,27,1332211,95,Young Premium Spenders
+2771,Female,42,523325,53,Middle-aged Budget Shoppers
+2772,Female,58,997984,22,Senior Conservative
+2773,Male,45,1369555,33,High-income Cautious
+2774,Female,54,1463470,30,High-income Cautious
+2775,Female,26,1278682,81,Young Premium Spenders
+2776,Female,50,1308138,40,High-income Cautious
+2777,Female,27,1356231,88,Young Premium Spenders
+2778,Female,47,922898,20,Senior Conservative
+2779,Male,22,1336593,81,Young Premium Spenders
+2780,Female,30,1062659,87,Young Premium Spenders
+2781,Male,30,1229327,92,Young Premium Spenders
+2782,Female,55,953414,21,Senior Conservative
+2783,Male,60,1245159,27,High-income Cautious
+2784,Female,33,545193,56,Middle-aged Budget Shoppers
+2785,Female,41,481909,64,Middle-aged Budget Shoppers
+2786,Female,47,581796,50,Middle-aged Budget Shoppers
+2787,Female,29,693812,78,Young Active Spenders
+2788,Female,41,566735,54,Middle-aged Budget Shoppers
+2789,Female,38,742015,71,Young Active Spenders
+2790,Female,43,554913,44,Middle-aged Budget Shoppers
+2791,Female,42,593259,44,Middle-aged Budget Shoppers
+2792,Female,27,765695,56,Young Active Spenders
+2793,Female,50,557293,49,Middle-aged Budget Shoppers
+2794,Male,58,1112605,16,Senior Conservative
+2795,Male,46,792807,53,Middle-aged Budget Shoppers
+2796,Male,58,1258419,34,High-income Cautious
+2797,Male,56,944660,22,Senior Conservative
+2798,Female,25,1118008,80,Young Premium Spenders
+2799,Male,51,1487405,30,High-income Cautious
+2800,Male,52,995379,17,Senior Conservative
+2801,Female,42,752047,42,Middle-aged Budget Shoppers
+2802,Female,45,510147,38,Middle-aged Budget Shoppers
+2803,Female,31,636724,68,Young Active Spenders
+2804,Male,38,831217,58,Young Active Spenders
+2805,Male,43,510436,44,Middle-aged Budget Shoppers
+2806,Male,57,1360052,38,High-income Cautious
+2807,Male,56,862371,11,Senior Conservative
+2808,Female,28,830864,68,Young Active Spenders
+2809,Female,45,599645,43,Middle-aged Budget Shoppers
+2810,Female,49,1369966,28,High-income Cautious
+2811,Male,62,913682,21,Senior Conservative
+2812,Female,52,832779,10,Senior Conservative
+2813,Female,46,529808,51,Middle-aged Budget Shoppers
+2814,Female,25,1220976,89,Young Premium Spenders
+2815,Male,55,972233,19,Senior Conservative
+2816,Male,50,343280,50,Middle-aged Budget Shoppers
+2817,Male,35,487532,51,Middle-aged Budget Shoppers
+2818,Male,56,995614,15,Senior Conservative
+2819,Male,42,264097,47,Middle-aged Budget Shoppers
+2820,Female,44,468882,60,Middle-aged Budget Shoppers
+2821,Male,54,917122,18,Senior Conservative
+2822,Male,27,864334,81,Young Active Spenders
+2823,Female,39,868390,54,Young Active Spenders
+2824,Female,43,474052,47,Middle-aged Budget Shoppers
+2825,Male,40,474505,41,Middle-aged Budget Shoppers
+2826,Female,36,631612,62,Middle-aged Budget Shoppers
+2827,Female,55,1494052,32,High-income Cautious
+2828,Female,42,594714,47,Middle-aged Budget Shoppers
+2829,Female,47,1373972,35,High-income Cautious
+2830,Female,39,390542,47,Middle-aged Budget Shoppers
+2831,Male,39,563594,55,Middle-aged Budget Shoppers
+2832,Male,46,560218,58,Middle-aged Budget Shoppers
+2833,Male,33,664849,60,Young Active Spenders
+2834,Male,26,815964,66,Young Active Spenders
+2835,Male,46,407872,48,Middle-aged Budget Shoppers
+2836,Male,52,872990,31,Senior Conservative
+2837,Male,63,770962,18,Senior Conservative
+2838,Male,36,866676,82,Young Active Spenders
+2839,Male,43,591371,32,Middle-aged Budget Shoppers
+2840,Female,27,703122,80,Young Active Spenders
+2841,Male,34,823034,74,Young Active Spenders
+2842,Male,24,636069,78,Young Active Spenders
+2843,Female,47,1436916,45,High-income Cautious
+2844,Male,34,632309,50,Middle-aged Budget Shoppers
+2845,Male,50,488747,42,Middle-aged Budget Shoppers
+2846,Female,27,699871,75,Young Active Spenders
+2847,Female,65,790236,27,Senior Conservative
+2848,Female,28,1186975,82,Young Premium Spenders
+2849,Male,46,448359,48,Middle-aged Budget Shoppers
+2850,Male,25,590875,61,Young Active Spenders
+2851,Female,31,749002,69,Young Active Spenders
+2852,Male,28,784607,66,Young Active Spenders
+2853,Female,40,506952,46,Middle-aged Budget Shoppers
+2854,Male,53,1500000,36,High-income Cautious
+2855,Female,21,1165480,82,Young Premium Spenders
+2856,Female,66,1048378,27,Senior Conservative
+2857,Male,26,1001681,70,Young Premium Spenders
+2858,Female,27,601289,69,Young Active Spenders
+2859,Male,62,765110,18,Senior Conservative
+2860,Male,44,565175,53,Middle-aged Budget Shoppers
+2861,Male,55,1246258,31,High-income Cautious
+2862,Male,57,909359,24,Senior Conservative
+2863,Female,26,1248308,72,Young Premium Spenders
+2864,Female,21,1174927,86,Young Premium Spenders
+2865,Female,31,856781,69,Young Active Spenders
+2866,Female,65,823082,28,Senior Conservative
+2867,Male,29,1327761,100,Young Premium Spenders
+2868,Male,31,667630,71,Young Active Spenders
+2869,Female,34,757404,66,Young Active Spenders
+2870,Female,48,843565,29,Senior Conservative
+2871,Male,37,734829,87,Young Active Spenders
+2872,Female,40,497371,50,Middle-aged Budget Shoppers
+2873,Male,29,770024,74,Young Active Spenders
+2874,Male,61,841246,32,Senior Conservative
+2875,Male,34,443750,54,Middle-aged Budget Shoppers
+2876,Male,30,704276,80,Young Active Spenders
+2877,Male,41,1407189,36,High-income Cautious
+2878,Male,28,747491,58,Young Active Spenders
+2879,Male,50,1487888,36,High-income Cautious
+2880,Male,52,1004789,29,Senior Conservative
+2881,Male,38,539471,52,Middle-aged Budget Shoppers
+2882,Female,32,762671,61,Young Active Spenders
+2883,Male,21,1405074,90,Young Premium Spenders
+2884,Female,54,877575,19,Senior Conservative
+2885,Male,57,1500000,29,High-income Cautious
+2886,Female,27,1351939,79,Young Premium Spenders
+2887,Female,52,1286899,42,High-income Cautious
+2888,Male,49,1500000,29,High-income Cautious
+2889,Female,58,1374101,34,High-income Cautious
+2890,Male,43,503054,47,Middle-aged Budget Shoppers
+2891,Male,32,1049012,77,Young Premium Spenders
+2892,Male,42,1331356,41,High-income Cautious
+2893,Male,30,1203304,84,Young Premium Spenders
+2894,Female,40,607457,55,Middle-aged Budget Shoppers
+2895,Female,28,988737,66,Young Premium Spenders
+2896,Male,35,961679,69,Young Active Spenders
+2897,Male,33,322524,44,Middle-aged Budget Shoppers
+2898,Female,43,407269,41,Middle-aged Budget Shoppers
+2899,Male,44,389442,44,Middle-aged Budget Shoppers
+2900,Male,29,762159,65,Young Active Spenders
+2901,Female,47,1231496,24,High-income Cautious
+2902,Male,44,620284,45,Middle-aged Budget Shoppers
+2903,Male,42,568739,35,Middle-aged Budget Shoppers
+2904,Male,30,860679,76,Young Active Spenders
+2905,Male,28,1159860,89,Young Premium Spenders
+2906,Female,51,1477437,47,High-income Cautious
+2907,Female,46,439422,43,Middle-aged Budget Shoppers
+2908,Male,27,1284158,92,Young Premium Spenders
+2909,Female,22,1271777,80,Young Premium Spenders
+2910,Male,54,1217992,36,High-income Cautious
+2911,Male,62,804642,29,Senior Conservative
+2912,Male,46,1333484,37,High-income Cautious
+2913,Male,58,743131,15,Senior Conservative
+2914,Female,61,1062940,19,Senior Conservative
+2915,Male,56,972306,20,Senior Conservative
+2916,Female,25,1304509,81,Young Premium Spenders
+2917,Male,31,649209,71,Young Active Spenders
+2918,Male,47,1496608,33,High-income Cautious
+2919,Male,46,656016,20,Senior Conservative
+2920,Female,38,489924,33,Middle-aged Budget Shoppers
+2921,Female,23,1131387,84,Young Premium Spenders
+2922,Male,54,833144,30,Senior Conservative
+2923,Female,49,1465708,40,High-income Cautious
+2924,Female,64,853803,15,Senior Conservative
+2925,Male,50,1469032,33,High-income Cautious
+2926,Female,27,1145859,87,Young Premium Spenders
+2927,Female,29,1239247,88,Young Premium Spenders
+2928,Male,40,505251,47,Middle-aged Budget Shoppers
+2929,Female,32,865671,81,Young Active Spenders
+2930,Female,30,706260,80,Young Active Spenders
+2931,Male,52,1048280,24,Senior Conservative
+2932,Female,44,525053,52,Middle-aged Budget Shoppers
+2933,Female,60,767938,31,Senior Conservative
+2934,Male,32,689337,66,Young Active Spenders
+2935,Male,62,855596,25,Senior Conservative
+2936,Male,39,478554,41,Middle-aged Budget Shoppers
+2937,Female,51,1394694,26,High-income Cautious
+2938,Female,46,1439986,36,High-income Cautious
+2939,Female,28,1124962,81,Young Premium Spenders
+2940,Male,59,947272,27,Senior Conservative
+2941,Female,26,715176,66,Young Active Spenders
+2942,Male,38,315664,51,Middle-aged Budget Shoppers
+2943,Male,38,489989,50,Middle-aged Budget Shoppers
+2944,Female,58,1448992,44,High-income Cautious
+2945,Female,38,321319,46,Middle-aged Budget Shoppers
+2946,Female,26,712801,82,Young Active Spenders
+2947,Male,27,573375,75,Young Active Spenders
+2948,Male,54,1447815,42,High-income Cautious
+2949,Female,25,1290297,91,Young Premium Spenders
+2950,Female,50,1491503,36,High-income Cautious
+2951,Male,49,1401789,45,High-income Cautious
+2952,Female,55,707100,21,Senior Conservative
+2953,Male,41,743546,67,Young Active Spenders
+2954,Female,39,372665,45,Middle-aged Budget Shoppers
+2955,Female,46,1430616,39,High-income Cautious
+2956,Male,29,788750,78,Young Active Spenders
+2957,Female,51,1483608,26,High-income Cautious
+2958,Female,59,960112,14,Senior Conservative
+2959,Female,46,625005,51,Middle-aged Budget Shoppers
+2960,Male,29,793119,78,Young Active Spenders
+2961,Female,43,535191,40,Middle-aged Budget Shoppers
+2962,Male,50,1409035,32,High-income Cautious
+2963,Female,27,1047373,88,Young Premium Spenders
+2964,Male,27,726998,77,Young Active Spenders
+2965,Female,20,999583,80,Young Premium Spenders
+2966,Male,48,1387234,34,High-income Cautious
+2967,Male,61,709913,30,Senior Conservative
+2968,Female,36,687296,50,Young Active Spenders
+2969,Male,45,1297322,39,High-income Cautious
+2970,Male,30,798426,76,Young Active Spenders
+2971,Male,57,862544,20,Senior Conservative
+2972,Male,29,1352879,97,Young Premium Spenders
+2973,Female,28,732596,85,Young Active Spenders
+2974,Male,60,945076,21,Senior Conservative
+2975,Male,42,1499070,44,High-income Cautious
+2976,Female,25,1247097,87,Young Premium Spenders
+2977,Female,22,1133341,93,Young Premium Spenders
+2978,Male,41,491515,41,Middle-aged Budget Shoppers
+2979,Female,41,1331072,23,High-income Cautious
+2980,Female,55,1003423,24,Senior Conservative
+2981,Female,44,444689,46,Middle-aged Budget Shoppers
+2982,Male,29,789084,81,Young Active Spenders
+2983,Female,35,622103,75,Young Active Spenders
+2984,Female,45,433757,34,Middle-aged Budget Shoppers
+2985,Male,53,1288826,44,High-income Cautious
+2986,Female,62,831563,21,Senior Conservative
+2987,Female,32,383144,47,Middle-aged Budget Shoppers
+2988,Male,20,1223203,95,Young Premium Spenders
+2989,Male,26,716430,67,Young Active Spenders
+2990,Male,58,1496879,42,High-income Cautious
+2991,Female,43,602826,48,Middle-aged Budget Shoppers
+2992,Female,25,1141985,87,Young Premium Spenders
+2993,Male,42,435347,53,Middle-aged Budget Shoppers
+2994,Female,28,1084131,78,Young Premium Spenders
+2995,Female,47,1435858,33,High-income Cautious
+2996,Male,41,642045,41,Middle-aged Budget Shoppers
+2997,Male,57,766885,29,Senior Conservative
+2998,Male,55,977146,20,Senior Conservative
+2999,Male,37,439009,55,Middle-aged Budget Shoppers
+3000,Female,62,968805,17,Senior Conservative

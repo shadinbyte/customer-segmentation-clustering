@@ -1,0 +1,42 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# 🧪 Virtual Environments
+venv/
+.venv/
+
+# ⚙️ Environment Variables
+.env
+.env.*
+
+# 🪣 Build / Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 🗑️ IDE / Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🧩 Logs / Databases
+*.log
+*.sqlite3
+db.sqlite3
+
+# 🪄 Node / Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# 🧰 OS Files
+.DS_Store
+Thumbs.db
