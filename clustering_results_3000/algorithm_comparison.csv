@@ -1,4 +1,0 @@
-Algorithm,Silhouette,Davies_Bouldin,Calinski_Harabasz,Clusters,Validation_ARI,Silhouette_num
-KMeans,0.5492,0.6507,6504,5,0.9689,0.5492
-Hierarchical,0.5457,0.6549,6438,5,0.9617,0.5457
-GMM,0.5489,0.6514,6496,5,0.9688,0.5489
