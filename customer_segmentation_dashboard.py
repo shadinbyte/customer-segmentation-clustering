@@ -17,6 +17,8 @@ Technical Stack:
     - Plotly: Interactive visualizations
     - Pandas/NumPy: Data processing
 
+📊 Data → 🔍 Clustering → 🛍️ Products → 📈 Plan
+
 Author: Shadin
 Version: 2.0.0
 Date: November 2025
@@ -670,6 +672,7 @@ class ClusterInsight:
     spending_group: str
     recommendation: str
     priority: str
+    spending_category: str = ""
 
 
 class BusinessIntelligence:
@@ -1103,8 +1106,7 @@ class CustomerSegmentationDashboard:
             [
                 "📊 Data Overview",
                 "🔍 Clustering Analysis",
-                "💡 Business Insights",
-                "🛍️ Product Recommendations",
+                "📦 Product Recommendations",
                 "📈 Action Plan",
             ]
         )
@@ -1116,12 +1118,9 @@ class CustomerSegmentationDashboard:
             self._render_clustering_tab()
 
         with tabs[2]:
-            self._render_insights_tab()
-
-        with tabs[3]:
             self._render_recommendations_tab()
 
-        with tabs[4]:
+        with tabs[3]:
             self._render_action_plan_tab()
 
     def _render_data_overview_tab(self) -> None:
@@ -1320,77 +1319,9 @@ class CustomerSegmentationDashboard:
         else:
             st.info("👆 Click the button above to run clustering analysis")
 
-    def _render_insights_tab(self) -> None:
-        """Render business insights tab."""
-        st.header("💡 Business Insights")
-
-        if "insights" not in st.session_state or not st.session_state["insights"]:
-            st.info("📊 Run clustering analysis to see business insights")
-            return
-
-        insights = st.session_state["insights"]
-
-        # Summary metrics
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            st.metric("Total Clusters", len(insights))
-        with col2:
-            # Handle both dataclass and dict formats
-            largest = max(
-                insights, key=lambda x: x.size if hasattr(x, "size") else x["size"]
-            )
-            size = largest.size if hasattr(largest, "size") else largest["size"]
-            pct = (
-                largest.percentage
-                if hasattr(largest, "percentage")
-                else largest["percentage"]
-            )
-            st.metric("Largest Cluster", f"{size:,} ({pct:.1f}%)")
-        with col3:
-            high_priority = sum(
-                1
-                for i in insights
-                if "High" in (i.priority if hasattr(i, "priority") else i["priority"])
-            )
-            st.metric("High Priority Segments", high_priority)
-
-        st.markdown("---")
-
-        # Display each cluster
-        for insight in insights:
-            with st.expander(
-                f"🎯 Cluster {insight.cluster_id} - {insight.size:,} customers "
-                f"({insight.percentage:.1f}%) - {insight.priority}",
-                expanded=True,
-            ):
-                col1, col2 = st.columns(2)
-
-                with col1:
-                    st.markdown("#### 📈 Cluster Profile")
-                    st.markdown(
-                        f"""
-                    - **Average Age:** {insight.avg_age:.1f} years ({insight.age_group})
-                    - **Average Income:** BDT {insight.avg_income:,.0f} ({insight.income_group})
-                    - **Spending Score:** {insight.avg_spending:.1f} ({insight.spending_group})
-                    - **Dominant Gender:** {insight.dominant_gender}
-                    - **Market Share:** {insight.percentage:.1f}%
-                    """
-                    )
-
-                with col2:
-                    st.markdown("#### 🎯 Business Strategy")
-                    st.success(f"**💡 Recommendation:**\n{insight.recommendation}")
-
-                    if "High" in insight.priority:
-                        st.error(f"{insight.priority} - Focus marketing efforts here")
-                    elif "Medium" in insight.priority:
-                        st.warning(f"{insight.priority} - Moderate attention needed")
-                    else:
-                        st.info(f"{insight.priority} - Maintain current engagement")
-
     def _render_recommendations_tab(self) -> None:
         """Render product recommendations tab."""
-        st.header("🛍️ Product Recommendations by Cluster")
+        st.header("📦 Product Recommendations by Cluster")
 
         if "insights" not in st.session_state or not st.session_state["insights"]:
             st.info("📊 Run clustering analysis to see product recommendations")
@@ -1399,31 +1330,48 @@ class CustomerSegmentationDashboard:
         insights = st.session_state["insights"]
 
         for insight in insights:
-            recs, demo_insight = self.product_engine.generate_recommendations(
-                insight.age_group,
-                insight.income_group,
-                insight.spending_group,
-                insight.avg_age,
-            )
+            # ADD SPENDING SCORE DISPLAY
+            spending_display = f"{insight.avg_spending:.1f}/100"
 
             with st.expander(
                 f"🎯 Cluster {insight.cluster_id} - {insight.size:,} customers - "
-                f"{insight.age_group}, {insight.income_group} Income",
+                f"{insight.age_group}, {insight.income_group} Income | "
+                f"💰 Spending: {spending_display}",  # ← NEW
                 expanded=True,
             ):
+                # OPTIONAL: Add metric box at top
+                col1, col2, col3, col4 = st.columns(4)
+                with col1:
+                    st.metric("Cluster Size", f"{insight.size:,}")
+                with col2:
+                    st.metric("Avg Age", f"{insight.avg_age:.1f}y")
+                with col3:
+                    st.metric("Avg Income", f"BDT {insight.avg_income:,.0f}")
+                with col4:
+                    st.metric("Spending Score", f"{insight.avg_spending:.1f}")
+
+                st.markdown("---")
+
                 # Demographic insights
+                recs, demo_insight = self.product_engine.generate_recommendations(
+                    insight.age_group,
+                    insight.income_group,
+                    insight.spending_group,
+                    insight.avg_age,
+                )
+
                 st.info(
                     f"""
-                **{demo_insight.demographic}**
+                    **{demo_insight.demographic}**
 
-                **Behavior**: {demo_insight.behavior}
+                    **Behavior**: {demo_insight.behavior}
 
-                **Approach**: {demo_insight.approach}
-                """
+                    **Approach**: {demo_insight.approach}
+                    """
                 )
 
                 st.markdown("---")
-                st.markdown("#### 🛍️ Recommended Products")
+                st.markdown("#### 📦 Recommended Products")
 
                 # Display recommendations
                 for rec in recs:
@@ -1466,41 +1414,136 @@ class CustomerSegmentationDashboard:
 
         insights = st.session_state["insights"]
 
-        # Priority-based recommendations
-        col1, col2 = st.columns(2)
+        st.markdown("### 🎯 Action Plan by Priority Level")
 
-        with col1:
-            st.markdown("#### 🔴 High Priority Actions")
-            high_priority = [i for i in insights if "High" in i.priority]
-
-            for cluster in high_priority:
-                st.markdown(
-                    f"""
-                **Cluster {cluster.cluster_id}** ({cluster.size:,} customers)
-                - {cluster.recommendation}
-                - Estimated Impact: High
-                - Timeline: 3-6 months
-                """
-                )
-                st.markdown("---")
-
-        with col2:
-            st.markdown("#### 🟡 Medium Priority Actions")
-            medium_priority = [i for i in insights if "Medium" in i.priority]
-
-            for cluster in medium_priority:
-                st.markdown(
-                    f"""
-                **Cluster {cluster.cluster_id}** ({cluster.size:,} customers)
-                - {cluster.recommendation}
-                - Estimated Impact: Moderate
-                - Timeline: 6-12 months
-                """
-                )
-                st.markdown("---")
-
-        # Export functionality
+        # Display ALL clusters organized by priority
         st.markdown("---")
+
+        # 🔴 HIGH PRIORITY CLUSTERS
+        st.markdown("#### 🔴 HIGH PRIORITY ACTIONS")
+        high_priority = [i for i in insights if "High" in i.priority]
+
+        if high_priority:
+            for cluster in high_priority:
+                with st.expander(
+                    f"Cluster {cluster.cluster_id} - {cluster.size:,} customers ({cluster.percentage:.1f}%)",
+                    expanded=True,
+                ):
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        st.markdown(
+                            f"""
+                        **Segment Profile:**
+                        - Age: {cluster.avg_age:.1f} years ({cluster.age_group})
+                        - Income: BDT {cluster.avg_income:,.0f} ({cluster.income_group})
+                        - Spending: {cluster.avg_spending:.1f}/100 ({cluster.spending_group})
+
+                        **Strategy:**
+                        {cluster.recommendation}
+
+                        **Expected Impact:** High
+                        **Timeline:** 3-6 months
+                        """
+                        )
+
+                    with col2:
+                        st.metric("Market Share", f"{cluster.percentage:.1f}%")
+                        st.metric("Revenue Potential", "High")
+        else:
+            st.info("No high priority segments")
+
+        st.markdown("---")
+
+        # 🟡 MEDIUM PRIORITY CLUSTERS
+        st.markdown("#### 🟡 MEDIUM PRIORITY ACTIONS")
+        medium_priority = [i for i in insights if "Medium" in i.priority]
+
+        if medium_priority:
+            for cluster in medium_priority:
+                with st.expander(
+                    f"Cluster {cluster.cluster_id} - {cluster.size:,} customers ({cluster.percentage:.1f}%)",
+                    expanded=False,
+                ):
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        st.markdown(
+                            f"""
+                        **Segment Profile:**
+                        - Age: {cluster.avg_age:.1f} years ({cluster.age_group})
+                        - Income: BDT {cluster.avg_income:,.0f} ({cluster.income_group})
+                        - Spending: {cluster.avg_spending:.1f}/100 ({cluster.spending_group})
+
+                        **Strategy:**
+                        {cluster.recommendation}
+
+                        **Expected Impact:** Moderate
+                        **Timeline:** 6-12 months
+                        """
+                        )
+
+                    with col2:
+                        st.metric("Market Share", f"{cluster.percentage:.1f}%")
+                        st.metric("Revenue Potential", "Moderate")
+        else:
+            st.info("No medium priority segments")
+
+        st.markdown("---")
+
+        # 🟢 LOW PRIORITY CLUSTERS
+        st.markdown("#### 🟢 LOW PRIORITY ACTIONS")
+        low_priority = [i for i in insights if "Low" in i.priority]
+
+        if low_priority:
+            for cluster in low_priority:
+                with st.expander(
+                    f"Cluster {cluster.cluster_id} - {cluster.size:,} customers ({cluster.percentage:.1f}%)",
+                    expanded=False,
+                ):
+                    col1, col2 = st.columns([2, 1])
+
+                    with col1:
+                        st.markdown(
+                            f"""
+                        **Segment Profile:**
+                        - Age: {cluster.avg_age:.1f} years ({cluster.age_group})
+                        - Income: BDT {cluster.avg_income:,.0f} ({cluster.income_group})
+                        - Spending: {cluster.avg_spending:.1f}/100 ({cluster.spending_group})
+
+                        **Strategy:**
+                        {cluster.recommendation}
+
+                        **Expected Impact:** Low
+                        **Timeline:** Ongoing maintenance
+                        """
+                        )
+
+                    with col2:
+                        st.metric("Market Share", f"{cluster.percentage:.1f}%")
+                        st.metric("Revenue Potential", "Low")
+        else:
+            st.info("No low priority segments")
+
+        st.markdown("---")
+
+        # BUDGET ALLOCATION
+        st.markdown("### 💰 Recommended Budget Allocation")
+
+        budget_data = {
+            "Priority": ["High Priority", "Medium Priority", "Low Priority"],
+            "Budget %": [50, 35, 15],
+            "Reason": [
+                "Maximum ROI focus",
+                "Optimization efforts",
+                "Maintenance campaigns",
+            ],
+        }
+        st.dataframe(budget_data, use_container_width=True)
+
+        st.markdown("---")
+
+        # EXPORT FUNCTIONALITY
         st.markdown("### 📥 Export Results")
 
         col1, col2 = st.columns(2)
@@ -1520,10 +1563,24 @@ class CustomerSegmentationDashboard:
                 )
 
         with col2:
-            insights_df = pd.DataFrame([vars(i) for i in insights])
+            insights_df = pd.DataFrame(
+                [
+                    {
+                        "Cluster": i.cluster_id,
+                        "Size": i.size,
+                        "Market %": f"{i.percentage:.1f}%",
+                        "Avg Age": f"{i.avg_age:.1f}",
+                        "Avg Income": f"BDT {i.avg_income:,.0f}",
+                        "Avg Spending": f"{i.avg_spending:.1f}",
+                        "Priority": i.priority,
+                        "Strategy": i.recommendation,
+                    }
+                    for i in insights
+                ]
+            )
             csv = insights_df.to_csv(index=False)
             st.download_button(
-                label="💡 Download Insights Summary (CSV)",
+                label="💡 Download Insights (CSV)",
                 data=csv,
                 file_name="cluster_insights_summary.csv",
                 mime="text/csv",
