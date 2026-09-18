@@ -31,9 +31,8 @@ import warnings
 from dataclasses import dataclass
 from enum import Enum
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import List, Optional, Tuple
 
-import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 import plotly.express as px
@@ -49,6 +48,17 @@ from sklearn.metrics import (
 )
 from sklearn.mixture import GaussianMixture
 from sklearn.preprocessing import StandardScaler
+
+from business_rules import (
+    IncomeCategory,
+    SpendingCategory,
+    categorize_age,
+    categorize_income,
+    categorize_spending,
+    generate_marketing_strategy,
+    generate_product_suggestions,
+    segment_priority,
+)
 
 # Suppress warnings for cleaner output
 warnings.filterwarnings("ignore")
@@ -110,12 +120,8 @@ class ClusterAlgorithm(str, Enum):
     GAUSSIAN_MIXTURE = "Gaussian Mixture"
 
 
-class SegmentPriority(str, Enum):
-    """Business priority levels for customer segments."""
-
-    HIGH = "🔴 High"
-    MEDIUM = "🟡 Medium"
-    LOW = "🟢 Low"
+# Business priority levels (SegmentPriority) live in business_rules.py now,
+# shared with the analysis pipeline.
 
 
 # STREAMLIT PAGE CONFIGURATION
@@ -300,11 +306,6 @@ class ClusteringResult:
     adjusted_rand_index: Optional[float] = None
     warning_message: Optional[str] = None
 
-    @property
-    def is_valid(self) -> bool:
-        """Check if clustering produced valid results."""
-        return self.labels is not None and self.n_clusters > 1
-
 
 class ClusteringEngine:
     """Handles all clustering operations with caching."""
@@ -313,7 +314,16 @@ class ClusteringEngine:
         self.config = config
 
     @staticmethod
-    @st.cache_data(show_spinner=False, hash_funcs={pd.Series: lambda x: id(x)})
+    @st.cache_data(
+        show_spinner=False,
+        # Hash on the Series' actual values, not its object identity. id()
+        # only worked here by coincidence (the same in-memory Series was
+        # reused across reruns); two Series with identical values but
+        # different identities would have looked like a cache miss.
+        hash_funcs={
+            pd.Series: lambda x: pd.util.hash_pandas_object(x).values.tobytes()
+        },
+    )
     def perform_clustering(
         X_scaled: np.ndarray,
         algorithm: str,
@@ -672,45 +682,19 @@ class ClusterInsight:
     spending_group: str
     recommendation: str
     priority: str
-    spending_category: str = ""
 
 
 class BusinessIntelligence:
     """Generates business insights and recommendations."""
 
-    @staticmethod
-    def categorize_age(age: float) -> str:
-        """Categorize age into groups."""
-        if age < 30:
-            return "Young"
-        elif age < 50:
-            return "Middle-aged"
-        else:
-            return "Senior"
-
-    @staticmethod
-    def categorize_income(income: float) -> str:
-        """Categorize income into groups."""
-        if income < 500000:
-            return "Low"
-        elif income < 1000000:
-            return "Medium"
-        else:
-            return "High"
-
-    @staticmethod
-    def categorize_spending(spending: float) -> str:
-        """Categorize spending into groups."""
-        if spending < 40:
-            return "Low"
-        elif spending < 70:
-            return "Medium"
-        else:
-            return "High"
+    # categorize_age/income/spending and the strategy text now live in
+    # business_rules.py, shared with the analysis pipeline, so the two
+    # entry points can't quietly drift apart again (see AUDIT_REPORT.md,
+    # section 5.4).
 
     @staticmethod
     def generate_recommendation(
-        income_group: str, spending_group: str
+        income_group: str, spending_group: str, market_share_pct: Optional[float] = None
     ) -> Tuple[str, str]:
         """
         Generate business recommendation and priority.
@@ -718,26 +702,13 @@ class BusinessIntelligence:
         Returns:
             Tuple of (recommendation, priority)
         """
-        if spending_group == "High" and income_group == "High":
-            return (
-                "Premium products, VIP programs, exclusive offers, personalized service",
-                SegmentPriority.HIGH.value,
-            )
-        elif spending_group == "High" and income_group in ["Medium", "Low"]:
-            return (
-                "Value bundles, loyalty rewards, quality products at competitive prices",
-                SegmentPriority.MEDIUM.value,
-            )
-        elif spending_group == "Low" and income_group == "High":
-            return (
-                "Trust-building campaigns, product demonstrations, value proposition focus",
-                SegmentPriority.MEDIUM.value,
-            )
-        else:
-            return (
-                "Standard campaigns, seasonal promotions, volume discounts",
-                SegmentPriority.LOW.value,
-            )
+        income_cat = IncomeCategory(income_group)
+        spending_cat = SpendingCategory(spending_group)
+        recommendation = generate_marketing_strategy(
+            income_cat, spending_cat, market_share_pct
+        )
+        priority = segment_priority(income_cat, spending_cat)
+        return recommendation, priority.value
 
     @staticmethod
     @st.cache_data(show_spinner=False)
@@ -772,13 +743,13 @@ class BusinessIntelligence:
             )
 
             # Categorize
-            age_group = BusinessIntelligence.categorize_age(avg_age)
-            income_group = BusinessIntelligence.categorize_income(avg_income)
-            spending_group = BusinessIntelligence.categorize_spending(avg_spending)
+            age_group = categorize_age(avg_age).value
+            income_group = categorize_income(avg_income).value
+            spending_group = categorize_spending(avg_spending).value
 
             # Generate recommendation
             recommendation, priority = BusinessIntelligence.generate_recommendation(
-                income_group, spending_group
+                income_group, spending_group, percentage
             )
 
             insights.append(
@@ -808,15 +779,20 @@ class BusinessIntelligence:
 
 
 # PRODUCT RECOMMENDATION ENGINE
+#
+# The category/price_tier/reason text below are heuristic examples, not
+# something derived from purchase data - this dataset has no transaction
+# history. spending_index is the one number that's actually computed
+# from the cluster's data. See business_rules.py for the full note.
 
 
 @dataclass
 class ProductRecommendation:
-    """Product recommendation with business rationale."""
+    """Illustrative product-category suggestion, not a data-derived recommendation."""
 
-    product: str
-    price: str
-    conversion: str
+    category: str
+    price_tier: str
+    spending_index: str
     priority: str
     reason: str
     strategy: str
@@ -832,7 +808,7 @@ class DemographicInsight:
 
 
 class ProductRecommendationEngine:
-    """Generates product recommendations based on cluster characteristics."""
+    """Generates illustrative product-category suggestions for a cluster."""
 
     @staticmethod
     def get_demographic_insight(age_group: str) -> DemographicInsight:
@@ -858,100 +834,51 @@ class ProductRecommendationEngine:
 
     @staticmethod
     def generate_recommendations(
-        age_group: str, income_group: str, spending_group: str, avg_age: float
+        age_group: str,
+        income_group: str,
+        spending_group: str,
+        avg_spending: float,
+        population_avg_spending: float,
     ) -> Tuple[List[ProductRecommendation], DemographicInsight]:
         """
-        Generate product recommendations for a cluster.
+        Generate illustrative product-category suggestions for a cluster.
 
         Args:
             age_group: Age category
             income_group: Income category
             spending_group: Spending category
-            avg_age: Average age
+            avg_spending: Segment's average Spending Score
+            population_avg_spending: Whole dataset's average Spending Score
 
         Returns:
-            Tuple of (recommendations_list, demographic_insight)
+            Tuple of (suggestions_list, demographic_insight)
         """
-        # Get demographic insights
         demo_insight = ProductRecommendationEngine.get_demographic_insight(age_group)
 
-        recommendations = []
+        suggestions = generate_product_suggestions(
+            IncomeCategory(income_group),
+            SpendingCategory(spending_group),
+            avg_spending,
+            population_avg_spending,
+        )
 
-        # High Income + High Spending
-        if income_group == "High" and spending_group == "High":
-            recommendations = [
-                ProductRecommendation(
-                    product="📱 iPhone Pro Max",
-                    price="BDT 140,000 - 180,000",
-                    conversion="High (75-85%)",
-                    priority="🔴 Primary Target",
-                    reason="High purchasing power with willingness to spend on premium products.",
-                    strategy="VIP early access, exclusive events, premium service packages",
-                ),
-                ProductRecommendation(
-                    product="💻 MacBook Pro",
-                    price="BDT 180,000 - 280,000",
-                    conversion="High (70-80%)",
-                    priority="🔴 Primary Target",
-                    reason="Professional segment seeking premium productivity tools.",
-                    strategy="B2B partnerships, corporate bundles, professional support",
-                ),
-            ]
+        strategy_by_tier = {
+            "Premium": "VIP early access, exclusive events, premium service packages",
+            "Mid-range": "Flexible payment plans, bundle offers, loyalty rewards",
+            "Budget": "Affordability focus, quality assurance, first-buyer incentives",
+        }
 
-        # High Income + Low Spending
-        elif income_group == "High" and spending_group in ["Low", "Medium"]:
-            recommendations = [
-                ProductRecommendation(
-                    product="🖥️ HP Business Laptop",
-                    price="BDT 65,000 - 95,000",
-                    conversion="High (70-80%)",
-                    priority="🔴 Primary Target",
-                    reason="Value-conscious despite high income. Seeks quality at reasonable prices.",
-                    strategy="Emphasize ROI, durability, warranty, customer reviews",
-                ),
-            ]
-
-        # Medium/Low Income + High Spending
-        elif income_group in ["Low", "Medium"] and spending_group == "High":
-            recommendations = [
-                ProductRecommendation(
-                    product="🖥️ HP Mid-Range Laptop",
-                    price="BDT 45,000 - 70,000",
-                    conversion="High (75-85%)",
-                    priority="🔴 Primary Target",
-                    reason="Aspirational but affordable. EMI options make it accessible.",
-                    strategy="Flexible payment plans, 0% EMI, student discounts",
-                ),
-                ProductRecommendation(
-                    product="🎧 Wireless Headphones",
-                    price="BDT 3,000 - 8,000",
-                    conversion="High (70-80%)",
-                    priority="🔴 Primary Target",
-                    reason="Lifestyle accessory within budget with perceived value.",
-                    strategy="Social media campaigns, influencer marketing, cashback offers",
-                ),
-            ]
-
-        # Default recommendations
-        else:
-            recommendations = [
-                ProductRecommendation(
-                    product="🎧 Budget Headphones",
-                    price="BDT 1,500 - 3,500",
-                    conversion="High (75-85%)",
-                    priority="🔴 Primary Target",
-                    reason="Essential accessory at accessible price point.",
-                    strategy="Affordability focus, quality assurance, first-buyer incentives",
-                ),
-                ProductRecommendation(
-                    product="🔊 Basic Bluetooth Speaker",
-                    price="BDT 1,800 - 3,500",
-                    conversion="Medium (65-75%)",
-                    priority="🟡 Secondary Target",
-                    reason="Entry-level lifestyle product with volume sales potential.",
-                    strategy="Volume discounts, festival bonanzas, flash sales",
-                ),
-            ]
+        recommendations = [
+            ProductRecommendation(
+                category=s.category,
+                price_tier=s.price_tier,
+                spending_index=s.spending_index,
+                priority=s.priority,
+                reason=s.reason,
+                strategy=strategy_by_tier.get(s.price_tier, "Standard promotional mix"),
+            )
+            for s in suggestions
+        ]
 
         return recommendations, demo_insight
 
@@ -1322,12 +1249,18 @@ class CustomerSegmentationDashboard:
     def _render_recommendations_tab(self) -> None:
         """Render product recommendations tab."""
         st.header("📦 Product Recommendations by Cluster")
+        st.caption(
+            "Illustrative example categories built from age/income/spending "
+            "patterns only. This dataset has no purchase or transaction history, "
+            "so nothing here is a modeled conversion rate."
+        )
 
         if "insights" not in st.session_state or not st.session_state["insights"]:
             st.info("📊 Run clustering analysis to see product recommendations")
             return
 
         insights = st.session_state["insights"]
+        population_avg_spending = self.df["Spending Score (1-100)"].mean()
 
         for insight in insights:
             # ADD SPENDING SCORE DISPLAY
@@ -1357,7 +1290,8 @@ class CustomerSegmentationDashboard:
                     insight.age_group,
                     insight.income_group,
                     insight.spending_group,
-                    insight.avg_age,
+                    insight.avg_spending,
+                    population_avg_spending,
                 )
 
                 st.info(
@@ -1371,7 +1305,7 @@ class CustomerSegmentationDashboard:
                 )
 
                 st.markdown("---")
-                st.markdown("#### 📦 Recommended Products")
+                st.markdown("#### 📦 Example Categories")
 
                 # Display recommendations
                 for rec in recs:
@@ -1380,11 +1314,11 @@ class CustomerSegmentationDashboard:
                     with col1:
                         st.markdown(
                             f"""
-                        ### {rec.product}
+                        ### {rec.category}
                         **{rec.priority}**
 
-                        💰 **Price**: {rec.price}
-                        📈 **Conversion**: {rec.conversion}
+                        💰 **Price tier**: {rec.price_tier}
+                        📊 **Spending index**: {rec.spending_index}
                         """
                         )
 
@@ -1407,6 +1341,11 @@ class CustomerSegmentationDashboard:
     def _render_action_plan_tab(self) -> None:
         """Render action plan tab."""
         st.header("📈 Marketing Action Plan")
+        st.caption(
+            "Priority, expected impact, and budget split below are heuristic "
+            "starting points based on income/spending category, not predictions "
+            "from a model."
+        )
 
         if "insights" not in st.session_state or not st.session_state["insights"]:
             st.info("📊 Run clustering analysis to generate action plans")

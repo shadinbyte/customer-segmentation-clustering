@@ -6,7 +6,6 @@ Generates 3000 customers with realistic correlations and patterns
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import seaborn as sns
 
 # Set seed for reproducibility
 np.random.seed(42)
@@ -24,6 +23,12 @@ class RealisticCustomerGenerator:
         Generate 5 distinct customer segments with CLEAR SEPARATION
         Optimized for clustering algorithms to discover 5 distinct groups
         Reduced correlations to emphasize segment differences
+
+        Note: because these segments are hand-tuned Gaussian blobs with
+        tight, non-overlapping standard deviations, a clustering algorithm
+        recovering them well mainly proves the pipeline works correctly,
+        not that the same accuracy would hold on messier real customer
+        data with overlapping segments. See AUDIT_REPORT.md, section 4.2.
         """
 
         # Define 5 customer segments with CLEAR SEPARATION

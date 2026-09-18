@@ -14,8 +14,14 @@ Algorithm            Silhouette      Davies-Bouldin       Calinski-Harabasz
 --------------------------------------------------------------------------------
 KMeans               0.5492          0.6507               6504                
 Hierarchical         0.5457          0.6549               6438                
-DBSCAN               0.1837          5.2893               455                 
+DBSCAN               0.4647          1.4948               2578                
 GMM                  0.5489          0.6514               6496                
+
+ALGORITHM-SPECIFIC DETAILS
+--------------------------------------------------------------------------------
+KMeans: inertia=929.18871101391, n_iter=4
+DBSCAN: n_noise=328, eps=0.23524589981874452, min_samples=11
+GMM: bic=14664.684606608467, aic=14370.372595793606, converged=True
 
 Recommended Algorithm: KMeans (Highest Silhouette Score)
 
@@ -30,9 +36,9 @@ Cluster 0: 595 customers (19.8%)
   Gender: Female
   Marketing Strategy: Premium products, VIP programs, exclusive offers, personalized service
 
-  Top Product Recommendations:
-    - iPhone Pro Max: Premium segment with high purchasing power
-    - MacBook Pro: Affluent professionals seeking premium quality
+  Illustrative Product Suggestions (not data-derived):
+    - Premium electronics (flagship phones, laptops): Premium segment with high purchasing power
+    - Luxury lifestyle products: Affluent profile, high average spending
 
 Cluster 1: 649 customers (21.6%)
   Age: 41.4 years (Middle-aged)
@@ -41,20 +47,20 @@ Cluster 1: 649 customers (21.6%)
   Gender: Female
   Marketing Strategy: Mass market campaigns, seasonal promotions, volume discounts
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 2: 597 customers (19.9%)
   Age: 49.4 years (Middle-aged)
   Income: BDT 1,397,074 (High)
   Spending: 34.5 (Low)
   Gender: Male
-  Marketing Strategy: Trust-building campaigns, product demonstrations, value propositions
+  Marketing Strategy: Trust-building campaigns, product demonstrations, value proposition focus
 
-  Top Product Recommendations:
-    - HP Business Laptop: Value-conscious professionals
-    - Bluetooth Speaker: Low-risk entry point
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range business electronics: High income but a more price-conscious spending pattern
+    - Practical accessories: Low-risk entry point for this profile
 
 Cluster 3: 543 customers (18.1%)
   Age: 57.4 years (Senior)
@@ -63,9 +69,9 @@ Cluster 3: 543 customers (18.1%)
   Gender: Male
   Marketing Strategy: Entry-level products, first-purchase discounts, education campaigns
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 4: 616 customers (20.5%)
   Age: 31.3 years (Middle-aged)
@@ -74,9 +80,9 @@ Cluster 4: 616 customers (20.5%)
   Gender: Female
   Marketing Strategy: Value bundles, loyalty rewards, installment plans, quality assurance
 
-  Top Product Recommendations:
-    - HP Mid-Range Laptop: Aspirational buyers, offer financing
-    - Wireless Headphones: Lifestyle accessory within budget
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range electronics, financing available: Aspirational buyers; financing may help conversion
+    - Lifestyle accessories: Affordable within this segment's typical budget
 
 
 HIERARCHICAL - CLUSTER PROFILES
@@ -89,20 +95,20 @@ Cluster 0: 653 customers (21.8%)
   Gender: Female
   Marketing Strategy: Mass market campaigns, seasonal promotions, volume discounts
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 1: 596 customers (19.9%)
   Age: 49.4 years (Middle-aged)
   Income: BDT 1,397,329 (High)
   Spending: 34.5 (Low)
   Gender: Male
-  Marketing Strategy: Trust-building campaigns, product demonstrations, value propositions
+  Marketing Strategy: Trust-building campaigns, product demonstrations, value proposition focus
 
-  Top Product Recommendations:
-    - HP Business Laptop: Value-conscious professionals
-    - Bluetooth Speaker: Low-risk entry point
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range business electronics: High income but a more price-conscious spending pattern
+    - Practical accessories: Low-risk entry point for this profile
 
 Cluster 2: 597 customers (19.9%)
   Age: 25.5 years (Young)
@@ -111,9 +117,9 @@ Cluster 2: 597 customers (19.9%)
   Gender: Female
   Marketing Strategy: Premium products, VIP programs, exclusive offers, personalized service
 
-  Top Product Recommendations:
-    - iPhone Pro Max: Premium segment with high purchasing power
-    - MacBook Pro: Affluent professionals seeking premium quality
+  Illustrative Product Suggestions (not data-derived):
+    - Premium electronics (flagship phones, laptops): Premium segment with high purchasing power
+    - Luxury lifestyle products: Affluent profile, high average spending
 
 Cluster 3: 546 customers (18.2%)
   Age: 57.4 years (Senior)
@@ -122,9 +128,9 @@ Cluster 3: 546 customers (18.2%)
   Gender: Male
   Marketing Strategy: Entry-level products, first-purchase discounts, education campaigns
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 4: 608 customers (20.3%)
   Age: 31.3 years (Middle-aged)
@@ -133,35 +139,68 @@ Cluster 4: 608 customers (20.3%)
   Gender: Female
   Marketing Strategy: Value bundles, loyalty rewards, installment plans, quality assurance
 
-  Top Product Recommendations:
-    - HP Mid-Range Laptop: Aspirational buyers, offer financing
-    - Wireless Headphones: Lifestyle accessory within budget
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range electronics, financing available: Aspirational buyers; financing may help conversion
+    - Lifestyle accessories: Affordable within this segment's typical budget
 
 
 DBSCAN - CLUSTER PROFILES
 ================================================================================
 
-Cluster 0: 591 customers (19.7%)
-  Age: 49.4 years (Middle-aged)
-  Income: BDT 1,398,706 (High)
-  Spending: 34.5 (Low)
+Cluster 0: 530 customers (17.7%)
+  Age: 49.5 years (Middle-aged)
+  Income: BDT 1,407,741 (High)
+  Spending: 34.2 (Low)
   Gender: Male
-  Marketing Strategy: Trust-building campaigns, product demonstrations, value propositions
+  Marketing Strategy: Trust-building campaigns, product demonstrations, value proposition focus
 
-  Top Product Recommendations:
-    - HP Business Laptop: Value-conscious professionals
-    - Bluetooth Speaker: Low-risk entry point
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range business electronics: High income but a more price-conscious spending pattern
+    - Practical accessories: Low-risk entry point for this profile
 
-Cluster 1: 2366 customers (78.9%)
-  Age: 38.5 years (Middle-aged)
-  Income: BDT 836,960 (Medium)
-  Spending: 57.1 (Medium)
+Cluster 1: 565 customers (18.8%)
+  Age: 41.4 years (Middle-aged)
+  Income: BDT 513,599 (Medium)
+  Spending: 47.5 (Medium)
   Gender: Female
-  Marketing Strategy: Mass market campaigns, seasonal promotions, volume discounts
+  Marketing Strategy: Entry-level products, first-purchase discounts, education campaigns
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
+
+Cluster 2: 549 customers (18.3%)
+  Age: 25.4 years (Young)
+  Income: BDT 1,224,133 (High)
+  Spending: 84.8 (High)
+  Gender: Female
+  Marketing Strategy: Premium products, VIP programs, exclusive offers, personalized service
+
+  Illustrative Product Suggestions (not data-derived):
+    - Premium electronics (flagship phones, laptops): Premium segment with high purchasing power
+    - Luxury lifestyle products: Affluent profile, high average spending
+
+Cluster 3: 535 customers (17.8%)
+  Age: 31.2 years (Middle-aged)
+  Income: BDT 748,709 (Medium)
+  Spending: 71.5 (High)
+  Gender: Female
+  Marketing Strategy: Value bundles, loyalty rewards, installment plans, quality assurance
+
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range electronics, financing available: Aspirational buyers; financing may help conversion
+    - Lifestyle accessories: Affordable within this segment's typical budget
+
+Cluster 4: 493 customers (16.4%)
+  Age: 57.4 years (Senior)
+  Income: BDT 891,331 (Medium)
+  Spending: 22.0 (Low)
+  Gender: Male
+  Marketing Strategy: Entry-level products, first-purchase discounts, education campaigns
+
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 
 GMM - CLUSTER PROFILES
@@ -174,9 +213,9 @@ Cluster 0: 596 customers (19.9%)
   Gender: Female
   Marketing Strategy: Premium products, VIP programs, exclusive offers, personalized service
 
-  Top Product Recommendations:
-    - iPhone Pro Max: Premium segment with high purchasing power
-    - MacBook Pro: Affluent professionals seeking premium quality
+  Illustrative Product Suggestions (not data-derived):
+    - Premium electronics (flagship phones, laptops): Premium segment with high purchasing power
+    - Luxury lifestyle products: Affluent profile, high average spending
 
 Cluster 1: 645 customers (21.5%)
   Age: 41.4 years (Middle-aged)
@@ -185,20 +224,20 @@ Cluster 1: 645 customers (21.5%)
   Gender: Female
   Marketing Strategy: Mass market campaigns, seasonal promotions, volume discounts
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 2: 598 customers (19.9%)
   Age: 49.4 years (Middle-aged)
   Income: BDT 1,396,894 (High)
   Spending: 34.5 (Low)
   Gender: Male
-  Marketing Strategy: Trust-building campaigns, product demonstrations, value propositions
+  Marketing Strategy: Trust-building campaigns, product demonstrations, value proposition focus
 
-  Top Product Recommendations:
-    - HP Business Laptop: Value-conscious professionals
-    - Bluetooth Speaker: Low-risk entry point
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range business electronics: High income but a more price-conscious spending pattern
+    - Practical accessories: Low-risk entry point for this profile
 
 Cluster 3: 542 customers (18.1%)
   Age: 57.4 years (Senior)
@@ -207,9 +246,9 @@ Cluster 3: 542 customers (18.1%)
   Gender: Male
   Marketing Strategy: Entry-level products, first-purchase discounts, education campaigns
 
-  Top Product Recommendations:
-    - Headphones: Essential accessory at accessible price
-    - Bluetooth Speaker: Entry-level lifestyle product
+  Illustrative Product Suggestions (not data-derived):
+    - Budget-friendly essentials: Accessible price point matches this segment's spending
+    - Entry-level lifestyle products: Low commitment, broad appeal
 
 Cluster 4: 619 customers (20.6%)
   Age: 31.4 years (Middle-aged)
@@ -218,16 +257,16 @@ Cluster 4: 619 customers (20.6%)
   Gender: Female
   Marketing Strategy: Value bundles, loyalty rewards, installment plans, quality assurance
 
-  Top Product Recommendations:
-    - HP Mid-Range Laptop: Aspirational buyers, offer financing
-    - Wireless Headphones: Lifestyle accessory within budget
+  Illustrative Product Suggestions (not data-derived):
+    - Mid-range electronics, financing available: Aspirational buyers; financing may help conversion
+    - Lifestyle accessories: Affordable within this segment's typical budget
 
 
 VALIDATION RESULTS
 --------------------------------------------------------------------------------
 KMeans: ARI = 0.9689
 Hierarchical: ARI = 0.9617
-DBSCAN: ARI = 0.2075
+DBSCAN: ARI = 0.8289
 GMM: ARI = 0.9688
 
 ================================================================================

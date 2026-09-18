@@ -30,7 +30,6 @@ License: MIT
 
 import logging
 import os
-import sys
 import warnings
 from dataclasses import dataclass, field
 from enum import Enum
@@ -52,6 +51,18 @@ from sklearn.metrics import (
 from sklearn.mixture import GaussianMixture
 from sklearn.neighbors import NearestNeighbors
 from sklearn.preprocessing import StandardScaler
+
+from business_rules import (
+    AgeCategory,
+    IncomeCategory,
+    ProductSuggestion,
+    SpendingCategory,
+    categorize_age,
+    categorize_income,
+    categorize_spending,
+    generate_marketing_strategy,
+    generate_product_suggestions,
+)
 
 # Suppress warnings for cleaner output
 warnings.filterwarnings("ignore")
@@ -116,28 +127,8 @@ class ClusteringAlgorithm(str, Enum):
     GMM = "GMM"
 
 
-class IncomeCategory(str, Enum):
-    """Income level categories."""
-
-    LOW = "Low"
-    MEDIUM = "Medium"
-    HIGH = "High"
-
-
-class SpendingCategory(str, Enum):
-    """Spending behavior categories."""
-
-    LOW = "Low"
-    MEDIUM = "Medium"
-    HIGH = "High"
-
-
-class AgeCategory(str, Enum):
-    """Age group categories."""
-
-    YOUNG = "Young"
-    MIDDLE_AGED = "Middle-aged"
-    SENIOR = "Senior"
+# Age/income/spending categories live in business_rules.py now, shared
+# with the dashboard so the two entry points can't drift apart again.
 
 
 # LOGGING SETUP
@@ -231,7 +222,7 @@ class ClusterProfile:
     income_category: IncomeCategory
     spending_category: SpendingCategory
     marketing_strategy: str
-    product_recommendations: List[Dict[str, str]]
+    product_recommendations: List[ProductSuggestion]
 
 
 # DATA LOADER
@@ -749,6 +740,11 @@ class OptimalClusterFinder:
         self.logger.info(f"  Calinski-Harabasz Index: k = {optimal_k_ch}")
 
         optimal_k = optimal_k_sil
+        if optimal_k_db != optimal_k:
+            self.logger.info(
+                f"  Note: Davies-Bouldin suggests k={optimal_k_db}, but proceeding "
+                f"with the Silhouette/Calinski-Harabasz consensus of k={optimal_k}"
+            )
         self.logger.info(f"\n  SELECTED OPTIMAL K: {optimal_k}")
         self.logger.info("-" * 60)
 
@@ -1024,7 +1020,17 @@ class ClusteringEngine:
         self.logger.info(f"  Calinski-Harabasz Index: {metrics['calinski']:.0f}")
 
     def _optimize_dbscan_params(self) -> Tuple[float, int]:
-        """Optimize DBSCAN parameters using k-distance graph."""
+        """
+        Optimize DBSCAN parameters using a k-distance graph, then confirm
+        the choice with a small grid search around it.
+
+        The k-distance percentile gives a starting point for eps. Rather
+        than trusting that single point estimate, a handful of nearby
+        eps/min_samples combinations are also tried, and the one with the
+        best Silhouette score among those producing more than one cluster
+        is kept. This makes a "DBSCAN doesn't work on this data" verdict
+        harder to blame on one unlucky parameter choice.
+        """
         try:
             k = min(self.config.DBSCAN_K_NEIGHBORS, len(self.X_scaled) // 100)
             neighbors = NearestNeighbors(n_neighbors=k)
@@ -1032,14 +1038,59 @@ class ClusteringEngine:
             distances, _ = neighbors.kneighbors(self.X_scaled)
             distances = np.sort(distances[:, -1])
 
+            base_min_samples = max(2 * self.X_scaled.shape[1], 5)
+
+            candidates = []
+            for percentile in (75, 85, self.config.DBSCAN_PERCENTILE, 95):
+                eps = np.percentile(distances, percentile)
+                for min_samples in (base_min_samples, base_min_samples + 5):
+                    candidates.append((eps, min_samples))
+
+            self.logger.info(
+                f"Searching {len(candidates)} eps/min_samples combinations "
+                "around the k-distance heuristic..."
+            )
+
+            best_choice = None
+            best_score = -1.0
+            for eps, min_samples in candidates:
+                labels = DBSCAN(eps=eps, min_samples=min_samples).fit_predict(
+                    self.X_scaled
+                )
+                n_found = len(set(labels)) - (1 if -1 in labels else 0)
+                if n_found <= 1:
+                    self.logger.info(
+                        f"  eps={eps:.3f}, min_samples={min_samples} -> "
+                        f"{n_found} cluster(s), skipped"
+                    )
+                    continue
+
+                score = silhouette_score(self.X_scaled, labels)
+                self.logger.info(
+                    f"  eps={eps:.3f}, min_samples={min_samples} -> "
+                    f"{n_found} clusters, silhouette={score:.4f}"
+                )
+                if score > best_score:
+                    best_score = score
+                    best_choice = (eps, min_samples)
+
+            if best_choice is not None:
+                eps, min_samples = best_choice
+                self.logger.info(
+                    f"Best grid result: eps={eps:.3f}, min_samples={min_samples} "
+                    f"(silhouette={best_score:.4f})"
+                )
+                return eps, min_samples
+
+            # Nothing in the grid found more than one cluster - fall back to the
+            # original heuristic point estimate and let run_dbscan report the
+            # single-cluster outcome honestly.
             eps = np.percentile(distances, self.config.DBSCAN_PERCENTILE)
-            min_samples = max(2 * self.X_scaled.shape[1], 5)
-
-            self.logger.info(f"Auto-optimized parameters:")
-            self.logger.info(f"  eps: {eps:.3f}")
-            self.logger.info(f"  min_samples: {min_samples}")
-
-            return eps, min_samples
+            self.logger.info(
+                "No grid combination produced more than one cluster; falling "
+                f"back to the heuristic eps={eps:.3f}, min_samples={base_min_samples}"
+            )
+            return eps, base_min_samples
 
         except Exception as e:
             self.logger.warning(f"Parameter optimization failed: {e}. Using defaults.")
@@ -1094,36 +1145,6 @@ class BusinessIntelligenceEngine:
         self.config = config
         self.logger = logger
 
-    @staticmethod
-    def categorize_age(age: float) -> AgeCategory:
-        """Categorize age into groups."""
-        if age < 30:
-            return AgeCategory.YOUNG
-        elif age < 50:
-            return AgeCategory.MIDDLE_AGED
-        else:
-            return AgeCategory.SENIOR
-
-    @staticmethod
-    def categorize_income(income: float) -> IncomeCategory:
-        """Categorize income into groups."""
-        if income < 500000:
-            return IncomeCategory.LOW
-        elif income < 1000000:
-            return IncomeCategory.MEDIUM
-        else:
-            return IncomeCategory.HIGH
-
-    @staticmethod
-    def categorize_spending(spending: float) -> SpendingCategory:
-        """Categorize spending into groups."""
-        if spending < 40:
-            return SpendingCategory.LOW
-        elif spending < 70:
-            return SpendingCategory.MEDIUM
-        else:
-            return SpendingCategory.HIGH
-
     def generate_cluster_profiles(
         self, df: pd.DataFrame, labels: np.ndarray, algorithm_name: str
     ) -> List[ClusterProfile]:
@@ -1141,6 +1162,15 @@ class BusinessIntelligenceEngine:
         self.logger.info(f"\n" + "-" * 60)
         self.logger.info(f"{algorithm_name} - CLUSTER PROFILING")
         self.logger.info("-" * 60)
+        self.logger.info(
+            "Note: product suggestions below are illustrative categories built "
+            "from age/income/spending patterns only. This dataset has no purchase "
+            "or transaction history, so nothing here is a modeled conversion rate."
+        )
+
+        # Population baseline for the one genuinely data-derived number in the
+        # product suggestions (spending_index) - see business_rules.py
+        population_avg_spending = df["Spending Score (1-100)"].mean()
 
         profiles = []
 
@@ -1158,7 +1188,9 @@ class BusinessIntelligenceEngine:
             cluster_data = df[mask]
 
             # Calculate statistics
-            profile = self._create_cluster_profile(cluster_id, cluster_data, len(df))
+            profile = self._create_cluster_profile(
+                cluster_id, cluster_data, len(df), population_avg_spending
+            )
 
             profiles.append(profile)
 
@@ -1168,7 +1200,11 @@ class BusinessIntelligenceEngine:
         return profiles
 
     def _create_cluster_profile(
-        self, cluster_id: int, cluster_data: pd.DataFrame, total_customers: int
+        self,
+        cluster_id: int,
+        cluster_data: pd.DataFrame,
+        total_customers: int,
+        population_avg_spending: float,
     ) -> ClusterProfile:
         """Create a single cluster profile."""
         # Basic statistics
@@ -1184,18 +1220,16 @@ class BusinessIntelligenceEngine:
         dominant_gender = gender_mode[0] if len(gender_mode) > 0 else "Mixed"
 
         # Categorization
-        age_cat = self.categorize_age(avg_age)
-        income_cat = self.categorize_income(avg_income)
-        spending_cat = self.categorize_spending(avg_spending)
+        age_cat = categorize_age(avg_age)
+        income_cat = categorize_income(avg_income)
+        spending_cat = categorize_spending(avg_spending)
 
         # Strategy
-        strategy = self._generate_marketing_strategy(
-            age_cat, income_cat, spending_cat, size, total_customers
-        )
+        strategy = generate_marketing_strategy(income_cat, spending_cat, percentage)
 
-        # Product recommendations
-        products = self._generate_product_recommendations(
-            age_cat, income_cat, spending_cat, avg_age, avg_income, avg_spending
+        # Product suggestions (illustrative - see business_rules.py)
+        products = generate_product_suggestions(
+            income_cat, spending_cat, avg_spending, population_avg_spending
         )
 
         return ClusterProfile(
@@ -1239,124 +1273,11 @@ class BusinessIntelligenceEngine:
         self.logger.info(f"  Strategy: {profile.marketing_strategy}")
 
         if profile.product_recommendations:
-            self.logger.info(f"\n  🛍️ PRODUCT RECOMMENDATIONS:")
+            self.logger.info(f"\n  Illustrative product suggestions (not data-derived):")
             for rec in profile.product_recommendations[:3]:
-                self.logger.info(f"    {rec['priority']} {rec['product']}")
-                self.logger.info(f"       Reason: {rec['reason']}")
-                self.logger.info(f"       Conversion: {rec['conversion']}")
-
-    def _generate_marketing_strategy(
-        self,
-        age_cat: AgeCategory,
-        income_cat: IncomeCategory,
-        spending_cat: SpendingCategory,
-        cluster_size: int,
-        total_customers: int,
-    ) -> str:
-        """Generate marketing strategy based on cluster characteristics."""
-        market_share = (cluster_size / total_customers) * 100
-
-        if spending_cat == SpendingCategory.HIGH and income_cat == IncomeCategory.HIGH:
-            return (
-                "Premium products, VIP programs, exclusive offers, personalized service"
-            )
-        elif spending_cat == SpendingCategory.HIGH:
-            return (
-                "Value bundles, loyalty rewards, installment plans, quality assurance"
-            )
-        elif spending_cat == SpendingCategory.LOW and income_cat == IncomeCategory.HIGH:
-            return (
-                "Trust-building campaigns, product demonstrations, value propositions"
-            )
-        elif spending_cat == SpendingCategory.MEDIUM and market_share > 20:
-            return "Mass market campaigns, seasonal promotions, volume discounts"
-        else:
-            return "Entry-level products, first-purchase discounts, education campaigns"
-
-    def _generate_product_recommendations(
-        self,
-        age_cat: AgeCategory,
-        income_cat: IncomeCategory,
-        spending_cat: SpendingCategory,
-        avg_age: float,
-        avg_income: float,
-        avg_spending: float,
-    ) -> List[Dict[str, str]]:
-        """Generate intelligent product recommendations."""
-        recommendations = []
-
-        # High Income + High Spending
-        if income_cat == IncomeCategory.HIGH and spending_cat == SpendingCategory.HIGH:
-            recommendations = [
-                {
-                    "product": "iPhone Pro Max",
-                    "priority": "🔴 Primary",
-                    "reason": "Premium segment with high purchasing power",
-                    "conversion": "85-90%",
-                },
-                {
-                    "product": "MacBook Pro",
-                    "priority": "🔴 Primary",
-                    "reason": "Affluent professionals seeking premium quality",
-                    "conversion": "75-80%",
-                },
-            ]
-
-        # High Income + Low/Medium Spending
-        elif income_cat == IncomeCategory.HIGH:
-            recommendations = [
-                {
-                    "product": "HP Business Laptop",
-                    "priority": "🟡 Primary",
-                    "reason": "Value-conscious professionals",
-                    "conversion": "70-75%",
-                },
-                {
-                    "product": "Bluetooth Speaker",
-                    "priority": "🟢 Secondary",
-                    "reason": "Low-risk entry point",
-                    "conversion": "55-60%",
-                },
-            ]
-
-        # Medium Income + High Spending
-        elif (
-            income_cat == IncomeCategory.MEDIUM
-            and spending_cat == SpendingCategory.HIGH
-        ):
-            recommendations = [
-                {
-                    "product": "HP Mid-Range Laptop",
-                    "priority": "🔴 Primary",
-                    "reason": "Aspirational buyers, offer financing",
-                    "conversion": "75-80%",
-                },
-                {
-                    "product": "Wireless Headphones",
-                    "priority": "🟡 Primary",
-                    "reason": "Lifestyle accessory within budget",
-                    "conversion": "70-75%",
-                },
-            ]
-
-        # Default budget segment
-        else:
-            recommendations = [
-                {
-                    "product": "Headphones",
-                    "priority": "🔴 Primary",
-                    "reason": "Essential accessory at accessible price",
-                    "conversion": "80-85%",
-                },
-                {
-                    "product": "Bluetooth Speaker",
-                    "priority": "🟡 Primary",
-                    "reason": "Entry-level lifestyle product",
-                    "conversion": "75-80%",
-                },
-            ]
-
-        return recommendations
+                self.logger.info(f"    [{rec.priority}] {rec.category}")
+                self.logger.info(f"       Reason: {rec.reason}")
+                self.logger.info(f"       Spending index: {rec.spending_index}")
 
 
 # VISUALIZATION ENGINE
@@ -1444,7 +1365,10 @@ class VisualizationEngine:
         fig = plt.figure(figsize=(16, 8))
 
         sample_size = min(self.config.DENDROGRAM_SAMPLE_SIZE, len(X_scaled))
-        sample_indices = np.random.choice(len(X_scaled), sample_size, replace=False)
+        # Use a seeded RNG (not the global np.random state) so the sampled rows,
+        # and therefore the dendrogram image, are reproducible across runs
+        rng = np.random.RandomState(self.config.RANDOM_STATE)
+        sample_indices = rng.choice(len(X_scaled), sample_size, replace=False)
         Z = linkage(X_scaled[sample_indices], "ward")
 
         plt.title(
@@ -1601,6 +1525,18 @@ class ReportGenerator:
                     f"{result.calinski_harabasz_score:<20.0f}\n"
                 )
 
+            # Algorithm-specific details (DBSCAN's chosen eps/min_samples and
+            # noise share, GMM's BIC/AIC/convergence) captured during the run
+            f.write("\nALGORITHM-SPECIFIC DETAILS\n")
+            f.write("-" * 80 + "\n")
+            for algo, result in results.items():
+                if not result.additional_metrics:
+                    continue
+                details = ", ".join(
+                    f"{key}={value}" for key, value in result.additional_metrics.items()
+                )
+                f.write(f"{algo}: {details}\n")
+
             # Best Algorithm
             best_algo = max(results.items(), key=lambda x: x[1].silhouette_score)
             f.write(
@@ -1629,9 +1565,9 @@ class ReportGenerator:
                     f.write(f"  Marketing Strategy: {profile.marketing_strategy}\n")
 
                     if profile.product_recommendations:
-                        f.write(f"\n  Top Product Recommendations:\n")
+                        f.write(f"\n  Illustrative Product Suggestions (not data-derived):\n")
                         for rec in profile.product_recommendations[:3]:
-                            f.write(f"    - {rec['product']}: {rec['reason']}\n")
+                            f.write(f"    - {rec.category}: {rec.reason}\n")
 
             # Validation Results
             f.write("\n\nVALIDATION RESULTS\n")
@@ -1834,6 +1770,14 @@ class SegmentationPipeline:
         profiles_dict = {}
 
         for algo, result in results.items():
+            if not result.is_valid:
+                self.logger.warning(
+                    f"Skipping business insights for {algo}: result is not valid "
+                    f"({result.n_clusters} cluster(s) found, nothing meaningful to profile)"
+                )
+                profiles_dict[algo] = []
+                continue
+
             profiles = self.bi_engine.generate_cluster_profiles(
                 self.df, result.labels, algo
             )
